@@ -1,6 +1,16 @@
 # 2025-group-10
 2025 COMSM0166 group 10
 
+### Week 1: Game Selection Phase 1
+
+| Game                      | Description                                                                                               |
+|---------------------------|-----------------------------------------------------------------------------------------------------------|
+| Kids Going Down the Stairs| **Twist**: Add different types of stairs (moving, disappearing, or bouncy).<br>**Challenges**: Implement dynamic stair generation and smooth character physics. |
+| Frogger-like Road Crossing| **Twist**: Add weather effects like rain and additional road obstacles.<br>**Challenges**: Design random vehicle generation and collision detection for interactions. |
+| Jumping Over Pits on a Bridge | **Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
+
+### Week 2: Paint Prototype
+
 ## Your Game
 
 Link to your game [PLAY HERE](https://peteinfo.github.io/COMSM0166-project-template/)
@@ -13,12 +23,17 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 Add a group photo here!
 
-- Group member 1, name, email, role
-- Group member 2, name, email, role
-- Group member 3, name, email, role
-- Group member 4, name, email, role
-- Group member 5, name, email, role
-- Group member 5, name, email, role
+- Bryant Lin, me24405@bristol.ac.uk, Bryant0909
+
+- Naiwen Tsui, rp24072@bristol.ac.uk, Naiwen1027
+
+- Zhu Xuefei, ft24227@bristol.ac.uk, muler-hussel
+
+- Pinchun Shen, mw24258@bristol.ac.uk, PinChuns
+
+- Chih Hsien Ho, kq23915@bristol.ac.uk, Cindy626
+
+- Cyunwun lin, cyunwunlin@gmail.com, CarminaTW
 
 ## Project Report
 
