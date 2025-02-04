@@ -17,7 +17,7 @@ This week, our focus was on coming up with ideas for our game project. After a l
 
 Game Link:  https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
 
-KanBan Board: https://github.com/orgs/UoB-COMSM0166/projects/122/settings
+KanBan Board: https://github.com/orgs/UoB-COMSM0166/projects/122
 
 This is a simple drawing game where you can use your mouse to draw colorful circles on the canvas.
 
