@@ -18,7 +18,7 @@ Different types of stairs have unique effects, adding variety and challenge. Som
 
 #### 2. Frogger-like Road Crossing
 
-https://youtu.be/M9n7DXvjcw8?si=FcxUdEGWT1FpQf-O
+Video link: https://youtu.be/M9n7DXvjcw8?si=FcxUdEGWT1FpQf-O
 
 In Frog Cross Road, players must guide a small frog safely across a series of busy roads, rivers, and other hazardous environments. The screen continuously moves forward, pressuring players to make quick decisions to avoid getting left behind or hit by passing vehicles.
 
