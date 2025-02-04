@@ -14,21 +14,14 @@ This week, our focus was on coming up with ideas for our game project. After a l
 
 
 ### Week 2: P5.js & Agile Techniques
+This week, we designed a simple yet fun drawing game that allows players to use the mouse to draw colorful circles on the canvas. The gameplay is very intuitive—players simply click to draw circles and can adjust the brush color by pressing different keys.
+
+During the development process, we created a Kanban Board to manage project progress. We divided the work into different tasks, and by using the Kanban Board, we were able to clearly track the status of each task and ensure effective collaboration among team members.
 
 Game Link:  https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
 
 KanBan Board: https://github.com/orgs/UoB-COMSM0166/projects/122
 
-This is a simple drawing game where you can use your mouse to draw colorful circles on the canvas.
-
-**How to Play:**<br>
-Click to draw.<br>
-Press 'r' to add red to your brush.<br>
-Press 'g' to add green.<br>
-Press 'b' to add blue.<br>
-Press 'o' to reset the brush color to black.<br>
-Press 'c' to clear the canvas.<br>
-The brush color gradually intensifies as you press 'r', 'g', or 'b'. Have fun creating colorful art! <br>
 
 
 ### Week 3: Game Demo Videos
