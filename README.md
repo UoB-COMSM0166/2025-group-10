@@ -58,7 +58,19 @@ The game features various obstacles, such as cars, trucks, floating logs, and fa
 #### User Stories
 - As a busy working professional, I want simple but meaningful achievements, so that I can feel joy even with minimal effort.
 - As a streamer, I want a game that is both challenging and entertaining, so that my audience stays engaged while watching my gameplay.
-- As a student, I want a leaderboard system, so that I can compete with my classmates and see who gets the highest score
+- As a student, I want a leaderboard system, so that I can compete with my classmates and see who gets the highest score.
+
+#### Brief
+During this requirements workshop, our team deeply explored Epics, User Stories, and Acceptance Criteria and applied these concepts to the requirements planning for our game, "Angels Going Down the Clouds."
+
+First, we learned that Epics are high-level requirements that group related user stories. For example, "making the game challenging" is one of our Epics, which includes mechanics like character movement, jumping, and dodging. This structure helps us organize requirements and keep the development direction clear.
+
+Next, User Stories allow us to think from the player's perspective when defining game features. For instance, "As a player, I want a leaderboard system so that I can compete with my friends." This approach helps us focus on the user experience and ensures the game meets the needs of different types of players, such as streamers, working professionals, and students.
+
+Finally, Acceptance Criteria define when a requirement is considered "done." For example, "Given that a player finishes a game session, when the score is calculated, then the leaderboard should update and display the player's rank." This clear criterion makes it easier for the development team to test and validate features.
+
+Through this workshop, we not only gained a solid understanding of requirements analysis but also learned how to apply these concepts in the development process, ensuring that our game design is well-structured and aligned with player expectations.
+
 ---
 
 ## Your Game
