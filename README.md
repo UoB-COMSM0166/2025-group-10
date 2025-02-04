@@ -12,9 +12,14 @@
 ### Week 2: Game Demo Videos
 
 #### Kids Going Down the Stairs
+This game is all about quick reflexes and fast-paced action. The screen continuously scrolls downward, and players must guide their character down the stairs to avoid getting caught by the spikes at the top. If hit by the spikes, they lose health, and missing a step results in instant failure.
+
+Different types of stairs have unique effects, adding variety and challenge. Some platforms might disappear, move, or even bounce the player unpredictably. The game is intense, highly reactive, and keeps players on edge with its rapid pace and unpredictable obstacles, making for an exciting and adrenaline-pumping experience.
 
 #### Frogger-like Road Crossing
+In Frog Cross Road, players must guide a small frog safely across a series of busy roads, rivers, and other hazardous environments. The screen continuously moves forward, pressuring players to make quick decisions to avoid getting left behind or hit by passing vehicles.
 
+The game features various obstacles, such as cars, trucks, floating logs, and fast-moving rapids, each requiring precise timing to navigate. Some platforms move unpredictably, adding to the challenge. With its fast-paced gameplay, high tension, and increasing difficulty, Frog Cross Road is an exciting test of reflexes and strategy. The ever-changing environment and quick reaction requirements keep players engaged and on edge throughout the experience.
 
 
 ## Your Game
