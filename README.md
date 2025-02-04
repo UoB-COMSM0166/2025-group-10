@@ -12,6 +12,7 @@ This week, our focus was on coming up with ideas for our game project. After a l
 | Frogger-like Road Crossing| **Twist**: Add weather effects like rain and additional road obstacles.<br>**Challenges**: Design random vehicle generation and collision detection for interactions. |
 | Jumping Over Pits on a Bridge | **Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
 
+---
 
 ### Week 2: P5.js & Agile Techniques
 This week, we designed a simple yet fun drawing game that allows players to use the mouse to draw colorful circles on the canvas. The gameplay is very intuitive—players simply click to draw circles and can adjust the brush color by pressing different keys.
@@ -42,6 +43,7 @@ In Frog Cross Road, players must guide a small frog safely across a series of bu
 
 The game features various obstacles, such as cars, trucks, floating logs, and fast-moving rapids, each requiring precise timing to navigate. Some platforms move unpredictably, adding to the challenge. With its fast-paced gameplay, high tension, and increasing difficulty, Frog Cross Road is an exciting test of reflexes and strategy. The ever-changing environment and quick reaction requirements keep players engaged and on edge throughout the experience.
 
+---
 
 ### Week 4: Object Oriented Design
 
@@ -53,6 +55,7 @@ The game features various obstacles, such as cars, trucks, floating logs, and fa
 
 #### User Stories
 
+---
 
 ## Your Game
 
