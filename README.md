@@ -69,17 +69,15 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 Add a group photo here!
 
-- Bryant Lin, me24405@bristol.ac.uk, Bryant0909
+| Name              | Email                              | Username    |
+|-------------------|----------------------------------|-------------|
+| Bryant Lin       | [me24405@bristol.ac.uk](mailto:me24405@bristol.ac.uk) | Bryant0909  |
+| Naiwen Tsui      | [rp24072@bristol.ac.uk](mailto:rp24072@bristol.ac.uk) | Naiwen1027  |
+| Zhu Xuefei       | [ft24227@bristol.ac.uk](mailto:ft24227@bristol.ac.uk) | muler-hussel |
+| Pinchun Shen     | [mw24258@bristol.ac.uk](mailto:mw24258@bristol.ac.uk) | PinChuns    |
+| Chih Hsien Ho    | [kq23915@bristol.ac.uk](mailto:kq23915@bristol.ac.uk) | Cindy626    |
+| Cyunwun Lin      | [cyunwunlin@gmail.com](mailto:cyunwunlin@gmail.com) | CarminaTW   |
 
-- Naiwen Tsui, rp24072@bristol.ac.uk, Naiwen1027
-
-- Zhu Xuefei, ft24227@bristol.ac.uk, muler-hussel
-
-- Pinchun Shen, mw24258@bristol.ac.uk, PinChuns
-
-- Chih Hsien Ho, kq23915@bristol.ac.uk, Cindy626
-
-- Cyunwun lin, cyunwunlin@gmail.com, CarminaTW
 
 ## Project Report
 
