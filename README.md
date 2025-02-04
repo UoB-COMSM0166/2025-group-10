@@ -14,7 +14,7 @@ This week, our focus was on coming up with ideas for our game project. After a l
 
 ### Week 2: P5.js & Agile Techniques
 
-Game Link: https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
+Game Link:  https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
 
 ### Week 3: Game Demo Videos
 
