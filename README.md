@@ -30,7 +30,7 @@ KanBan Board: https://github.com/orgs/UoB-COMSM0166/projects/122
 
 ### Week 3: Game Demo Videos
 
-#### 1. Angels Going Down the Stairs
+#### 1. Angel Drop
 
 Video link: https://youtu.be/rdkpm2Llshk?si=53pmZ8UEkNTFCre_
 
