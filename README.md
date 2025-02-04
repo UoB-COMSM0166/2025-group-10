@@ -48,10 +48,11 @@ The game features various obstacles, such as cars, trucks, floating logs, and fa
 ### Week 4: Object Oriented Design
 
 #### Stakeholder List
-
+Owner, Developer, Customers, Potential Customers, Public, App Stores
 
 #### Epics
-
+1. Improve player engagement through challenging mechanics 
+2. Enhance happiness for player
 
 #### User Stories
 
