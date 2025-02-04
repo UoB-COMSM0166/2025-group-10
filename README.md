@@ -10,7 +10,7 @@ This week, our focus was on coming up with ideas for our game project. After a l
 | Frogger-like Road Crossing| **Twist**: Add weather effects like rain and additional road obstacles.<br>**Challenges**: Design random vehicle generation and collision detection for interactions. |
 | Jumping Over Pits on a Bridge | **Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
 
-### Week 2: Game Demo Videos
+### Week 3: Game Demo Videos
 
 #### 1. Kids Going Down the Stairs
 
