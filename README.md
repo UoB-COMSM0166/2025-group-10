@@ -17,6 +17,17 @@ This week, our focus was on coming up with ideas for our game project. After a l
 
 Game Link:  https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
 
+This is a simple drawing game where you can use your mouse to draw colorful circles on the canvas.
+
+How to Play:
+Click to draw.
+Press 'r' to add red to your brush.
+Press 'g' to add green.
+Press 'b' to add blue.
+Press 'o' to reset the brush color to black.
+Press 'c' to clear the canvas.
+The brush color gradually intensifies as you press 'r', 'g', or 'b'. Have fun creating colorful art! 
+
 
 ### Week 3: Game Demo Videos
 
