@@ -1,6 +1,8 @@
 # 2025-group-10
 2025 COMSM0166 group 10
 
+## Lecture Notes
+
 ### Week 1: Game Selection Phase 1
 This week, our focus was on coming up with ideas for our game project. After a lot of brainstorming and discussions, we finalized three potential game concepts. Each idea comes with a unique twist and its own set of challenges. We considered different gameplay mechanics, potential difficulties in implementation, and how to make each game engaging for players. It was a fun but challenging process, and now we are excited to move forward with refining and selecting the best concept to develop.
 
