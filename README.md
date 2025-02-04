@@ -45,6 +45,13 @@ The game features various obstacles, such as cars, trucks, floating logs, and fa
 
 ### Week 4: Object Oriented Design
 
+#### Stakeholder List
+
+
+#### Epics
+
+
+#### User Stories
 
 
 ## Your Game
