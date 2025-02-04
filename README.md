@@ -8,7 +8,7 @@ This week, our focus was on coming up with ideas for our game project. After a l
 
 | Game                      | Description                                                                                               |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
-| Angels Going Down the Stairs| **Twist**: Add different types of stairs (moving, disappearing, or bouncy).<br>**Challenges**: Implement dynamic stair generation and smooth character physics. |
+| Little Kids Going Down the Stairs|The original game involves players controlling a character as they descend a series of stairs, avoiding obstacles and collecting rewards. **Twist**: The theme is changed to "Angels Descending from Clouds," where players navigate through fluffy clouds instead of stairs, with unique challenges and mechanisms like disappearing clouds, wind currents, or moving platforms.<br>**Development Challenges**: Designing dynamic cloud behaviors, integrating unique mechanisms, and balancing difficulty across levels.|
 | Frogger-like Road Crossing| **Twist**: Add weather effects like rain and additional road obstacles.<br>**Challenges**: Design random vehicle generation and collision detection for interactions. |
 | Jumping Over Pits on a Bridge | **Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
 
