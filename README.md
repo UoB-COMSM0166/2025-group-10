@@ -8,7 +8,7 @@ This week, our focus was on coming up with ideas for our game project. After a l
 
 | Game                      | Description                                                                                               |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
-| Kids Going Down the Stairs| **Twist**: Add different types of stairs (moving, disappearing, or bouncy).<br>**Challenges**: Implement dynamic stair generation and smooth character physics. |
+| Angels Going Down the Stairs| **Twist**: Add different types of stairs (moving, disappearing, or bouncy).<br>**Challenges**: Implement dynamic stair generation and smooth character physics. |
 | Frogger-like Road Crossing| **Twist**: Add weather effects like rain and additional road obstacles.<br>**Challenges**: Design random vehicle generation and collision detection for interactions. |
 | Jumping Over Pits on a Bridge | **Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
 
@@ -27,7 +27,7 @@ KanBan Board: https://github.com/orgs/UoB-COMSM0166/projects/122
 
 ### Week 3: Game Demo Videos
 
-#### 1. Kids Going Down the Stairs
+#### 1. Angels Going Down the Stairs
 
 Video link: https://youtu.be/rdkpm2Llshk?si=53pmZ8UEkNTFCre_
 
@@ -56,7 +56,9 @@ The game features various obstacles, such as cars, trucks, floating logs, and fa
 2. Enhance happiness for player
 
 #### User Stories
-
+- As a busy working professional, I want simple but meaningful achievements, so that I can feel joy even with minimal effort.
+- As a streamer, I want a game that is both challenging and entertaining, so that my audience stays engaged while watching my gameplay.
+- As a student, I want a leaderboard system, so that I can compete with my classmates and see who gets the highest score
 ---
 
 ## Your Game
