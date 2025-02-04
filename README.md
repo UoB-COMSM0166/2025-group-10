@@ -22,7 +22,7 @@ Game Link:  https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
 
 KanBan Board: https://github.com/orgs/UoB-COMSM0166/projects/122
 
-
+---
 
 ### Week 3: Game Demo Videos
 
