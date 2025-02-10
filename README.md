@@ -47,6 +47,17 @@ In Frog Cross Road, players must guide a small frog safely across a series of bu
 
 The game features various obstacles, such as cars, trucks, floating logs, and fast-moving rapids, each requiring precise timing to navigate. Some platforms move unpredictably, adding to the challenge. With its fast-paced gameplay, high tension, and increasing difficulty, Frog Cross Road is an exciting test of reflexes and strategy. The ever-changing environment and quick reaction requirements keep players engaged and on edge throughout the experience.
 
+#### 3. Up Up Angel (Final decision)
+
+Video link: https://youtube.com/shorts/dFYu5HwDuT4?si=URENKYaQuJJZ4qi2
+
+Up Up Angel" is a platformer game inspired by Doodle Jump, but with our own unique twist. Instead of an automatically bouncing character, players must manually jump using controls, adding a layer of strategy and challenge.
+
+Our goal was to reimagine the classic jumping game with a celestial theme. In this version, players control an angel ascending toward the heavens, navigating through clouds while avoiding small creatures that block their path. We designed the game with elements representing heaven, such as floating platforms made of clouds and a pair of golden wings at the highest point, symbolizing the angel's final transformation.
+
+By adding manual jumping mechanics, we made the game feel more interactive and engaging. Players must carefully time their jumps and plan their movements to reach their goal successfully.
+
+This project allowed us to experiment with game mechanics and level design, and we aimed to create a fun yet challenging experience with a distinctive angelic theme.
 ---
 
 ### Week 4: Object Oriented Design
