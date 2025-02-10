@@ -55,9 +55,9 @@ Up Up Angel" is a platformer game inspired by Doodle Jump, but with our own uniq
 
 Our goal was to reimagine the classic jumping game with a celestial theme. In this version, players control an angel ascending toward the heavens, navigating through clouds while avoiding small creatures that block their path. We designed the game with elements representing heaven, such as floating platforms made of clouds and a pair of golden wings at the highest point, symbolizing the angel's final transformation.
 
-By adding manual jumping mechanics, we made the game feel more interactive and engaging. Players must carefully time their jumps and plan their movements to reach their goal successfully.
+By adding manual jumping mechanics, we made the game feel more interactive and engaging. Players must carefully time their jumps and plan their movements to reach their goal successfully. This project allowed us to experiment with game mechanics and level design, and we aimed to create a fun yet challenging experience with a distinctive angelic theme.
 
-This project allowed us to experiment with game mechanics and level design, and we aimed to create a fun yet challenging experience with a distinctive angelic theme.
+
 ---
 
 ### Week 4: Object Oriented Design
