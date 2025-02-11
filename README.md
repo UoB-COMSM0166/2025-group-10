@@ -101,7 +101,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 ## Your Group
 
-Add a group photo here!
+![Description](IMG_5257.HEIC)
 
 | Name              | Email                              | Username    |
 |-------------------|----------------------------------|-------------|
