@@ -131,7 +131,9 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 - 15% ~750 words 
 - System architecture. Class diagrams, behavioural diagrams.
 - ![class diagram](https://github.com/user-attachments/assets/5ffad842-9d05-45fe-99f5-88d1f67b08cd)
+  
 - ![Diagram 2025-02-12 22-13-42](https://github.com/user-attachments/assets/5d2c7397-e042-4b1b-aa70-9846d49dff14)
+
 ### Implementation
 
 - 15% ~750 words
