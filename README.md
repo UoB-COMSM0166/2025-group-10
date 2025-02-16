@@ -124,7 +124,8 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 ### Requirements 
 
 - 15% ~750 words
-- Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop? 
+- Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop?
+- Our game is called "Up up Angels", originally inspired by NS-Shaft, which focuses on jumping down. However, while working on our game demo, we noticed a small angel illustration on a ruler and felt it would be a perfect fit for our main character. This led us to redesign the concept—since our protagonist is an angel, we decided to have him jump upwards instead. Only upon successfully completing the game does the angel grow wings and ascend to heaven, reinforcing the sense of achievement and aligning with the overall theme of the game.
 
 ### Design
 
