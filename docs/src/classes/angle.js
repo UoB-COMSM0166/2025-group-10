@@ -67,7 +67,7 @@ class Angle {
     }
   }
   
-  attack(monster) {
+  canAttack(monster) {
     if (this.y !== monster.y) {
       return false;
     }

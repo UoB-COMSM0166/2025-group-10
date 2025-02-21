@@ -9,6 +9,8 @@ class Player {
    * pace - The pace of the player, for common player pace is 5, while for angle pace is 3.
    * curHalo - The current number of haloes player has. Player can only have at most 3 haloes. 3 haloes turn into 1 life.
    * size - The size of player's image.
+   * maxX - The most right position movingCloud can move to. Initially, the total distance that movingCloud can move is 2/3 of width of canvas.
+   * minX - The most left position movingCloud can move to.
    */
   constructor(x, y) {
     this.x = x;
@@ -48,17 +50,22 @@ class Player {
     }
   }
   
-  //需要判定this.y == obj.y
   collidesWith(obj) {
+    if (this.y !== obj.y) {
+      return false;
+    }
+    
     let d = dist(this.x, obj.x);
-
     if (d < this.size / 2 + obj.size / 2) {
       if (obj instanceof Halo) {
         addHalo();
+        return true;
       } else {
         loseLife();
+        return true;
       }
     }
+    return false;
   }
   
   show() {

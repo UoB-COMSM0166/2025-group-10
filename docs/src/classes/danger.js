@@ -7,10 +7,10 @@ class Danger {
    * [x, y] - position of danger, danger is on the cloud.
    * size - The size of danger's image.
    */
-  constructor(x, y, cloud) {
+  constructor(x, cloud) {
     this.x = x; //生成时需要判定x不超出cloudPos
     this.size = 10;
-    this.y = cloud.y + this.size / 2;
+    this.y = cloud.y + cloud.h / 2 + this.size / 2;
   }
   
   show() {

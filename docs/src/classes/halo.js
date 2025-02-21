@@ -7,15 +7,13 @@ class Halo {
    * [x, y] - position of halo, halo is on the cloud.
    * size - The size of halo's image.
    */
-  constructor(x, y, cloud) {
+  constructor(x, cloud) {
     this.x = x;
     this.size = 10;
-    this.y = cloud.y + this.size / 2;
+    this.y = cloud.y + cloud.h / 2 + this.size / 2;
   }
   
   show() {
     image(haloImg, this.x, this.y, this.size, this.size);
   }
-  
-  //disapper()
 }
