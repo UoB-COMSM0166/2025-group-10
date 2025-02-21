@@ -1,19 +1,23 @@
 /**
  * Represents a danger in the game.
  */
-class Danger {
+class Danger extends Object {
   /**
-   * Creates a new Danger instance.
+   * Creates a new Danger instance, including monster.
    * [x, y] - position of danger, danger is on the cloud.
    * size - The size of danger's image.
    */
-  constructor(x, cloud) {
-    this.x = x; //生成时需要判定x不超出cloudPos
-    this.size = 10;
-    this.y = cloud.y + cloud.h / 2 + this.size / 2;
+  constructor(cloud) {
+    super(cloud);
+  }
+  
+  move() {
+    super.move();
   }
   
   show() {
-    image(dangerImg, this.x, this.y, this.size, this.size);
+    fill(0, 255, 0);
+    rect(this.x, this.y, this.size, this.size);
+    //image(dangerImg, this.x, this.y, this.size, this.size);
   }
 }

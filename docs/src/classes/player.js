@@ -25,11 +25,11 @@ class Player {
     //在main中判定x,y是否超出width，height，这里不判定
     if (keyPressed()) {
       if (key == ' ') {
-        this.y -= 5;
+        this.y -= 40;
       }
     }
-    if (keyIsDown(LEFT_ARROW)) this.x -= 5;
-    if (keyIsDown(RIGHT_ARROW)) this.x += 5;
+    if (keyIsDown(LEFT_ARROW)) this.x -= 10;
+    if (keyIsDown(RIGHT_ARROW)) this.x += 10;
   }
 
   addLife() {

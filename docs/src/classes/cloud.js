@@ -8,14 +8,18 @@ class Cloud {
    * w - The width of cloud's image.
    * h - The height of cloud's image.
    */
-  constructor(x, y, w, h) {
+  constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.w = 30;
+    this.w = 40;
     this.h = 5;
   }
   
+  move(){}
+  
   show() {
-    image(cloudImg, this.x, this.y, this.w, this.h);
+    //image(cloudImg, this.x, this.y, this.w, this.h);
+    fill(255, 0, 0);
+    ellipse(this.x, this.y, this.w, this.h);
   }
 }

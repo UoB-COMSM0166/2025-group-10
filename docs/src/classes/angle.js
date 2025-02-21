@@ -1,7 +1,7 @@
 /**
  * Represents an angle player in the game.
  */
-class Angle {
+class Angle extends Player {
   /**
    * Creates a new Angle player instance.
    * [x, y] - Initially, angle should be at position[width/2, height]
@@ -13,13 +13,9 @@ class Angle {
    * attckDistance - AttckDistance of angle.
    */
   constructor(x, y) {
-    this.x = x;
-    this.y = y;
-    this.life = 3;
+    super(x, y);
     this.pace = 3;
-    this.curHalo = 0;
     this.attackDirection = 1;
-    this.size = 10;
     this.attckDistance = 5;
   }
 

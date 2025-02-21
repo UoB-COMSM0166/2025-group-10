@@ -1,19 +1,24 @@
 /**
  * Represents a halo in the game.
  */
-class Halo {
+class Halo extends Object {
   /**
    * Creates a new Halo instance.
    * [x, y] - position of halo, halo is on the cloud.
    * size - The size of halo's image.
    */
-  constructor(x, cloud) {
-    this.x = x;
-    this.size = 10;
-    this.y = cloud.y + cloud.h / 2 + this.size / 2;
+  constructor(cloud) {
+    super(cloud);
+  }
+  
+  //跟随云朵移动
+  move(){
+    super.move();
   }
   
   show() {
-    image(haloImg, this.x, this.y, this.size, this.size);
+    fill(0, 0, 255);
+    rect(this.x, this.y, this.size, this.size);
+    //image(haloImg, this.x, this.y, this.size, this.size);
   }
 }

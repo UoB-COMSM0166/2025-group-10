@@ -12,26 +12,23 @@ class MovingCloud extends Cloud {
    * maxX - The most right position movingCloud can move to. Initially, the total distance that movingCloud can move is 2/3 of width of canvas.
    * minX - The most left position movingCloud can move to.
    */
-  constructor(x, y, w, h, canvasWidth) {
-    this.x = x;
-    this.y = y;
-    this.w = 30;
-    this.h = 5;
+  constructor(x, y, canvasWidth) {
+    super(x, y);
     this.speed = 2;
     this.direction = 1; 
     
-    this.maxX = (x + w / 2 + canvasWidth / 3) > canvasWidth ? canvasWidth : x + canvasWidth / 3;
-    this.minX = (x - w / 2 - canvasWidth / 3) < 0 ? 0 : x - canvasWidth / 3;
+    this.maxX = (x + this.w / 2 + canvasWidth / 3) > canvasWidth ? canvasWidth - this.w / 2 : x + canvasWidth / 3;
+    this.minX = (x - this.w / 2 - canvasWidth / 3) < 0 ? this.w / 2 : x - canvasWidth / 3;
   }
   
   move() {
     this.x += this.speed * this.direction;
-    if (this.x <= minX || this.x >= maxX) {
+    if (this.x <= this.minX || this.x >= this.maxX) {
       this.direction *= -1;
     }
   }
   
   show() {
-    image(cloudImg, this.x, this.y, this.w, this.h);
+    super.show();
   }
 }
