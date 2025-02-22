@@ -1,7 +1,7 @@
 /**
  * Represents a halo in the game.
  */
-class Halo extends Object {
+class Halo extends Objects {
   /**
    * Creates a new Halo instance.
    * [x, y] - position of halo, halo is on the cloud.
@@ -11,7 +11,6 @@ class Halo extends Object {
     super(cloud);
   }
   
-  //跟随云朵移动
   move(){
     super.move();
   }

@@ -1,4 +1,4 @@
-class Object {
+class Objects {
   /**
    * Creates a new Object instance, including danger and halo.
    * [x, y] - position of object, object is on the cloud.
@@ -6,7 +6,8 @@ class Object {
    */
    constructor(cloud) {
     this.size = 10;
-    this.x = random(cloud.x - cloud.w / 2 + this.size / 2, cloud.x + cloud.w / 2 - this.size/2);
+    this.cloud = cloud;
+    this.x = random(cloud.x - cloud.w / 2 + this.size, cloud.x + cloud.w / 2 - this.size);
     this.y = cloud.y - cloud.h / 2 - this.size;
      
     this.offsetX = this.x - cloud.x;
@@ -16,8 +17,5 @@ class Object {
     this.x = this.offsetX + this.cloud.x;
   }
   
-  show() {
-    fill(0, 255, 0);
-    rect(this.x, this.y, this.size, this.size);
-  }
+  show() {}
 }

@@ -14,7 +14,7 @@ class MovingCloud extends Cloud {
    */
   constructor(x, y, canvasWidth) {
     super(x, y);
-    this.speed = 2;
+    this.speed = 1;
     this.direction = 1; 
     
     this.maxX = (x + this.w / 2 + canvasWidth / 3) > canvasWidth ? canvasWidth - this.w / 2 : x + canvasWidth / 3;

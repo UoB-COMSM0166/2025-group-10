@@ -1,7 +1,7 @@
 /**
  * Represents a danger in the game.
  */
-class Danger extends Object {
+class Danger extends Objects {
   /**
    * Creates a new Danger instance, including monster.
    * [x, y] - position of danger, danger is on the cloud.

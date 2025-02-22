@@ -8,31 +8,17 @@ class Angle extends Player {
    * life - The life for the angle, initially 3, at most 3, if is 0 the game will be over.
    * pace - The pace of the angle is 3.
    * curHalo - The current number of haloes angle has. Angle can only have at most 3 haloes. 3 haloes turn into 1 life.
-   * attackDirection - Angle can attck, the direction depends on the last move direction. Initially direction is right. Let left = 0, right = 1.
    * size - The size of angle's image.
    * attckDistance - AttckDistance of angle.
    */
   constructor(x, y) {
     super(x, y);
     this.pace = 3;
-    this.attackDirection = 1;
     this.attckDistance = 5;
   }
 
   move() {
-    if (keyPressed()) {
-      if (key == ' ') {
-        this.y -= 5;
-      }
-    }
-    if (keyIsDown(LEFT_ARROW)) {
-      this.x -= 5;
-      this.attckDirection = 0;
-    }
-    if (keyIsDown(RIGHT_ARROW)) {
-      this.x += 5;
-      this.attckDirection = 1;
-    }
+    super.move();
   }
 
   addLife() {

@@ -11,6 +11,9 @@ class Player {
    * size - The size of player's image.
    * maxX - The most right position movingCloud can move to. Initially, the total distance that movingCloud can move is 2/3 of width of canvas.
    * minX - The most left position movingCloud can move to.
+   * direction - The direction depends on the last move direction. Initially direction is right. Let left = -1, right = 1.
+   * jumpPower - When pressing space, player can jump 40.
+   * gravity - After jumping, player can fall down automatically, until reach the bottom of canvas or a cloud.
    */
   constructor(x, y) {
     this.x = x;
@@ -19,27 +22,28 @@ class Player {
     this.pace = 5;
     this.curHalo = 0;
     this.size = 10;
+    this.direction = 1;
+    this.jumpPower = -40;
+    this.gravity = 5;
   }
 
   move() {
-    //在main中判定x,y是否超出width，height，这里不判定
-    if (keyPressed()) {
-      if (key == ' ') {
-        this.y -= 40;
-      }
-    }
-    if (keyIsDown(LEFT_ARROW)) this.x -= 10;
-    if (keyIsDown(RIGHT_ARROW)) this.x += 10;
+    this.x += this.direction * this.pace;
   }
 
   addLife() {
     if (this.life < 3) {
       this.life += 1;
+      console.log("current life is:" + this.life);
     }
   }
   
   loseLife() {
     this.life -= 1;
+    if (this.life == 0) {
+      console.log("game over");
+    }
+    console.log("current life is:" + this.life);
   }
   
   addHalo() {
@@ -47,6 +51,8 @@ class Player {
     if (this.curHalo == 3) {
       this.addLife();
       this.curHalo = 0;
+      console.log("current life is:" + this.life);
+      console.log("current halo is:" + this.curHalo);
     }
   }
   
@@ -69,6 +75,7 @@ class Player {
   }
   
   show() {
-    image(playerImg, this.x, this.y, this.size, this.size);
+    circle(100,400 - this.size / 2,10);
+    //image(playerImg, this.x, this.y, this.size, this.size);
   }
 }

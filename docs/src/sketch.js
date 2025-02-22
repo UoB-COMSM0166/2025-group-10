@@ -1,11 +1,9 @@
 let clouds = [];
-let dangers = [];
-let monsters = [];
-let halos = [];
+let objects = [];
 let player;
-let numClouds = 20;
+let numClouds = 100;
 let level = 1;
-let canvasWidth = 300;
+let canvasWidth = 250;
 let canvasHeight = 400;
 
 function generateClouds(numClouds, level, x, y, w, h, canvasWidth) {
@@ -40,19 +38,23 @@ function setup() {
   // Generate clouds
   clouds = generateClouds(numClouds, level, random(50, 250), random(canvasHeight - 3, canvasHeight - 4), 30, 5, canvasWidth);
   
+  //Generate objects
   for (let i = 0; i < numClouds; i++) {
     let cloud = clouds[i];
      // Randomly add a danger on some clouds
     if (random() < 0.3) { // 30% chance of having a danger
       if (random() < 0.3) {
-        dangers.push(new Monster(cloud));
+        objects.push(new Monster(cloud));
       } else {
-        dangers.push(new Danger(cloud));
+        objects.push(new Danger(cloud));
       }
     } else if (random() < 0.3) { // 30% chance of having a halo
-      halos.push(new Halo(cloud));
+      objects.push(new Halo(cloud));
     }
   }
+  
+  //Generate player
+  player = new Player(canvasWidth / 2, canvasHeight);
 }
 
 function draw() {
@@ -64,17 +66,23 @@ function draw() {
     cloud.move();
   }
 
-  // Draw dangers and monsters
-  for (let danger of dangers) {
-    danger.show();
-    danger.move();
+  for (let obj of objects) {
+    obj.show();
+    obj.move();
   }
   
-  for (let halo of halos) {
-    halo.show();
-    halo.move();
-  }
-  
-  player = player(canvasWidth / 2, canvasHeight);
+  player.show();
   player.move();
+}
+
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    player.direction = -1;
+    player.move();
+  } else if (keyCode === RIGHT_ARROW) {
+    player.direction = 1;
+    player.move();
+  } else if (keyCode === 32) { // SPACE key
+    player.jump();
+  }
 }
