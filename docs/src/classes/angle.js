@@ -20,6 +20,10 @@ class Angle extends Player {
   move() {
     super.move();
   }
+  
+  jump() {
+    super.jump();
+  }
 
   addLife() {
     super.addLife();
@@ -45,6 +49,9 @@ class Angle extends Player {
         if (!attack(obj)) {
           loseLife();
         }
+      } else if (obj instanceof Wing) {
+        console.log("You win the game");
+        return true;
       }
     }
   }
@@ -63,6 +70,11 @@ class Angle extends Player {
   }
   
   show() {
-    image(AngleImg, this.x, this.y, this.size, this.size);
+    super.show();
+    // if (this.direction === -1) {
+    //   image(angleLeftImg, this.x, this.y, this.size, this.size);
+    // } else {
+    //   image(angleRightImg, this.x, this.y, this.size, this.size);
+    // }
   }
 }

@@ -11,7 +11,7 @@ class Monster extends Danger {
    */
   constructor(cloud) {
     super(cloud);
-    this.speed = 1;
+    this.speed = 2;
     this.direction = 1;
     
     this.maxX = cloud.x + cloud.w / 2 - this.size / 2;
@@ -19,6 +19,7 @@ class Monster extends Danger {
   }
   
   move() {
+    this.y = this.cloud.y - this.cloud.h / 2 - this.size;
     this.maxX = this.cloud.x + this.cloud.w / 2 - this.size / 2;
     this.minX = this.cloud.x - this.cloud.w / 2 + this.size / 2;
     
@@ -34,6 +35,10 @@ class Monster extends Danger {
   show() {
     fill(0, 255, 0);
     rect(this.x, this.y, this.size, this.size);
-    //image(monsterImg, this.x, this.y, this.size, this.size);
+    // if (this.direction === -1) {
+    //   image(monsterLeftImg, this.x, this.y, this.size, this.size);
+    // } else {
+    //   image(monsterRightImg, this.x, this.y, this.size, this.size);
+    // }
   }  
 }

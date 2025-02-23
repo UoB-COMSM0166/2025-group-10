@@ -5,6 +5,9 @@ let numClouds = 50;
 let level = 1;
 let canvasWidth = 350;
 let canvasHeight = 600;
+let cloudWidth = 70;
+let cloudHeight = 10;
+let currentShift = 0;
 
 function generateClouds(numClouds, level, x, y, w, h, canvasWidth) {
   let prevX = x;
@@ -14,8 +17,8 @@ function generateClouds(numClouds, level, x, y, w, h, canvasWidth) {
   let movingCloudsRatio = map(level, 1, 10, 0.2, 0.8);
   
   for (let i = 0; i < numClouds; i++) {
-    //Suppose player can jump 150, height between ajacent clouds should be about 30;
-    let newY = prevY - random(60, 80);
+    //height between ajacent clouds should be appropriate;
+    let newY = prevY - random(60, 90);
     //Distance between ajacent clouds should be suitable;
     let newX;
     if (random() < 0.5) {
@@ -23,13 +26,13 @@ function generateClouds(numClouds, level, x, y, w, h, canvasWidth) {
     } else {
       newX = prevX + random(w / 2, w * 2);
     }
-    newX = newX < w * 2 ? w * 2 : newX;
-    newX = newX > canvasWidth - w * 2 ? canvasWidth - w * 2 : newX;
+    newX = newX < w ? w : newX;
+    newX = newX > canvasWidth - w ? canvasWidth - w : newX;
     
     if (random() < movingCloudsRatio) {
-      clouds.push(new MovingCloud(newX, newY, canvasWidth));
+      clouds.push(new MovingCloud(newX, newY, w, h, canvasWidth));
     } else {
-      clouds.push(new Cloud(newX, newY));
+      clouds.push(new Cloud(newX, newY, w, h));
     }
 
     prevX = newX;
@@ -42,20 +45,34 @@ function setup() {
   createCanvas(canvasWidth, canvasHeight);
 
   // Generate clouds
-  clouds = generateClouds(numClouds, level, random(50, 250), random(canvasHeight - 3, canvasHeight - 4), 30, 5, canvasWidth);
+  clouds = generateClouds(numClouds, 
+                          level, 
+                          random(50, 250), 
+                          random(canvasHeight - 3, canvasHeight - 4), 
+                          cloudWidth, 
+                          cloudHeight, 
+                          canvasWidth);
   
   //Generate objects
   for (let i = 0; i < numClouds; i++) {
     let cloud = clouds[i];
-     // Randomly add a danger on some clouds
-    if (random() < 0.3) { // 30% chance of having a danger
-      if (random() < 0.2) {
-        objects.push(new Monster(cloud));
+    
+    //Wing is on the final cloud
+    if (i === numClouds - 1) {
+      objects.push(new Wing(cloud));
+    } else {
+      // Randomly add a danger on some clouds
+      if (random() < 0.3) { // 30% chance of having a danger
+        if (random() < 0.2) {
+          objects.push(new Monster(cloud));
+        } else {
+          objects.push(new Danger(cloud));
+        }
+      } else if (random() < 0.3) { // 30% chance of having a halo
+        objects.push(new Halo(cloud));
       } else {
-        objects.push(new Danger(cloud));
+        objects.push(new Objects(cloud));
       }
-    } else if (random() < 0.3) { // 30% chance of having a halo
-      objects.push(new Halo(cloud));
     }
   }
   
@@ -96,4 +113,11 @@ function keyPressed() {
       player.jump();
     }
   }
+}
+
+//Every time player jumps, scroll clouds down and center the current cloud in the canvas.
+function shiftScreen(shiftAmount) {
+    for (let cloud of clouds) {
+      cloud.y += shiftAmount;
+    }
 }
