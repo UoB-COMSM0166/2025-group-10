@@ -11,7 +11,7 @@ class Monster extends Danger {
    */
   constructor(cloud) {
     super(cloud);
-    this.speed = 2;
+    this.speed = 1;
     this.direction = 1;
     
     this.maxX = cloud.x + cloud.w / 2 - this.size / 2;

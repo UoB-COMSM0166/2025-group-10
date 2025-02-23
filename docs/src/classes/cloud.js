@@ -11,8 +11,8 @@ class Cloud {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.w = 40;
-    this.h = 5;
+    this.w = 70;
+    this.h = 10;
   }
   
   move(){}

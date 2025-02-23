@@ -14,21 +14,64 @@ class Player {
    * direction - The direction depends on the last move direction. Initially direction is right. Let left = -1, right = 1.
    * jumpPower - When pressing space, player can jump 40.
    * gravity - After jumping, player can fall down automatically, until reach the bottom of canvas or a cloud.
+   * velocityY - After jumping, the distance player should fall down;
    */
   constructor(x, y) {
     this.x = x;
-    this.y = y;
     this.life = 3;
     this.pace = 5;
     this.curHalo = 0;
-    this.size = 10;
+    this.size = 20;
+    this.y = y - this.size / 2;
     this.direction = 1;
-    this.jumpPower = -40;
+    this.jumpPower = -150;
     this.gravity = 5;
+    this.isOnCloud = false;
   }
+  
+  update(canvasHeight, clouds, objects) {
+    if (this.y != canvasHeight - this.size / 2) {
+      let newY = this.y + this.gravity;
+      // Stop at the bottom of canvas, life -1
+      if (newY + this.size / 2 >= canvasHeight) {
+        this.y = canvasHeight - this.size / 2;
+        this.velocityY = 0; // Stop falling
+        this.loseLife();
+      } else {
+        this.y = newY;
+      }
+    }
 
-  move() {
-    this.x += this.direction * this.pace;
+    // Stop at cloud
+    for (let i = clouds.length - 1; i >= 0; i--) {
+      let cloud = clouds[i];
+      if (
+        this.y + this.size / 2 >= cloud.y - cloud.h / 2 &&
+        this.y + this.size / 2 <= cloud.y + cloud.h / 2 &&
+        this.x >= cloud.x - cloud.w / 2 &&
+        this.x <= cloud.x + cloud.w / 2
+      ) {
+        this.y = cloud.y - cloud.h / 2 - this.size / 2;
+        this.isOnCloud = true;
+        if (this.collidesWith(objects[i])) {
+          objects[i] = new Objects(cloud);
+        }
+      }
+    }
+  }
+  
+  move(dir, canvasWidth) {
+    let newX = this.x + dir * this.pace;
+    if (dir < 0) {
+      this.x = newX < this.size / 2 ? this.size / 2 : newX;
+    } else {
+      this.x = newX > canvasWidth - this.size / 2 ? canvasWidth - this.size / 2 : newX;
+    }
+  }
+  
+  jump() {
+    this.y += this.jumpPower;
+    this.isOnCloud = false;
   }
 
   addLife() {
@@ -48,26 +91,22 @@ class Player {
   
   addHalo() {
     this.curHalo += 1;
-    if (this.curHalo == 3) {
+    if (this.curHalo === 3) {
       this.addLife();
       this.curHalo = 0;
-      console.log("current life is:" + this.life);
-      console.log("current halo is:" + this.curHalo);
     }
+    console.log("current life is:" + this.life);
+    console.log("current halo is:" + this.curHalo);
   }
   
   collidesWith(obj) {
-    if (this.y !== obj.y) {
-      return false;
-    }
-    
-    let d = dist(this.x, obj.x);
+    let d = abs(this.x - obj.x);
     if (d < this.size / 2 + obj.size / 2) {
       if (obj instanceof Halo) {
-        addHalo();
+        this.addHalo();
         return true;
-      } else {
-        loseLife();
+      } else if (obj instanceof Danger){
+        this.loseLife();
         return true;
       }
     }
@@ -75,7 +114,7 @@ class Player {
   }
   
   show() {
-    circle(100,400 - this.size / 2,10);
+    circle(this.x, this.y, this.size);
     //image(playerImg, this.x, this.y, this.size, this.size);
   }
 }

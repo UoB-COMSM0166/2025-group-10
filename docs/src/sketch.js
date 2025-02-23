@@ -1,10 +1,10 @@
 let clouds = [];
 let objects = [];
 let player;
-let numClouds = 100;
+let numClouds = 50;
 let level = 1;
-let canvasWidth = 250;
-let canvasHeight = 400;
+let canvasWidth = 350;
+let canvasHeight = 600;
 
 function generateClouds(numClouds, level, x, y, w, h, canvasWidth) {
   let prevX = x;
@@ -14,11 +14,17 @@ function generateClouds(numClouds, level, x, y, w, h, canvasWidth) {
   let movingCloudsRatio = map(level, 1, 10, 0.2, 0.8);
   
   for (let i = 0; i < numClouds; i++) {
-    //Suppose player can jump 40, height between ajacent clouds should be about 20;
-    let newY = prevY - random(16, 20);
-    //Suppose player can move 10, distance between ajacent clouds should not larger than 5;
-    //let newX = constrain(prevX + random(-5, 5), 0, canvasWidth - w);
-    let newX = random(w / 2, canvasWidth - w);
+    //Suppose player can jump 150, height between ajacent clouds should be about 30;
+    let newY = prevY - random(60, 80);
+    //Distance between ajacent clouds should be suitable;
+    let newX;
+    if (random() < 0.5) {
+      newX = prevX + random(-w * 2, -w / 2);
+    } else {
+      newX = prevX + random(w / 2, w * 2);
+    }
+    newX = newX < w * 2 ? w * 2 : newX;
+    newX = newX > canvasWidth - w * 2 ? canvasWidth - w * 2 : newX;
     
     if (random() < movingCloudsRatio) {
       clouds.push(new MovingCloud(newX, newY, canvasWidth));
@@ -43,7 +49,7 @@ function setup() {
     let cloud = clouds[i];
      // Randomly add a danger on some clouds
     if (random() < 0.3) { // 30% chance of having a danger
-      if (random() < 0.3) {
+      if (random() < 0.2) {
         objects.push(new Monster(cloud));
       } else {
         objects.push(new Danger(cloud));
@@ -71,18 +77,23 @@ function draw() {
     obj.move();
   }
   
+  if (keyIsDown(LEFT_ARROW)) {
+    player.move(-1, canvasWidth); // Move left
+  }
+  if (keyIsDown(RIGHT_ARROW)) {
+    player.move(1, canvasWidth);  // Move right
+  }
+  
+  player.update(canvasHeight, clouds, objects);
   player.show();
-  player.move();
 }
 
 function keyPressed() {
-  if (keyCode === LEFT_ARROW) {
-    player.direction = -1;
-    player.move();
-  } else if (keyCode === RIGHT_ARROW) {
-    player.direction = 1;
-    player.move();
-  } else if (keyCode === 32) { // SPACE key
-    player.jump();
+  if (keyCode === 32) { // SPACE key
+    if (player.y === canvasHeight - player.size / 2) {
+      player.jump();
+    } else if (player.isOnCloud) {
+      player.jump();
+    }
   }
 }
