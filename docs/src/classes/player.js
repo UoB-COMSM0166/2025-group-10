@@ -16,11 +16,11 @@ class Player {
    * gravity - After jumping, player can fall down automatically, until reach the bottom of canvas or a cloud.
    * newY - After jumping, the ideal height player should be according to jumpPower.
    */
-  constructor(x, y) {
+  constructor(x, y, life, curHalo) {
     this.x = x;
-    this.life = 3;
+    this.life = life;
     this.pace = 5;
-    this.curHalo = 0;
+    this.curHalo = curHalo;
     this.size = 20;
     this.y = y - this.size / 2;
     this.direction = 1;
@@ -30,7 +30,7 @@ class Player {
     this.newY = this.y;
   }
   
-  update(canvasHeight, clouds, objects) {
+  update() {
     //Jump beyond canvasHeight / 2, move clouds
     if (this.newY < canvasHeight / 2) {
       while (this.newY < canvasHeight / 2) {
@@ -74,7 +74,7 @@ class Player {
     }
   }
   
-  move(dir, canvasWidth) {
+  move(dir) {
     let newX = this.x + dir * this.pace;
     if (dir < 0) {
       this.x = newX < this.size / 2 ? this.size / 2 : newX;
@@ -89,32 +89,36 @@ class Player {
   }
 
   addLife() {
-    if (this.life < 3) {
-      this.life += 1;
-      console.log("current life is:" + this.life);
+    if (life < 3) {
+      life += 1;
     }
   }
   
   loseLife() {
-    if (this.life > 0) {
-      this.life -= 1;
-    } else {
+    if (life === 1) {
       console.log("game over");
     }
-    console.log("current life is:" + this.life);
+    life -= 1;
+    if (life === 2 && curHalo === 3) {
+      life += 1;
+      curHalo = 0;
+    }
+    console.log("current life is:" + life);
   }
   
   addHalo() {
-    if (this.curHalo === 3) {
-      if (this.life !== 3) {
+    if (curHalo === 2) {
+      if (life !== 3) {
         this.addLife();
-        this.curHalo = 0;
+        curHalo = 0;
+      } else {
+        curHalo += 1;
       }
     } else {
-      this.curHalo += 1;
+      curHalo += 1;
     }
-    console.log("current life is:" + this.life);
-    console.log("current halo is:" + this.curHalo);
+    console.log("current life is:" + life);
+    console.log("current halo is:" + curHalo);
   }
   
   collidesWith(obj) {
@@ -142,6 +146,7 @@ class Player {
   }
   
   show() {
+    fill(255, 204, 200);
     circle(this.x, this.y, this.size);
     // if (this.direction === -1) {
     //   image(playerLeftImg, this.x, this.y, this.size, this.size);
