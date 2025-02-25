@@ -148,6 +148,10 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 - 15% ~750 words
 
 - One qualitative evaluation (your choice) 
+1.The ball bounces too fast.  
+2.I hope the interface can be more refined.  
+3.The stationary platforms could be longer.  
+4.When the ball jumps onto a moving platform, it should not move along with it.(we don't choose)
 
 - One quantitative evaluation (of your choice) 
 
