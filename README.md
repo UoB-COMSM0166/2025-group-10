@@ -162,6 +162,8 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 1.The character movement in our game isn’t smooth enough. We hadn’t noticed many of these issues before.
 2. Without guidance, players are unable to play the game.
 
+Our playtesters helped us notice many issues we had previously overlooked. They revealed that the character movement in our game isn’t smooth enough, which aligns with the results from our think-aloud sessions. 
+
 - Description of how code was tested. 
 
 ### Process 
