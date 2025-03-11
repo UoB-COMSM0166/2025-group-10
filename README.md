@@ -91,6 +91,10 @@ Finally, Acceptance Criteria define when a requirement is considered "done." For
 Through this workshop, we not only gained a solid understanding of requirements analysis but also learned how to apply these concepts in the development process, ensuring that our game design is well-structured and aligned with player expectations.
 
 ---
+### WEEK 8
+				<img width="865" alt="截圖 2025-03-11 16 19 40" src="https://github.com/user-attachments/assets/fdf76347-9dfd-494f-be21-d53670b4ea39" />
+
+---
 
 ## Your Game
 
