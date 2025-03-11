@@ -159,6 +159,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 4.When the ball jumps onto a moving platform, it should not move along with it.(we don't choose)
 
 - One quantitative evaluation (of your choice)
+
 1.The character movement in our game isn’t smooth enough. We hadn’t noticed many of these issues before.
 2. Without guidance, players are unable to play the game.
 
