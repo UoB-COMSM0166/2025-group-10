@@ -92,8 +92,8 @@ Through this workshop, we not only gained a solid understanding of requirements 
 
 ---
 ### WEEK 8
-				<img width="865" alt="截圖 2025-03-11 16 19 40" src="https://github.com/user-attachments/assets/fdf76347-9dfd-494f-be21-d53670b4ea39" />
-
+				SUS and NASA TLX survey.xlsx
+    
 ---
 
 ## Your Game
