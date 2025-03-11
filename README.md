@@ -92,7 +92,7 @@ Through this workshop, we not only gained a solid understanding of requirements 
 
 ---
 ### WEEK 8
-				[SUS and NASA TLX survey.xlsx](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/SUS%20and%20NASA%20TLX%20survey.xlsx)
+[SUS and NASA TLX survey.xlsx](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/SUS%20and%20NASA%20TLX%20survey.xlsx)
     
     
 ---
