@@ -80,7 +80,7 @@ By adding manual jumping mechanics, we made the game feel more interactive and e
 - As a student, I want a leaderboard system, so that I can compete with my classmates and see who gets the highest score.
 
 #### Brief
-During this requirements workshop, our team deeply explored Epics, User Stories, and Acceptance Criteria and applied these concepts to the requirements planning for our game, "Angels Going Down the Clouds."
+During this requirements workshop, our team deeply explored Epics, User Stories, and Acceptance Criteria and applied these concepts to the requirements planning for our game, "Up Up Angel".
 
 First, we learned that Epics are high-level requirements that group related user stories. For example, "making the game challenging" is one of our Epics, which includes mechanics like character movement, jumping, and dodging. This structure helps us organize requirements and keep the development direction clear.
 
