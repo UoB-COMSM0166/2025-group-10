@@ -162,7 +162,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 - One quantitative evaluation (of your choice)
 
 1.The character movement in our game isn’t smooth enough. We hadn’t noticed many of these issues before.
-2. Without guidance, players are unable to play the game.
+2.Without guidance, players are unable to play the game.
 
 Our playtesters helped us notice many issues we had previously overlooked. They revealed that the character movement in our game isn’t smooth enough, which aligns with the results from our think-aloud sessions. Without guidance, as observers, we noticed that players had many questions and struggled to understand the game without team members’ instructions. This indicates that our game’s guidance and in-game object functions are not clear enough. Moving forward, we will add a game instruction page and incorporate character icons to ensure players can navigate the game smoothly without external guidance.
 
