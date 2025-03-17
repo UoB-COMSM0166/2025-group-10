@@ -1,5 +1,7 @@
 let bgImg;
 let angelWords;
+let titleY; // 標題 Y 軸位置
+let angle = 0; // 角度用來計算彈跳幅度
 let playNormal;
 let playHover;
 let playX, playY, playWidth, playHeight;
@@ -30,7 +32,7 @@ function preload() {
 function setup() {
   createCanvas(800, 600);
   
-
+  titleY = 0; // 設定標題初始位置
   playWidth = playNormal.width; // 設定按鈕寬度
   playHeight = playNormal.height / 1.5; 
   playX = width / 2 - playWidth / 2;
@@ -45,7 +47,11 @@ function setup() {
 function draw() {
   if (pageState == 0) { 
     image(bgImg, 0, 0, width, height);
-    image(angelWords, 90, 0, angelWords.width/0.7, angelWords.height/0.7); 
+    
+    let bounce = sin(angle) * 10; // 讓標題上下移動 10 像素範圍
+    angle += 0.05; // 控制動畫速度
+    
+    image(angelWords, 90, titleY + bounce, angelWords.width/0.7, angelWords.height/0.7); 
 
     let isPlayHover = mouseX > playX && mouseX < playX + playWidth && mouseY > playY && mouseY < playY + playHeight;
     
