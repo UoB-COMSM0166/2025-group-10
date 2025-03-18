@@ -93,8 +93,58 @@ Through this workshop, we not only gained a solid understanding of requirements 
 ---
 ### WEEK 8
 [SUS and NASA TLX survey.xlsx](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/SUS%20and%20NASA%20TLX%20survey.xlsx)
-    
-    
+
+---    
+### WEEK 10
+Sustainability Impact Analysis of "UPUP ANGEL" 
+
+Social Impact 
+
+Sense of Community  
+Q: How does the product/service affect individuals' sense of belonging?  
+A: By playing together, teenagers can interact, share topics, and feel recognized by their peers. 
+Trust  
+Q: How does the product/service change users' trust in the company?  
+A:  
+Securely storing player data ensures data protection, increasing trust in the company.  
+Quick and positive responses to player feedback improve user trust. 
+Inclusiveness and Diversity  
+Q: How does the product/service affect people's views of others?  
+A: The game is fair for all players, regardless of age, gender, or race, reducing bias and promoting inclusiveness.  
+Q: How does it impact users from different backgrounds, ages, education levels, or other differences?  
+A: The game is open to everyone without restrictions. 
+Equity  
+Q: How does the system treat people differently?  
+A: Game results depend entirely on personal performance, with no unfair internal mechanisms. 
+Participation and Communication  
+Q: How does the product/service change how people build social networks?  
+A: The game provides conversation topics, encouraging interaction and communication.  
+Q: How does the product/service change how people support, criticize, or argue with others?  
+A:  
+Positive: Game discussions improve players' communication and expression skills.  
+Negative: Spending too much time on the game may reduce real-life social interactions. 
+Cultural Impact 
+
+Individual Impact 
+
+Health  
+Q: How does the product/service improve or harm physical, mental, or emotional health?  
+A:  
+Positive: Different difficulty levels allow easy completion, boosting confidence and achievement.  
+Negative: Excessive play may damage eyesight and posture, affecting physical health. 
+Lifelong Learning  
+Q: How does the product/service affect people's abilities and skills?  
+A: The game teaches players to achieve success through effort and repeated attempts, building patience and persistence. 
+Privacy  
+Q: How does the product/service expose (or protect) personal identity, location, or social relationships?  
+A: No login is required, avoiding personal data collection and ensuring privacy protection. 
+Safety  
+Q: How does the product/service expose (or protect) people from physical harm?  
+A: The game does not involve physical activity, so there is no direct risk of injury, but long play sessions may affect health.  
+Q: What are the possible effects if the product/service is used unexpectedly?  
+A: If used for gambling or unfair competition, it may harm players' mental health and fairness in the game. 
+
+   
 ---
 
 ## Your Game
