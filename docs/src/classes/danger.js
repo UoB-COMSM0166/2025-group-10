@@ -9,6 +9,7 @@ class Danger extends Objects {
    */
   constructor(cloud) {
     super(cloud);
+    this.size = 25; // 原本可能是 40，現在縮小到 30
   }
   
   move() {
@@ -16,8 +17,6 @@ class Danger extends Objects {
   }
   
   show() {
-    fill(0, 255, 0);
-    rect(this.x, this.y, this.size, this.size);
-    //image(dangerImg, this.x, this.y, this.size, this.size);
+    image(dangerImg, this.x, this.y, this.size, this.size);
   }
 }

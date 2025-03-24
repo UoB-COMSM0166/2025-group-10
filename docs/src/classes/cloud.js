@@ -18,8 +18,6 @@ class Cloud {
   move(){}
   
   show() {
-    //image(cloudImg, this.x, this.y, this.w, this.h);
-    fill(255, 0, 0);
-    ellipse(this.x, this.y, this.w, this.h);
+    image(cloudImg, this.x - this.w / 2, this.y - this.h / 2, this.w, this.h);
   }
 }

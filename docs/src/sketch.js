@@ -1,119 +1,433 @@
-let clouds = [];
-let objects = [];
-let hearts = [];
-let coins = [];
+let clouds = [], objects = [], hearts = [];
 let player;
-let numClouds = 50;
-let level = 1;
-let canvasWidth = 350;
-let canvasHeight = 600;
-let statusAreaHeight = 50;
-let cloudWidth = 70;
-let cloudHeight = 10;
+let numClouds = 100;
+let canvasWidth = 800, canvasHeight = 600, statusAreaHeight = 50;
+let cloudWidth = 100, cloudHeight = 10;
 let numCoinOrHeart = 3;
-let life = 3;
-let curHalo = 0;
+let life = 3, candyCount = 0;
+let cloudImg, haloImg, monsterImg, dangerImg, playerImg;
+let bgImg, bgGame, angelWords, challengeWords;
+let simple, simpleHover, medium, mediumHover, hard, hardHover;
+let titleY = 100, angle = 0; // 控制標題彈跳動畫
+let playX, playY, playWidth = 200, playHeight = 80; // 增大按鈕尺寸
+let gameScreen = "start";
+let continueX, continueY, continueWidth = 200, continueHeight = 60;
+let selectedDifficulty = "easy"; // 預設為簡單模式
+let gameAssetsLoaded = false;
+
+//game over or you win variables
+let winOrLoseButtons = [];
+let winOrLoseLabels = ["Play Again", "Settings", "Exit Game"];
+let winOrLoseX, winOrLoseY;
+let winOrLoseWidth = 200, winOrLoseHeight = 50, winOrLoseSpacing = 15, winOrLoseFlashTimer = 0;
+
+//圖片匯入
+function preload() {
+  bgImg = loadImage('assets/bg.png');
+  angelWords = loadImage('assets/upup.jpg');
+}
+
 
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
+  loadGameAssets(); 
+  playX = width / 2;
+  playY = height - 150;
+  
+  textAlign(CENTER, CENTER);
+  textSize(24);
+  textFont("Comic Sans MS"); 
+  
+  // Continue 按鈕位置
+  continueX = width / 2 - 100;
+  continueY = height - 100;
+  
+  // 設定 Game Over or You Win 页面按鈕位置
+  winOrLoseX = width / 2;
+  winOrLoseY = height / 2 + 40;
 
-  // Generate clouds
-  clouds = generateClouds(level, 
-                          random(50, 250), 
-                          random(canvasHeight - 3, canvasHeight - 4), 
-                          cloudWidth, 
-                          cloudHeight);
-  
-  //Generate objects
-  for (let i = 0; i < numClouds; i++) {
-    let cloud = clouds[i];
-    
-    //Wing is on the final cloud
-    if (i === numClouds - 1) {
-      objects.push(new Wing(cloud));
-    } else {
-      // Randomly add a danger on some clouds
-      if (random() < 0.3) { // 30% chance of having a danger
-        if (random() < 0.2) {
-          objects.push(new Monster(cloud));
-        } else {
-          objects.push(new Danger(cloud));
-        }
-      } else if (random() < 0.3) { // 30% chance of having a halo
-        objects.push(new Halo(cloud));
-      } else {
-        objects.push(new Objects(cloud));
-      }
-    }
+  for (let i = 0; i < winOrLoseLabels.length; i++) {
+    winOrLoseButtons.push({
+      label: winOrLoseLabels[i],
+      x: winOrLoseX,
+      y: winOrLoseY + i * (winOrLoseHeight + winOrLoseSpacing),
+      w: winOrLoseWidth,
+      h: winOrLoseHeight,
+      hover: false
+    });
   }
-  
-  //Generate player
-  player = new Player(canvasWidth / 2, canvasHeight, life, curHalo);
-  
-  //Generate heart
-  generateHeart();
-  
-  generateCoin();
 }
 
 function draw() {
   background(255);
 
-  // Draw clouds and moving clouds
+  if (gameScreen === "start" || !gameAssetsLoaded) {
+    drawStartScreen();
+  } else if (gameScreen === "instruction") {
+    drawInstructionScreen();
+  } else if (gameScreen === "difficulty") {
+    drawDifficultyScreen();
+  } else if (gameScreen === "game")  {
+    drawGame();
+  } else {
+    drawWinOrLoseScreen();
+  }
+}
+
+// 繪製開始畫面
+function drawStartScreen() {
+  background(bgImg);
+  let bounce = sin(angle) * 20;
+  angle += 0.05;
+  image(angelWords, width / 2 - angelWords.width / 3 , titleY + bounce, angelWords.width / 1.5 , angelWords.height / 1.5);
+
+  let isPlayHover = mouseX > playX - playWidth / 2 && mouseX < playX + playWidth / 2 &&mouseY > playY - playHeight / 2 && mouseY < playY + playHeight / 2;
+
+  fill(isPlayHover ? '#DFA0B2' : '#0BCBB8');
+  rect(playX - playWidth / 2, playY - playHeight / 2, playWidth, playHeight, 10);
+  fill(255);
+  textSize(32);
+  textAlign(CENTER, CENTER);
+  text("PLAY", playX, playY);
+};
+
+// 繪製教學畫面
+function drawInstructionScreen() {
+  background(bgImg);
+  fill(0);
+  
+  textSize(50);
+  text("Instructions", width / 2, 80);
+
+  textSize(24);
+  let textX = width / 2 - 50;
+
+  fill(255, 150, 0);
+  text("Candy - ", 150, 180);
+  fill(0, 0, 0);
+  text("Collect three candies to gain an extra life!", textX + 85, 180);
+
+  fill(255, 150, 0);
+  text("Ghost - ", 150, 230);
+  fill(0, 0, 0);
+  text("If you touch a ghost, you will lose one life!", textX + 85, 230);
+
+  fill(255, 150, 0);
+  text("Ghost Fire - ", 170, 280);
+  fill(0, 0, 0);
+  drawWrappedText("If you touch the ghost fire, you will lose one life!", textX + 125, 280, 500);
+
+  fill(255, 150, 0);
+  text("Heart - ", 150, 360);
+  fill(0, 0, 0);
+  drawWrappedText("Represents your life. You start with three lives. If you lose them all, the game is over.", textX + 90, 360, 500);
+
+  fill(255, 150, 0);
+  text("Halo - ", 150, 440);
+  fill(0, 0, 0);
+  drawWrappedText("If you touch the halo, you will fly to heaven and win the game!", textX + 130, 440, 600);
+
+  image(candyImg, width / 2 - 370, 150, 60, 60); 
+  image(monsterImg, width / 2 - 360, 200, 40, 50);
+  image(dangerImg, width / 2 - 350, 262, 26, 30);
+  image(heartImg, width / 2 - 360, 335, 55, 55);
+  image(haloImg, width / 2 - 357, 415, 60, 60);
+
+  // 繪製 CONTINUE 按鈕
+  let isContinueHover = mouseX > continueX && mouseX < continueX + continueWidth &&mouseY > continueY && mouseY < continueY + continueHeight;
+  
+  fill(isContinueHover ? '#DFA0B2' : '#0BCBB8');
+  rect(continueX, continueY, continueWidth, continueHeight, 10);
+  fill(255);
+  textSize(32);
+  text("CONTINUE", continueX + continueWidth / 2, continueY + continueHeight / 2);
+}
+
+function drawWrappedText(txt, x, y, maxWidth) {
+  let words = txt.split(" ");
+  let line = "";
+  let lineHeight = 30;
+  
+  for (let i = 0; i < words.length; i++) {
+    let testLine = line + words[i] + " ";
+    if (textWidth(testLine) > maxWidth) {
+      text(line, x, y);
+      line = words[i] + " ";
+      y += lineHeight;
+    } else {
+      line = testLine;
+    }
+  }
+  text(line, x, y);
+}
+
+//繪製選擇難度畫面
+window.drawDifficultyScreen = function() {
+  background(bgGame);
+  image(challengeWords, 50, 50, challengeWords.width / 2, challengeWords.height / 2);
+  
+  // 設定按鈕的新大小
+  let buttonWidth = 350;
+  let buttonHeight = 300;
+
+  let isSimpleHover = mouseX > 185 && mouseX < 185 + 200 && mouseY > 150 && mouseY < 220 ;
+  let isMediumHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 300 && mouseY < 370 ;
+  let isHardHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 450 && mouseY < 520;
+  
+  let simpleHoverWidth = 250;  // 調整為適合的寬度
+  let simpleHoverHeight = 150; // 調整為適合的高度
+  let simpleHoverX = 250;  // 調整 X 位置
+  let simpleHoverY = 120;   // 調整 Y 位置
+
+  image(isSimpleHover ? simpleHover : simple, 
+    isSimpleHover ? simpleHoverX : 180,  // 如果 Hover，則使用不同的 X 位置
+    isSimpleHover ? simpleHoverY : 50,   // 如果 Hover，則使用不同的 Y 位置
+    isSimpleHover ? simpleHoverWidth : buttonWidth, 
+    isSimpleHover ? simpleHoverHeight : buttonHeight);
+  image(isMediumHover ? mediumHover : medium, 190, 200, buttonWidth, buttonHeight);
+  image(isHardHover ? hardHover : hard, 190, 350, buttonWidth, buttonHeight);
+};
+
+//Every time player jumps, scroll clouds down and center the current cloud in the canvas.
+function shiftScreen(shiftAmount) {
+  for (let cloud of clouds) {
+    cloud.y += shiftAmount;
+  }
+}
+
+function drawGame() {
   for (let cloud of clouds) {
     cloud.show();
     cloud.move();
   }
-
   for (let obj of objects) {
     obj.show();
     obj.move();
   }
-  
-  if (keyIsDown(LEFT_ARROW)) {
-    player.move(-1); // Move left
-  }
-  if (keyIsDown(RIGHT_ARROW)) {
-    player.move(1);  // Move right
-  }
-  
+  if (keyIsDown(LEFT_ARROW)) player.move(-1);
+  if (keyIsDown(RIGHT_ARROW)) player.move(1);
   player.update();
   player.show();
-  
   drawStatusArea();
   
-  for (let i = 0; i < life; i++) {
-    hearts[i].show(1);
+  for (let i = objects.length - 1; i >= 0; i--) {
+    if (player.collidesWith(objects[i])) {
+      if (objects[i] instanceof Danger) {
+        player.loseLife();
+        objects.splice(i, 1);
+      } else if (objects[i] instanceof Candy) {
+        candyCount++;
+        objects.splice(i, 1);
+        if (candyCount >= 3) {
+          player.addLife();
+          candyCount = 0;
+        }
+      } else if (objects[i] instanceof Halo) {
+        gameScreen = "youWin";
+        objects.splice(i, 1);
+      }
+    }
+  }
+}
+
+function drawStatusArea() {
+  // 畫出狀態區背景
+  fill(225);
+  rect(0, 0, canvasWidth, statusAreaHeight);
+  noStroke();
+  
+  // 顯示生命心（根據全局變數 life 與 hearts 陣列）
+  for (let i = 0; i < hearts.length; i++) {
+    if (i < life) {
+      hearts[i].show(1);
+    } else {
+      hearts[i].show(0);
+    }
   }
   
-  for (let i = 0; i < curHalo; i++) {
-    coins[i].show(1);
+  // 重設 tint，確保後續繪製不受之前 tint 影響
+  noTint();
+  
+  // 顯示金幣圖示及金幣數量（固定顯示在右上角）
+  let coinIconSize = 70;
+  let coinIconX = canvasWidth - 120;
+  let coinIconY = -7;
+  image(candyImg, coinIconX, coinIconY, coinIconSize, coinIconSize);
+  fill(0);
+  textSize(25);
+  text(candyCount, coinIconX + coinIconSize + 5, coinIconY + coinIconSize - 28);
+}
+
+// game over screen
+function drawWinOrLoseScreen() {
+  background(bgGame);
+  
+  winOrLoseFlashTimer++;
+  let textSizeValue = 100 + map(sin(winOrLoseFlashTimer * 0.1), -1, 1, 0, 10);
+  
+  fill(178, 34, 34);
+  textSize(textSizeValue);
+  let textContent = gameScreen === "gameOver" ? "Game Over!" : "You Win!";
+  text(textContent, width / 2, winOrLoseY - winOrLoseHeight - 80);
+  
+  textSize(34);
+  for (let btn of winOrLoseButtons) {
+    btn.hover = mouseX > btn.x - btn.w / 2 && mouseX < btn.x + btn.w / 2 &&
+                mouseY > btn.y - btn.h / 2 && mouseY < btn.y + btn.h / 2;
+    
+    fill(btn.hover ? 'rgb(255,182,193)' : 'black');
+    text(btn.label, btn.x, btn.y);
   }
 }
+
+//按鈕控制
+window.mousePressed = function() {
+  let isPlayHover = mouseX > playX - playWidth / 2 && mouseX < playX + playWidth / 2 &&mouseY > playY - playHeight / 2 && mouseY < playY + playHeight / 2;
+  
+  let isContinueHover = mouseX > continueX && mouseX < continueX + continueWidth &&mouseY > continueY && mouseY < continueY + continueHeight;
+  
+  let isSimpleHover = mouseX > 185 && mouseX < 185 + 200 && mouseY > 150 && mouseY < 220;
+  let isMediumHover = mouseX > 190 && mouseX < 190 + 350 && mouseY > 300 && mouseY < 370;
+  let isHardHover = mouseX > 190 && mouseX < 190 + 350 && mouseY > 450 && mouseY < 520;
+
+  if (gameScreen === "start" && isPlayHover) {
+    gameScreen = "instruction";
+  } else if (gameScreen === "instruction" && isContinueHover) {
+    gameScreen = "difficulty";
+  } else if (gameScreen === "difficulty") {
+    if (isSimpleHover) {
+      selectedDifficulty = "easy";
+      startNewGame();  // **確保新的遊戲初始化**
+    } else if (isMediumHover) {
+      selectedDifficulty = "medium";
+      startNewGame();
+    } else if (isHardHover) {
+      selectedDifficulty = "hard";
+      startNewGame();
+    }
+  } else {
+    for (let btn of winOrLoseButtons) {
+      if (btn.hover) {
+        if (btn.label === "Play Again") {
+          restartGame(); //重新開始當前難度的遊戲
+        } else if (btn.label === "Settings") {
+          resetGameData();  
+          gameScreen = "difficulty"; // 回到選擇難度畫面
+        } else if (btn.label === "Exit Game") {
+          resetGameData(); 
+          gameScreen = "start"; // 回到主畫面
+        }
+      }
+    }
+  }
+};
 
 function keyPressed() {
-  if (keyCode === 32) { // SPACE key
-    if (player.y === canvasHeight - player.size / 2) {
-      player.jump();
-    } else if (player.isOnCloud) {
-      player.jump();
+  if (gameScreen === "start") {
+    if (keyCode === ENTER) gameScreen = "game";
+  } else if (gameScreen === "gameOver" || gameScreen === "youWin" || gameScreen === "instruction") {
+    if (keyCode === ENTER) gameScreen = "start";
+  } else if (gameScreen === "game") {
+    if (keyCode === 32) { // SPACE 跳躍
+      if (player.y === canvasHeight - player.size / 2 || player.isOnCloud) {
+        player.jump();
+      }
     }
   }
 }
 
-//Every time player jumps, scroll clouds down and center the current cloud in the canvas.
-function shiftScreen(shiftAmount) {
-    for (let cloud of clouds) {
-      cloud.y += shiftAmount;
-    }
+function restartGame() {
+    // 重設遊戲變數
+    life = 3;
+    candyCount = 0;
+    
+    // 重新建立遊戲對象
+    clouds = [];
+    objects = [];
+    hearts = [];
+    
+    // 重新建立玩家
+    player = new Player(canvasWidth / 2, canvasHeight, life, candyCount);
+
+    // 重新生成雲朵、物件、生命
+    generateGameElements();
+    generateHeart();
+
+    // 切換回遊戲畫面
+    gameScreen = "game";
 }
 
-function generateClouds(level, x, y, w, h) {
+function startNewGame() {
+  resetGameData();  // **確保清空舊資料**
+  player = new Player(canvasWidth / 2, canvasHeight, life, candyCount);
+  generateGameElements();
+  generateHeart();
+  gameScreen = "game";  // 切換到遊戲畫面
+}
+
+function resetGameData() {
+  // **重設所有變數**
+  life = 3;
+  candyCount = 0;
+  
+  // **清空所有物件**
+  clouds = [];
+  objects = [];
+  hearts = [];
+  
+  // **確保畫面回到選擇難度時是乾淨的**
+  player = null;  
+}
+
+function generateGameElements() {
+  clouds = generateClouds(random(50, 250), random(canvasHeight - 3, canvasHeight - 4), cloudWidth, cloudHeight);
+  objects = [];
+
+  for (let i = 0; i < numClouds; i++) {
+    let cloud = clouds[i];
+    if (i === numClouds - 1) {
+      objects.push(new Halo(cloud));
+    } else {
+      if (selectedDifficulty === "easy") {
+        // 簡單模式：只有 Candy
+        if (random() < 0.3) {
+          objects.push(new Candy(cloud));
+        } else {
+          objects.push(new Objects(cloud));
+        }
+      } else if (selectedDifficulty === "medium") {
+        // 中級模式：有 Danger
+        if (random() < 0.3) {
+          objects.push(new Candy(cloud));
+        } else if (random() < 0.2) {
+          objects.push(new Danger(cloud));
+        } else {
+          objects.push(new Objects(cloud));
+        }
+      } else if (selectedDifficulty === "hard") {
+        // 困難模式：有 Monster 和 Danger
+        if (random() < 0.3) {
+          objects.push(new Candy(cloud));
+        } else if (random() < 0.2) {
+          objects.push(new Monster(cloud));
+        } else if (random() < 0.2) {
+          objects.push(new Danger(cloud));
+        } else {
+          objects.push(new Objects(cloud));
+        }
+      }
+    }
+  }
+  
+  player = new Player(canvasWidth / 2, canvasHeight, life, candyCount);
+  generateHeart();
+}
+
+function generateClouds(x, y, w, h) {
   let prevX = x;
   let prevY = y;
   
-  //Suppose our game has 10 levels, in the 1st level, we have 20% movingClouds, while in the 10th level, we have 80% movingClouds.Total number of Clouds is 20 now.
-  let movingCloudsRatio = map(level, 1, 10, 0.2, 0.8);
+  let movingCloudsRatio = 0.5;
   
   for (let i = 0; i < numClouds; i++) {
     //height between ajacent clouds should be appropriate;
@@ -140,26 +454,32 @@ function generateClouds(level, x, y, w, h) {
   return clouds;
 }
 
-function drawStatusArea() {
-  fill(225);
-  rect(0, 0, canvasWidth, statusAreaHeight);
-  noStroke();
-}
-
 function generateHeart() {
-  let gapWidth = 10;
-  let size = 20;
+  let gapWidth = 30; // 調整間距，避免圖案重疊
+  let size = 30; // 調整初始大小
   for (let i = 0; i < numCoinOrHeart; i++) {
     let heart = new LifeHeart((i + 1) * gapWidth + size / 2 * (2 * i + 1), statusAreaHeight / 2, size);
     hearts.push(heart);
   }
 }
 
-function generateCoin() {
-  let gapWidth = 10;
-  let size = 20;
-  for (let i = 0; i < numCoinOrHeart; i++) {
-    let coin = new Coin(canvasWidth - (i + 1) * gapWidth - size / 2 * (2 * i + 1), statusAreaHeight / 2, size);
-    coins.push(coin);
-  }
+function loadGameAssets() {
+  setTimeout(() => { 
+    challengeWords = loadImage('assets/selectchallenge.png');
+    bgGame = loadImage('assets/gameBackground.jpg');
+    cloudImg = loadImage('assets/cloud2.png');
+    candyImg = loadImage('assets/candy.png');
+    monsterImg = loadImage('assets/ghost2.gif');
+    dangerImg = loadImage('assets/ghost-fire.gif');
+    heartImg = loadImage('assets/blood.png');
+    haloImg = loadImage('assets/halo.png');
+    playerImg = loadImage('assets/angel-1.gif');
+    simple = loadImage('assets/simple1.png');
+    simpleHover = loadImage('assets/simple2.png');
+    medium = loadImage('assets/medium1.png');
+    mediumHover = loadImage('assets/medium2.png');
+    hard = loadImage('assets/hard1.png');
+    hardHover = loadImage('assets/hard2.png');
+    gameAssetsLoaded = true;
+  }, 500); // Simulating 0.5 seconds of loading
 }

@@ -12,7 +12,7 @@ class Objects {
      
     this.offsetX = this.x - cloud.x;
   }
-  
+
   move() {
     this.x = this.offsetX + this.cloud.x;
     this.y = this.cloud.y - this.cloud.h / 2 - this.size;

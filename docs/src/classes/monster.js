@@ -13,28 +13,35 @@ class Monster extends Danger {
     super(cloud);
     this.speed = 2;
     this.direction = 1;
+    this.size = 40; // 怪物的大小
     
-    this.maxX = cloud.x + cloud.w / 2 - this.size / 2;
-    this.minX = cloud.x - cloud.w / 2 + this.size / 2;
+    this.updateBounds();
+    this.x = (this.minX + this.maxX) / 2; // 設定怪物初始位置在範圍中心
   }
-  
+
+  updateBounds() {
+    this.minX = this.cloud.x - this.cloud.w / 2; // 雲朵左邊界
+    this.maxX = this.cloud.x + this.cloud.w / 2 - this.size; // 雲朵右邊界
+    this.y = this.cloud.y - this.cloud.h / 2 - this.size; // 怪物應該在雲的上方
+  }
+
   move() {
-    this.y = this.cloud.y - this.cloud.h / 2 - this.size;
-    this.maxX = this.cloud.x + this.cloud.w / 2 - this.size / 2;
-    this.minX = this.cloud.x - this.cloud.w / 2 + this.size / 2;
-    
+    this.updateBounds(); // 確保邊界是最新的
     this.x += this.speed * this.direction;
-    if (this.x <= this.minX || this.x >= this.maxX) {
+
+    // 如果超出範圍，則反轉方向並確保不溢出
+    if (this.x <= this.minX) {
+      this.x = this.minX;
       this.direction *= -1;
     }
-    while (this.x <= this.minX || this.x >= this.maxX) {
-      this.x += this.speed * this.direction;
+    if (this.x >= this.maxX) {
+      this.x = this.maxX;
+      this.direction *= -1;
     }
   }
   
   show() {
-    fill(0, 255, 0);
-    rect(this.x, this.y, this.size, this.size);
+    image(monsterImg, this.x, this.y + 10, this.size, this.size);
     // if (this.direction === -1) {
     //   image(monsterLeftImg, this.x, this.y, this.size, this.size);
     // } else {
