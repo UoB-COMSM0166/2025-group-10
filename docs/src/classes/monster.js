@@ -41,11 +41,10 @@ class Monster extends Danger {
   }
   
   show() {
-    image(monsterImg, this.x, this.y + 10, this.size, this.size);
-    // if (this.direction === -1) {
-    //   image(monsterLeftImg, this.x, this.y, this.size, this.size);
-    // } else {
-    //   image(monsterRightImg, this.x, this.y, this.size, this.size);
-    // }
+    if (this.direction === -1) {
+      image(monsterLeftImg, this.x, this.y, this.size, this.size);
+    } else {
+      image(monsterRightImg, this.x, this.y, this.size, this.size);
+    }
   }  
 }

@@ -9,16 +9,16 @@ class MovingCloud extends Cloud {
    * h - The height of movingCloud's image.
    * speed - The speed of movingCloud.
    * direction - The direction of movingCloud, initially is right. Right = 1, left = -1;
-   * maxX - The most right position movingCloud can move to. Initially, the total distance that movingCloud can move is 2/3 of width of canvas.
+   * maxX - The most right position movingCloud can move to. Initially, the total distance that movingCloud can move is 1/4 of width of canvas.
    * minX - The most left position movingCloud can move to.
    */
-  constructor(x, y, w, h, canvasWidth) {
-    super(x, y, w, h);
+  constructor(x, y) {
+    super(x, y);
     this.speed = random(0.5, 1.5);
     this.direction = random([-1, 1]);
     
-    this.maxX = (x + this.w / 2 + canvasWidth / 3) > canvasWidth ? canvasWidth - this.w / 2 : x + canvasWidth / 3;
-    this.minX = (x - this.w / 2 - canvasWidth / 3) < 0 ? this.w / 2 : x - canvasWidth / 3;
+    this.maxX = (x + this.w / 2 + movingDistance) > canvasWidth ? canvasWidth - this.w / 2 : x + movingDistance;
+    this.minX = (x - this.w / 2 - movingDistance) < 0 ? this.w / 2 : x - movingDistance;
   }
   
   move() {

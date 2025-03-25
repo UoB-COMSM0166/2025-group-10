@@ -2,10 +2,11 @@ let clouds = [], objects = [], hearts = [];
 let player;
 let numClouds = 100;
 let canvasWidth = 800, canvasHeight = 600, statusAreaHeight = 50;
-let cloudWidth = 100, cloudHeight = 10;
+let cloudWidth = 100, cloudHeight = 20;
+let movingDistance = canvasHeight / 8;
 let numCoinOrHeart = 3;
 let life = 3, candyCount = 0;
-let cloudImg, haloImg, monsterImg, dangerImg, playerImg;
+let cloudImg, haloImg, monsterLeftImg, monsterRightImg, dangerImg, playerLeftImg, playerRightImg;
 let bgImg, bgGame, angelWords, challengeWords;
 let simple, simpleHover, medium, mediumHover, hard, hardHover;
 let titleY = 100, angle = 0; // 控制標題彈跳動畫
@@ -26,7 +27,6 @@ function preload() {
   bgImg = loadImage('assets/bg.png');
   angelWords = loadImage('assets/upup.jpg');
 }
-
 
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
@@ -61,7 +61,7 @@ function setup() {
 function draw() {
   background(255);
 
-  if (gameScreen === "start" || !gameAssetsLoaded) {
+  if (!gameAssetsLoaded || gameScreen === "start") {
     drawStartScreen();
   } else if (gameScreen === "instruction") {
     drawInstructionScreen();
@@ -89,7 +89,7 @@ function drawStartScreen() {
   textSize(32);
   textAlign(CENTER, CENTER);
   text("PLAY", playX, playY);
-};
+}
 
 // 繪製教學畫面
 function drawInstructionScreen() {
@@ -128,7 +128,7 @@ function drawInstructionScreen() {
   drawWrappedText("If you touch the halo, you will fly to heaven and win the game!", textX + 130, 440, 600);
 
   image(candyImg, width / 2 - 370, 150, 60, 60); 
-  image(monsterImg, width / 2 - 360, 200, 40, 50);
+  image(monsterRightImg, width / 2 - 360, 200, 40, 50);
   image(dangerImg, width / 2 - 350, 262, 26, 30);
   image(heartImg, width / 2 - 360, 335, 55, 55);
   image(haloImg, width / 2 - 357, 415, 60, 60);
@@ -258,7 +258,7 @@ function drawStatusArea() {
   text(candyCount, coinIconX + coinIconSize + 5, coinIconY + coinIconSize - 28);
 }
 
-// game over screen
+// game over or you win screen
 function drawWinOrLoseScreen() {
   background(bgGame);
   
@@ -380,12 +380,12 @@ function resetGameData() {
 }
 
 function generateGameElements() {
-  clouds = generateClouds(random(50, 250), random(canvasHeight - 3, canvasHeight - 4), cloudWidth, cloudHeight);
+  clouds = generateClouds(random(60, 200), random(canvasHeight - 60, canvasHeight - 90));
   objects = [];
 
-  for (let i = 0; i < numClouds; i++) {
+  for (let i = 0; i < clouds.length; i++) {
     let cloud = clouds[i];
-    if (i === numClouds - 1) {
+    if (i === clouds.length - 1) {
       objects.push(new Halo(cloud));
     } else {
       if (selectedDifficulty === "easy") {
@@ -423,29 +423,39 @@ function generateGameElements() {
   generateHeart();
 }
 
-function generateClouds(x, y, w, h) {
-  let prevX = x;
+function generateClouds(x, y) {
+  let prevXMin = x - cloudWidth / 2, prevXMax = x + cloudWidth / 2, prevX = x;
   let prevY = y;
-  
   let movingCloudsRatio = 0.5;
-  
-  for (let i = 0; i < numClouds; i++) {
-    //height between ajacent clouds should be appropriate;
-    let newY = prevY - random(60, 90);
-    //Distance between ajacent clouds should be suitable;
-    let newX;
-    if (random() < 0.5) {
-      newX = prevX + random(-w * 2, -w / 2);
+  clouds.push(new Cloud(x, y));
+
+  for (let i = 1; i < numClouds; i++) {
+    //height between ajacent clouds should be appropriate; every level has three clouds;
+    let newY, newX;
+    if (i % 3 !== 0) {
+      newY = prevY;
     } else {
-      newX = prevX + random(w / 2, w * 2);
+      newY = prevY - random(60, 90);
     }
-    newX = newX < w ? w : newX;
-    newX = newX > canvasWidth - w ? canvasWidth - w : newX;
     
     if (random() < movingCloudsRatio) {
-      clouds.push(new MovingCloud(newX, newY, w, h, canvasWidth));
+      newX = nextCloudX(prevX, prevXMin, prevXMax, i, movingDistance);
+      if (newX === prevX && i % 3 !== 0) { //overlap after adjusting
+        continue;
+      } else {
+        clouds.push(new MovingCloud(newX, newY));
+        prevXMin = newX - cloudWidth / 2 - movingDistance;
+        prevXMax = newX + cloudWidth / 2 + movingDistance;
+      }
     } else {
-      clouds.push(new Cloud(newX, newY, w, h));
+      newX = nextCloudX(prevX, prevXMin, prevXMax, i, 0);
+      if (newX === prevX && i % 3 !== 0) { //overlap after adjusting
+        continue;
+      } else {
+        clouds.push(new Cloud(newX, newY));
+        prevXMin = newX - cloudWidth / 2;
+        prevXMax = newX + cloudWidth / 2;
+      }
     }
 
     prevX = newX;
@@ -454,9 +464,34 @@ function generateClouds(x, y, w, h) {
   return clouds;
 }
 
+function nextCloudX(prevX, prevXMin, prevXMax, i, movingDistance) {
+  // The first cloud will be generated on the bottom left of canvas.
+  // Each level has three clouds.
+  // At the first level, clouds generated from left to right. At the next level, generation is from right to left.
+  
+  let newX;
+  let level = Math.floor(i / 3);
+  if (i % 3 === 0) { // Generate a cloud in next level, allowing to overlap.
+    newX = prevX + random(-cloudWidth * 2, cloudWidth * 2);
+    newX = newX < cloudWidth ? cloudWidth : newX;
+    newX = newX > canvasWidth - cloudWidth ? canvasWidth - cloudWidth : newX;
+  } else if (level % 2 !== 0) { // Generate in the same level, to the left.
+    newX = prevXMin + random(-cloudWidth * 2, -cloudWidth) - movingDistance;
+    newX = newX < cloudWidth ? cloudWidth : newX;
+    //Check if clouds overlap after adjusting according to the boundary of canvas.
+    newX = (newX + cloudWidth / 2 + movingDistance>= prevXMin) ? prevX : newX;
+  } else { //To the right.
+    newX = prevXMax + random(cloudWidth, cloudWidth * 2) + movingDistance;
+    newX = newX > canvasWidth - cloudWidth ? canvasWidth - cloudWidth : newX;
+    //Check overlap
+    newX = (newX - cloudWidth / 2 - movingDistance <= prevXMax) ? prevX : newX;
+  }
+  return newX;
+}
+
 function generateHeart() {
-  let gapWidth = 30; // 調整間距，避免圖案重疊
-  let size = 30; // 調整初始大小
+  let gapWidth = 20; // 調整間距，避免圖案重疊
+  let size = 40; // 調整初始大小
   for (let i = 0; i < numCoinOrHeart; i++) {
     let heart = new LifeHeart((i + 1) * gapWidth + size / 2 * (2 * i + 1), statusAreaHeight / 2, size);
     hearts.push(heart);
@@ -469,11 +504,13 @@ function loadGameAssets() {
     bgGame = loadImage('assets/gameBackground.jpg');
     cloudImg = loadImage('assets/cloud2.png');
     candyImg = loadImage('assets/candy.png');
-    monsterImg = loadImage('assets/ghost2.gif');
+    monsterLeftImg = loadImage('assets/ghost2.gif');
+    monsterRightImg = loadImage('assets/ghost1.gif');
     dangerImg = loadImage('assets/ghost-fire.gif');
     heartImg = loadImage('assets/blood.png');
     haloImg = loadImage('assets/halo.png');
-    playerImg = loadImage('assets/angel-1.gif');
+    playerLeftImg = loadImage('assets/angel-2.gif');
+    playerRightImg = loadImage('assets/angel-1.gif');
     simple = loadImage('assets/simple1.png');
     simpleHover = loadImage('assets/simple2.png');
     medium = loadImage('assets/medium1.png');

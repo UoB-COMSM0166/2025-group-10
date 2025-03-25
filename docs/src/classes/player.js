@@ -22,11 +22,11 @@ class Player {
    * isJumping - If player is jumping.
    */
   constructor(x, y, life, candyCount) {
+    this.size = 40;
     this.x = x;
     this.life = life;
     this.pace = 5;
     this.candyCount = candyCount;
-    this.size = 20;
     this.y = y - this.size / 2;
     this.direction = 1;
     this.jumpPower = -15;  // 調整 jumpPower 為較小的數值
@@ -72,8 +72,8 @@ class Player {
       this.isOnCloud = false;
     }
 
-     // 當玩家跳躍後開始下落時，取消跳躍狀態
-      if (this.isJumping && this.velocity > 0) {
+    // 當玩家跳躍後開始下落時，取消跳躍狀態
+    if (this.isJumping && this.velocity > 0) {
       this.isJumping = false;
     }
 
@@ -87,7 +87,7 @@ class Player {
           (this.prevY + this.size / 2) <= cloudTop &&
           (this.y + this.size / 2) >= cloudTop &&
           this.x >= cloud.x - cloud.w / 2 &&
-          this.x <= cloud.x + cloud.w / 2
+          this.x + this.size / 2 <= cloud.x + cloud.w / 2
         ) {
           if (cloud instanceof MovingCloud) {
             this.currentCloud = cloud;
@@ -126,6 +126,7 @@ class Player {
   
   move(dir) {
     // 玩家左右移動（允許操控時調整位置）
+    this.direction = dir;
     let newX = this.x + dir * this.pace;
     if (newX < this.size / 2) {
       newX = this.size / 2;
@@ -172,16 +173,16 @@ class Player {
     }
   }
   
-  addHalo() {
-    if (curHalo === 2) {
+  addCandy() {
+    if (candyCount === 2) {
       if (life !== 3) {
         this.addLife();
-        curHalo = 0;
+        candyCount = 0;
       } else {
-        curHalo += 1;
+        candyCount += 1;
       }
     } else {
-      curHalo += 1;
+      candyCount += 1;
     }
   }
   
@@ -211,11 +212,10 @@ class Player {
   }
   
   show() {
-    image(playerImg, this.x, this.y, this.size, this.size);
-    // if (this.direction === -1) {
-    //   image(playerLeftImg, this.x, this.y, this.size, this.size);
-    // } else {
-    //   image(playerRightImg, this.x, this.y, this.size, this.size);
-    // }
+    if (this.direction === -1) {
+      image(playerLeftImg, this.x, this.y - this.size / 2, this.size, this.size);
+    } else {
+      image(playerRightImg, this.x, this.y - this.size / 2, this.size, this.size);
+    }
   }  
 }

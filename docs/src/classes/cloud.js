@@ -8,11 +8,11 @@ class Cloud {
    * w - The width of cloud's image.
    * h - The height of cloud's image.
    */
-  constructor(x, y, w, h) {
+  constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.w = w;
-    this.h = h;
+    this.w = cloudWidth;
+    this.h = cloudHeight;
   }
   
   move(){}

@@ -5,7 +5,7 @@ class Objects {
    * size - The size of object's image.
    */
    constructor(cloud) {
-    this.size = 10;
+    this.size = 30;
     this.cloud = cloud;
     this.x = random(cloud.x - cloud.w / 2 + this.size * 2, cloud.x + cloud.w / 2 - this.size * 2);
     this.y = cloud.y - cloud.h / 2 - this.size;
