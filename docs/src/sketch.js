@@ -2,7 +2,7 @@ let clouds = [], objects = [], hearts = [];
 let player;
 let numClouds = 100;
 let canvasWidth = 800, canvasHeight = 600, statusAreaHeight = 50;
-let cloudWidth = 100, cloudHeight = 20;
+let cloudWidth = 100, cloudHeight = 20, firstLevelX;
 let movingDistance = canvasHeight / 8;
 let numCoinOrHeart = 3;
 let life = 3, candyCount = 0;
@@ -190,12 +190,17 @@ window.drawDifficultyScreen = function() {
 
 //Every time player jumps, scroll clouds down and center the current cloud in the canvas.
 function shiftScreen(shiftAmount) {
-  for (let cloud of clouds) {
-    cloud.y += shiftAmount;
+  for (let i = 0; i < clouds.length; i++) {
+    clouds[i].y += shiftAmount;
+    let obj = objects[i];
+    if (obj instanceof Object) {
+      objects[i].y += shiftAmount;
+    }
   }
 }
 
 function drawGame() {
+  background(bgGame);
   for (let cloud of clouds) {
     cloud.show();
     cloud.move();
@@ -222,7 +227,7 @@ function drawGame() {
           player.addLife();
           candyCount = 0;
         }
-      } else if (objects[i] instanceof Halo) {
+      } else if (objects[i] instanceof Halo && life > 0) {
         gameScreen = "youWin";
         objects.splice(i, 1);
       }
@@ -329,7 +334,7 @@ function keyPressed() {
     if (keyCode === ENTER) gameScreen = "start";
   } else if (gameScreen === "game") {
     if (keyCode === 32) { // SPACE 跳躍
-      if (player.y === canvasHeight - player.size / 2 || player.isOnCloud) {
+      if (player.y === canvasHeight - player.size / 2 || player.currentCloud) {
         player.jump();
       }
     }
@@ -347,7 +352,7 @@ function restartGame() {
     hearts = [];
     
     // 重新建立玩家
-    player = new Player(canvasWidth / 2, canvasHeight, life, candyCount);
+    player = new Player(canvasWidth / 2, canvasHeight);
 
     // 重新生成雲朵、物件、生命
     generateGameElements();
@@ -381,6 +386,7 @@ function resetGameData() {
 
 function generateGameElements() {
   clouds = generateClouds(random(60, 200), random(canvasHeight - 60, canvasHeight - 90));
+  firstLevelX = clouds[0].y;
   objects = [];
 
   for (let i = 0; i < clouds.length; i++) {

@@ -15,11 +15,11 @@ class LifeHeart {
   
   //Status - 1: heart exist, 0: lose life
   show(status) {
-    image(heartImg, this.x - this.size / 2, this.y - this.size / 2, this.size, this.size);
     if (status === 1) {
       tint(255, 255);
     } else {
       tint(255, 0);
     }
+    image(heartImg, this.x - this.size / 2, this.y - this.size / 2, this.size, this.size);
   }
 }
