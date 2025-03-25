@@ -149,7 +149,7 @@ A: If used for gambling or unfair competition, it may harm players' mental healt
 
 ## Your Game
 
-Link to your game [PLAY HERE](https://peteinfo.github.io/COMSM0166-project-template/)
+Link to your game [PLAY HERE](https://uob-comsm0166.github.io/2025-group-10/)
 
 Your game lives in the [/docs](/docs) folder, and is published using Github pages to the link above.
 
