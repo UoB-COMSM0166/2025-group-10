@@ -25,7 +25,7 @@ let winOrLoseWidth = 200, winOrLoseHeight = 50, winOrLoseSpacing = 15, winOrLose
 //圖片匯入
 function preload() {
   bgImg = loadImage('assets/bg.png');
-  angelWords = loadImage('assets/upup.jpg');
+  angelWords = loadImage('assets/upup.png');
 }
 
 function setup() {
@@ -79,12 +79,13 @@ function drawStartScreen() {
   background(bgImg);
   let bounce = sin(angle) * 20;
   angle += 0.05;
-  image(angelWords, width / 2 - angelWords.width / 3 , titleY + bounce, angelWords.width / 1.5 , angelWords.height / 1.5);
+  image(angelWords, width / 3- angelWords.width / 3 , titleY/3+ bounce-60, angelWords.width / 0.7 , angelWords.height / 0.7);
 
   let isPlayHover = mouseX > playX - playWidth / 2 && mouseX < playX + playWidth / 2 &&mouseY > playY - playHeight / 2 && mouseY < playY + playHeight / 2;
 
   fill(isPlayHover ? '#DFA0B2' : '#0BCBB8');
-  rect(playX - playWidth / 2, playY - playHeight / 2, playWidth, playHeight, 10);
+  noStroke();
+  rect(playX - playWidth / 2+7, playY - playHeight / 2+5, playWidth-20, playHeight-20, 10);
   fill(255);
   textSize(32);
   textAlign(CENTER, CENTER);
