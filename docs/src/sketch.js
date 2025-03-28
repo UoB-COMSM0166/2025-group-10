@@ -93,7 +93,7 @@ function drawStartScreen() {
 
 // 繪製教學畫面
 function drawInstructionScreen() {
-  background(bgImg);
+  background(bgGame);
   fill(0);
   
   textSize(50);
@@ -110,12 +110,12 @@ function drawInstructionScreen() {
   fill(255, 150, 0);
   text("Ghost - ", 150, 230);
   fill(0, 0, 0);
-  text("If you touch a ghost, you will lose one life!", textX + 85, 230);
+  text("If you touch a ghost, you will lose one life!", textX + 100, 230);
 
   fill(255, 150, 0);
-  text("Ghost Fire - ", 170, 280);
+  text("Hellfire - ", 160, 280);
   fill(0, 0, 0);
-  drawWrappedText("If you touch the ghost fire, you will lose one life!", textX + 125, 280, 500);
+  drawWrappedText("If you touch the hellfire, you will lose one life!", textX + 110, 280, 500);
 
   fill(255, 150, 0);
   text("Heart - ", 150, 360);
@@ -126,6 +126,9 @@ function drawInstructionScreen() {
   text("Halo - ", 150, 440);
   fill(0, 0, 0);
   drawWrappedText("If you touch the halo, you will fly to heaven and win the game!", textX + 130, 440, 600);
+  
+  fill(0, 0, 0);
+  drawWrappedText("Note: Maximum of three lives. When you have three lives, you will not increase the number of candies even if you get three candies!", textX + 100, 480);
 
   image(candyImg, width / 2 - 370, 150, 60, 60); 
   image(monsterRightImg, width / 2 - 360, 200, 40, 50);
@@ -265,7 +268,7 @@ function drawStatusArea() {
 
 // game over or you win screen
 function drawWinOrLoseScreen() {
-  background(bgGame);
+  background(bg);
   
   winOrLoseFlashTimer++;
   let textSizeValue = 100 + map(sin(winOrLoseFlashTimer * 0.1), -1, 1, 0, 10);
