@@ -12,7 +12,7 @@ let simple, simpleHover, medium, mediumHover, hard, hardHover;
 let titleY = 100, angle = 0; // 控制標題彈跳動畫
 let playX, playY, playWidth = 200, playHeight = 80; // 增大按鈕尺寸
 let gameScreen = "start";
-let continueX, continueY, continueWidth = 200, continueHeight = 60;
+let IgotitX, IgotitY, IgotitW = 160, IgotitH = 50;
 let selectedDifficulty = "easy"; // 預設為簡單模式
 let gameAssetsLoaded = false;
 
@@ -38,9 +38,9 @@ function setup() {
   textSize(24);
   textFont("Comic Sans MS"); 
   
-  // Continue 按鈕位置
-  continueX = width / 2 - 100;
-  continueY = height - 100;
+  // Igotit 按鈕位置
+  IgotitX = width - 100;
+  IgotitY = height - 60;
   
   // 設定 Game Over or You Win 页面按鈕位置
   winOrLoseX = width / 2;
@@ -98,53 +98,72 @@ function drawInstructionScreen() {
   fill(0);
   
   textSize(50);
-  text("Instructions", width / 2, 80);
+  text("Instructions", width / 2, 60);
 
   textSize(24);
   let textX = width / 2 - 50;
 
   fill(255, 150, 0);
-  text("Candy - ", 150, 180);
+  text("Candy - ", 150, 120);
   fill(0, 0, 0);
-  text("Collect three candies to gain an extra life!", textX + 85, 180);
+  text("Collect three candies to gain an extra life!", textX + 85, 120);
 
   fill(255, 150, 0);
-  text("Ghost - ", 150, 230);
+  text("Ghost - ", 150, 170);
   fill(0, 0, 0);
-  text("If you touch a ghost, you will lose one life!", textX + 100, 230);
+  text("If you touch a ghost, you will lose one life!", textX + 90, 170);
 
   fill(255, 150, 0);
-  text("Hellfire - ", 160, 280);
+  text("Hellfire - ", 160, 220);
   fill(0, 0, 0);
-  drawWrappedText("If you touch the hellfire, you will lose one life!", textX + 110, 280, 500);
+  drawWrappedText("If you touch the hellfire, you will lose one life!", textX + 130, 220, 600);
 
   fill(255, 150, 0);
-  text("Heart - ", 150, 360);
+  text("Heart - ", 150, 270);
   fill(0, 0, 0);
-  drawWrappedText("Represents your life. You start with three lives. If you lose them all, the game is over.", textX + 90, 360, 500);
+  drawWrappedText("Represents your life. You start with three lives. If you lose them all, the game is over.", textX + 90, 270, 500);
 
   fill(255, 150, 0);
-  text("Halo - ", 150, 440);
+  text("Halo - ", 145, 350);
   fill(0, 0, 0);
-  drawWrappedText("If you touch the halo, you will fly to heaven and win the game!", textX + 130, 440, 600);
+  drawWrappedText("If you touch the halo, you will fly to heaven and win the game!", textX + 110, 350, 540);
   
-  fill(0, 0, 0);
-  drawWrappedText("Note: Maximum of three lives. When you have three lives, you will not increase the number of candies even if you get three candies!", textX + 100, 480);
-
-  image(candyImg, width / 2 - 370, 150, 60, 60); 
-  image(monsterRightImg, width / 2 - 360, 200, 40, 50);
-  image(dangerImg, width / 2 - 350, 262, 26, 30);
-  image(heartImg, width / 2 - 360, 335, 55, 55);
-  image(haloImg, width / 2 - 357, 415, 60, 60);
-
-  // 繪製 CONTINUE 按鈕
-  let isContinueHover = mouseX > continueX && mouseX < continueX + continueWidth &&mouseY > continueY && mouseY < continueY + continueHeight;
+  //Note1
+    fill(255, 150, 0);
+    text("Note1 - ", 150, 420);
+    fill(0, 0, 0);
+    drawWrappedText("If you fall to the ground, you will lose one life!", textX + 110, 420, 610);
   
-  fill(isContinueHover ? '#DFA0B2' : '#0BCBB8');
-  rect(continueX, continueY, continueWidth, continueHeight, 10);
-  fill(255);
-  textSize(32);
-  text("CONTINUE", continueX + continueWidth / 2, continueY + continueHeight / 2);
+    //Note2
+    fill(255, 150, 0);
+    text("Note2 - ", 150, 470);
+    fill(0, 0, 0);
+    drawWrappedText("You can only have up to three lives. If you already have three, collecting more candies won’t give you any extras!", textX + 130, 470, 580);
+
+  image(candyImg, width / 2 - 360, 95, 60, 60); 
+  image(monsterRightImg, width / 2 - 350, 150, 35, 45);
+  image(dangerImg, width / 2 - 345, 205, 26, 30);
+  image(heartImg, width / 2 - 360, 245, 55, 55);
+  image(haloImg, width / 2 - 350, 330, 40, 40);
+
+  // 繪製 Igotit 按鈕
+    let IgotitX = width - 70;
+    let IgotitY = height - 30;
+    let IgotitW = 100;
+    let IgotitH = 30;
+  
+    let isIgotitHover = mouseX > IgotitX && mouseX < IgotitX + IgotitW && mouseY > IgotitY && mouseY < IgotitY + IgotitH;
+
+    textSize(24);
+    textAlign(CENTER, CENTER);
+
+  
+    if (mouseX > IgotitX - IgotitW/2 && mouseX < IgotitX + IgotitW/2 && mouseY > IgotitY - IgotitH/2 && mouseY < IgotitY + IgotitH/2) {
+    fill("rgb(255, 150, 0)");
+  } else {
+    fill("#0662AC");
+  }
+    text("I got it →", IgotitX, IgotitY);
 }
 
 function drawWrappedText(txt, x, y, maxWidth) {
@@ -269,7 +288,7 @@ function drawStatusArea() {
 
 // game over or you win screen
 function drawWinOrLoseScreen() {
-  background(bg);
+  background(bgImg);
   
   winOrLoseFlashTimer++;
   let textSizeValue = 100 + map(sin(winOrLoseFlashTimer * 0.1), -1, 1, 0, 10);
@@ -293,7 +312,7 @@ function drawWinOrLoseScreen() {
 window.mousePressed = function() {
   let isPlayHover = mouseX > playX - playWidth / 2 && mouseX < playX + playWidth / 2 &&mouseY > playY - playHeight / 2 && mouseY < playY + playHeight / 2;
   
-  let isContinueHover = mouseX > continueX && mouseX < continueX + continueWidth &&mouseY > continueY && mouseY < continueY + continueHeight;
+  let isIgotitHover = mouseX > IgotitX && mouseX < IgotitX + IgotitW &&mouseY > IgotitY && mouseY < IgotitY + IgotitH;
   
   let isSimpleHover = mouseX > 185 && mouseX < 185 + 200 && mouseY > 150 && mouseY < 220;
   let isMediumHover = mouseX > 190 && mouseX < 190 + 350 && mouseY > 300 && mouseY < 370;
@@ -301,7 +320,7 @@ window.mousePressed = function() {
 
   if (gameScreen === "start" && isPlayHover) {
     gameScreen = "instruction";
-  } else if (gameScreen === "instruction" && isContinueHover) {
+  } else if (gameScreen === "instruction" && isIgotitHover) {
     gameScreen = "difficulty";
   } else if (gameScreen === "difficulty") {
     if (isSimpleHover) {
