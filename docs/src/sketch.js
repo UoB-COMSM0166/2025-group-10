@@ -25,7 +25,7 @@ let winOrLoseWidth = 200, winOrLoseHeight = 50, winOrLoseSpacing = 15, winOrLose
 //圖片匯入
 function preload() {
   bgImg = loadImage('assets/bg.png');
-  angelWords = loadImage('assets/upupangel.png');
+  angelWords = loadImage('assets/upup.png');
 }
 
 function setup() {
