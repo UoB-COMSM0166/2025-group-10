@@ -29,8 +29,7 @@ function preload() {
 }
 
 function setup() {
-  let cnv = createCanvas(canvasWidth, canvasHeight);
-  cnv.parent("game-container");
+  createCanvas(canvasWidth, canvasHeight);
   loadGameAssets(); 
   playX = width / 2;
   playY = height - 150;
