@@ -187,24 +187,26 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 ### Design
 Based on our initial user stories and the use case diagram, we collaboratively designed the system architecture of our game by creating a detailed class diagram and sequence diagram. This process was essential to ensuring a solid understanding of the structure and flow of the game before moving into implementation. By working as a team and discussing every design decision, we were able to align our expectations and divide responsibilities more effectively.
 
-## Class Diagram
+#### Class Diagram
 The class diagram represents a high-level overview of our object-oriented design and depicts the core classes used in the game, their attributes, methods, and relationships. At the center of our game logic is the Sketch class, which is responsible for controlling the flow of the game. It manages setup, draw cycles, user interactions, and oversees the initialization of other key classes.
 One of the most important classes is the Player class, which encapsulates all player-related behaviors such as jumping, moving left or right, checking collisions, and handling life count. It interacts with a number of other classes throughout the game loop.
 Clouds are also a critical component in the game, serving as platforms for the player to land on and move between. We implemented two types of clouds — static ones and moving ones— both inheriting from a common Cloud class. The MovingCloud class introduces horizontal motion logic and carries with it any object placed on top, ensuring consistent interaction.
 Another important hierarchy in our game is the Objects class, which serves as a superclass for all interactable items within the game world. Subclasses include Monster, Danger, Halo, and Candy. Each of these subclasses defines its own behavior upon collision with the player. For instance, Danger and Monster can reduce the player's life if touched, whereas Candy can restore life. If player interacts with Halo, while player still has enough life, user will win the game.
 All Objects instances are randomly generated on top of clouds. The game difficulty level determines the proportion and frequency of different objects (e.g., higher difficulty increases the number of moving clouds and dangerous objects). This structure makes the game dynamic and easily extensible.
-The LifeHeart class is a utility class that visually represents the player’s remaining lives on the heads-up display. It is updated in real time as the player interacts with various objects.
+The LifeHeart class is a utility class that visually represents the player’s remaining lives on the heads-up display. It is updated in real time as the player interacts with various objects.  
+
 ***Class Diagram***  
 ![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/assets/readme/Updated%20Class%20Diagram.png)  
 
-## Sequence Diagram
+#### Sequence Diagram
 After finalizing the class structure, we developed a sequence diagram to visualize the temporal interactions between these classes during game execution. This diagram begins with the display of the game’s starting interface, followed by the difficulty selection screen. Once a difficulty is selected, the Sketch class initializes instances of Player, Cloud, and Object classes according to the difficulty level settings.  
 During the game loop, Player listens for user inputs to jump or move. As the player moves, the system checks for collisions with clouds and objects. If a collision occurs, the Player class calls the respective Object subclass method to handle the event (e.g., reducing life when hitting a Monster, or increasing score when collecting a Candy).
 Meanwhile, the Sketch class continuously redraws the game scene using p5.js’s draw() function, updating the positions of all game elements. The LifeHeart class is called every frame to update the life display based on the player’s current state.  
 Whenever the player reaches new heights, the shiftScreen() method in Sketch ensures that the player remains centered vertically by moving all clouds and objects downward, simulating an upward motion. This method also handles the recycling or removal of off-screen elements.  
 ***Sequence Diagram***  
 ![Sequence Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/assets/readme/Updated%20Sequence%20Diagram.png)  
-## Design Iteration and Agile Process
+
+#### Design Iteration and Agile Process
 As we followed an agile development approach, our class and sequence diagrams were not static. Instead, we continuously revised and improved them as the game evolved. Early versions of the diagrams served as rough guides and allowed us to identify design issues early. As we added new features or refined gameplay mechanics, we updated the diagrams to reflect the current structure and ensure everyone on the team had a shared understanding of the system.  
 The diagrams proved especially helpful when debugging or integrating features developed by different team members. They served not only as documentation but also as a communication tool within the team, allowing for clearer discussion on logic, flow, and potential improvements.  
 Overall, our collaborative design approach — grounded in object-oriented principles and supported by UML diagrams — greatly contributed to the clarity, flexibility, and maintainability of our codebase.  
