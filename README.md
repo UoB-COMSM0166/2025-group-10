@@ -188,11 +188,11 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 - 15% ~750 words 
 - System architecture. Class diagrams, behavioural diagrams.
-***Class Diagram***
-![class diagram](/docs/assets/readme/Updated Class Diagram.png)
 
+***Class Diagram***
+![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/assets/readme/Updated%20Class%20Diagram.png)
 ***Sequence Diagram***
-- ![Diagram 2025-02-12 22-13-42](/docs/assets/readme/Updated Sequence Diagram.uxf)
+![Sequence Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/assets/readme/Updated%20Sequence%20Diagram.png)
 
 ### Implementation
 
