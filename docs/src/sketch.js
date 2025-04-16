@@ -187,28 +187,29 @@ function drawWrappedText(txt, x, y, maxWidth) {
 //繪製選擇難度畫面
 window.drawDifficultyScreen = function() {
   background(bgGame);
-  image(challengeWords, 50, 50, challengeWords.width / 2, challengeWords.height / 2);
+  
+  fill("#0662AC"); 
+  textSize(36);
+  textFont("Comic Sans MS");
+  textAlign(LEFT, TOP);
+  text("Select your challenge !", 50, 50);
   
   // 設定按鈕的新大小
-  let buttonWidth = 350;
-  let buttonHeight = 300;
+  let buttonWidth = 400;
+  let buttonHeight = 350;
 
-  let isSimpleHover = mouseX > 185 && mouseX < 185 + 200 && mouseY > 150 && mouseY < 220 ;
+  let isSimpleHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 150 && mouseY < 220 ;
   let isMediumHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 300 && mouseY < 370 ;
   let isHardHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 450 && mouseY < 520;
   
   let simpleHoverWidth = 250;  // 調整為適合的寬度
-  let simpleHoverHeight = 150; // 調整為適合的高度
+  let simpleHoverHeight = 100; // 調整為適合的高度
   let simpleHoverX = 250;  // 調整 X 位置
   let simpleHoverY = 120;   // 調整 Y 位置
 
-  image(isSimpleHover ? simpleHover : simple, 
-    isSimpleHover ? simpleHoverX : 180,  // 如果 Hover，則使用不同的 X 位置
-    isSimpleHover ? simpleHoverY : 50,   // 如果 Hover，則使用不同的 Y 位置
-    isSimpleHover ? simpleHoverWidth : buttonWidth, 
-    isSimpleHover ? simpleHoverHeight : buttonHeight);
+   image(isSimpleHover ? simpleHover : simple, 190, 50, buttonWidth, buttonHeight);
   image(isMediumHover ? mediumHover : medium, 190, 200, buttonWidth, buttonHeight);
-  image(isHardHover ? hardHover : hard, 190, 350, buttonWidth, buttonHeight);
+  image(isHardHover ? hardHover : hard, 190, 350, buttonWidth-2, buttonHeight+10);
 };
 
 //Every time player jumps, scroll clouds down and center the current cloud in the canvas.
@@ -529,7 +530,7 @@ function generateHeart() {
 
 function loadGameAssets() {
   setTimeout(() => { 
-    challengeWords = loadImage('assets/selectchallenge.png');
+    
     bgGame = loadImage('assets/gameBackground.jpg');
     cloudImg = loadImage('assets/cloud2.png');
     candyImg = loadImage('assets/candy.png');
@@ -540,8 +541,8 @@ function loadGameAssets() {
     haloImg = loadImage('assets/halo.png');
     playerLeftImg = loadImage('assets/angel-2.gif');
     playerRightImg = loadImage('assets/angel-1.gif');
-    simple = loadImage('assets/simple1.png');
-    simpleHover = loadImage('assets/simple2.png');
+    simple = loadImage('assets/simple1.PNG');
+    simpleHover = loadImage('assets/simple2.PNG');
     medium = loadImage('assets/medium1.png');
     mediumHover = loadImage('assets/medium2.png');
     hard = loadImage('assets/hard1.png');
