@@ -9,6 +9,7 @@ let life = 3, candyCount = 0;
 let cloudImg, haloImg, monsterLeftImg, monsterRightImg, dangerImg, playerLeftImg, playerRightImg;
 let bgImg, bgGame, angelWords, challengeWords;
 let simple, simpleHover, medium, mediumHover, hard, hardHover;
+let simpleBox, mediumBox, hardBox;
 let titleY = 100, angle = 0; // 控制標題彈跳動畫
 let playX, playY, playWidth = 200, playHeight = 80; // 增大按鈕尺寸
 let gameScreen = "start";
@@ -208,8 +209,33 @@ window.drawDifficultyScreen = function() {
   let simpleHoverY = 120;   // 調整 Y 位置
 
    image(isSimpleHover ? simpleHover : simple, 190, 50, buttonWidth, buttonHeight);
+  // 如果 hover 到簡單模式，就顯示提示圖
+if (isSimpleHover && simpleBox) {
+  let boxWidth = simpleBox.width/1.2 ;  // 可依情況縮放
+  let boxHeight = simpleBox.height/1.2 ;
+  let boxX = 190 + buttonWidth-150 ; // 按鈕右邊一點
+  let boxY = -100; // 和簡單按鈕同高
+  image(simpleBox, boxX, boxY, boxWidth, boxHeight);
+}
   image(isMediumHover ? mediumHover : medium, 190, 200, buttonWidth, buttonHeight);
+  
+  if (isMediumHover && mediumBox) {
+  let boxWidth = mediumBox.width / 1.2;
+  let boxHeight = mediumBox.height / 1.2;
+  let boxX = 190 + buttonWidth-150;
+  let boxY = -100;
+  image(mediumBox, boxX, boxY, boxWidth, boxHeight);
+}
+  
   image(isHardHover ? hardHover : hard, 190, 350, buttonWidth-2, buttonHeight+10);
+  
+  if (isHardHover && hardBox) {
+  let boxWidth = hardBox.width / 1.2;
+  let boxHeight = hardBox.height / 1.2;
+  let boxX = 190 + buttonWidth-150;
+  let boxY = -100;
+  image(hardBox, boxX, boxY, boxWidth, boxHeight);
+}
 };
 
 //Every time player jumps, scroll clouds down and center the current cloud in the canvas.
@@ -543,10 +569,15 @@ function loadGameAssets() {
     playerRightImg = loadImage('assets/angel-1.gif');
     simple = loadImage('assets/simple1.PNG');
     simpleHover = loadImage('assets/simple2.PNG');
+    simpleBox = loadImage('assets/simpleBox.PNG');
+
     medium = loadImage('assets/medium1.png');
     mediumHover = loadImage('assets/medium2.png');
+    mediumBox = loadImage('assets/mediumBox.png');
+
     hard = loadImage('assets/hard1.png');
     hardHover = loadImage('assets/hard2.png');
+    hardBox = loadImage('assets/hardBox.png');
     gameAssetsLoaded = true;
   }, 500); // Simulating 0.5 seconds of loading
 }
