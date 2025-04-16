@@ -198,9 +198,9 @@ window.drawDifficultyScreen = function() {
   let buttonWidth = 400;
   let buttonHeight = 350;
 
-  let isSimpleHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 150 && mouseY < 220 ;
-  let isMediumHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 300 && mouseY < 370 ;
-  let isHardHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 450 && mouseY < 520;
+  let isSimpleHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 200 && mouseY < 270;
+  let isMediumHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 350 && mouseY < 420 ;
+  let isHardHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 500 && mouseY < 570;
   
   let simpleHoverWidth = 250;  // 調整為適合的寬度
   let simpleHoverHeight = 100; // 調整為適合的高度
