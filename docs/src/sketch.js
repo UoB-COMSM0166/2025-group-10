@@ -223,7 +223,7 @@ if (isSimpleHover && simpleBox) {
   let boxWidth = mediumBox.width / 1.2;
   let boxHeight = mediumBox.height / 1.2;
   let boxX = 190 + buttonWidth-150;
-  let boxY = -100;
+  let boxY = 50;
   image(mediumBox, boxX, boxY, boxWidth, boxHeight);
 }
   
@@ -233,7 +233,7 @@ if (isSimpleHover && simpleBox) {
   let boxWidth = hardBox.width / 1.2;
   let boxHeight = hardBox.height / 1.2;
   let boxX = 190 + buttonWidth-150;
-  let boxY = -100;
+  let boxY = 200;
   image(hardBox, boxX, boxY, boxWidth, boxHeight);
 }
 };
@@ -341,9 +341,13 @@ window.mousePressed = function() {
   
   let isIgotitHover = mouseX > IgotitX && mouseX < IgotitX + IgotitW &&mouseY > IgotitY && mouseY < IgotitY + IgotitH;
   
-  let isSimpleHover = mouseX > 185 && mouseX < 185 + 200 && mouseY > 150 && mouseY < 220;
-  let isMediumHover = mouseX > 190 && mouseX < 190 + 350 && mouseY > 300 && mouseY < 370;
-  let isHardHover = mouseX > 190 && mouseX < 190 + 350 && mouseY > 450 && mouseY < 520;
+  let buttonWidth = 400;
+  let buttonHeight = 350;
+
+  let isSimpleHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 200 && mouseY < 270;
+  let isMediumHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 350 && mouseY < 420 ;
+  let isHardHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 500 && mouseY < 570;
+
 
   if (gameScreen === "start" && isPlayHover) {
     gameScreen = "instruction";
