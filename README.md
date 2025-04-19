@@ -242,8 +242,10 @@ Overall, our collaborative design approach — grounded in object-oriented princ
  
 Evaluation Report
 1. Think Aloud Evaluation
+
 Method
 We conducted a Think Aloud session to observe players' real-time thoughts and actions. A facilitator explained the task, and participants were encouraged to verbalize their thoughts while playing. Two observers recorded player behaviors and comments.
+
 
 Observations
 Participants made the following comments during the playtest:
@@ -252,6 +254,7 @@ Participants made the following comments during the playtest:
 ３．The stationary platforms could be longer.
 Note: We decided not to focus on the fourth comment about moving platforms.
 
+
 Insights
 Players hesitated and made trial-and-error movements at the start, indicating insufficient feedback and unclear physical mechanics. The fast bounce and rough interface design disrupted the immersion, while short platforms increased difficulty unnecessarily.
 
@@ -259,19 +262,23 @@ Players hesitated and made trial-and-error movements at the start, indicating in
 Method
 We invited a member from another team to act as an evaluator. They were asked to play the game independently and record usability issues based on Nielsen’s 10 heuristic principles. No instructions or help were provided during the session.
 
+
 Observations
 The evaluator identified the following issues:
 １．The character movement in our game isn’t smooth enough. We hadn’t noticed many of these issues before.
 ２．Without guidance, players are unable to play the game.
 
+
 Insights
 These findings suggest violations of multiple usability heuristics, including "visibility of system status," "help and documentation," and "consistency and standards." The lack of clear instructions and feedback led to confusion during gameplay.
+
 
 Summary and Action Plan
 Our playtesters helped us notice many issues we had previously overlooked.
 They revealed that the character movement in our game isn’t smooth enough, which aligns with the results from our think-aloud sessions.
 Without guidance, we observed that players had many questions and struggled to understand the game without instructions.
 This shows that our game’s guidance and object functionalities are not clear enough.
+
 
 Moving forward, we will:
 Add an instruction page at the beginning of the game
