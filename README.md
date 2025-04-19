@@ -190,13 +190,11 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 - 5% ~250 words 
 - Describe your game, what is based on, what makes it novel?
   
-Our game, Up Up Angel, is inspired by the mobile game Doodle Jump, but redesigned for desktop play by replacing the automatic bouncing with manual jumping. This change gives players more control and a greater sense of engagement.
+Our game, Up Up Angel, is inspired by the classic mobile game Doodle Jump, but we adapted it for desktop platforms by changing the auto-jumping mechanic into manual jumping. This gives players more control and creates a deeper sense of focus and challenge.
 
-We introduced a heaven-and-hell theme to add depth and emotion. Players guide a small angel upward through floating clouds while avoiding ghosts and hellfire. Candies appear along the way to restore life, creating a balance between danger and hope.
+To give the game a unique atmosphere, we introduced the theme of heaven and hell. The player controls a small angel who jumps upward through floating clouds, avoiding ghosts and hellfire while collecting candies that restore health. These elements represent both the obstacles and moments of support we encounter in life.At the top of the game, the angel can collect a glowing halo, symbolizing their final transformation into a true angel. This moment not only marks the player’s success but also represents a deeper message: with persistence and effort, people can reach their goals and ideals.
 
-At the highest point, the angel can collect a glowing halo, symbolizing their transformation into a true angel. This moment represents not just success in the game, but also the idea that through effort, anyone can reach their own goals and ideals.
-
-Our aim was to create a game that feels healing and positive, while still offering challenge. With symbolic elements and a simple yet meaningful journey, Up Up Angel blends gameplay with uplifting themes to provide a unique and memorable experience.
+Our goal was to design a game that feels positive and healing, yet still challenging. By combining symbolic visuals with simple but engaging mechanics, Up Up Angel offers players an experience that is both uplifting and meaningful.
   
 ### Requirements 
 
