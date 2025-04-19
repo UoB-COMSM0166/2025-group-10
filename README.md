@@ -254,7 +254,9 @@ Our playtesters helped us notice many issues we had previously overlooked. They 
 
 - 15% ~750 words
 
-- Teamwork. How did you work together, what tools did you use. Did you have team roles? Reflection on how you worked together. 
+- Teamwork. How did you work together, what tools did you use. Did you have team roles? Reflection on how you worked together.
+
+### Sustainability, Ethics, and Accessibility
 
 ### Conclusion
 
