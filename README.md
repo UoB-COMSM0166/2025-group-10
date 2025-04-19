@@ -190,7 +190,13 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 - 5% ~250 words 
 - Describe your game, what is based on, what makes it novel?
   
-  Our game is called "Up up Angels", originally inspired by NS-Shaft, which focuses on jumping down. However, while working on our game demo, we noticed a small angel illustration on a ruler and felt it would be a perfect fit for our main character. This led us to redesign the concept—since our protagonist is an angel, we decided to have him jump upwards instead. Only upon successfully completing the game does the angel grow wings and ascend to heaven, reinforcing the sense of achievement and aligning with the overall theme of the game.
+  Our game, Up Up Angel, is inspired by the mobile game Doodle Jump, but redesigned for desktop play by replacing the automatic bouncing with manual jumping. This change gives players more control and a greater sense of engagement.
+
+We introduced a heaven-and-hell theme to add depth and emotion. Players guide a small angel upward through floating clouds while avoiding ghosts and hellfire. Candies appear along the way to restore life, creating a balance between danger and hope.
+
+At the highest point, the angel can collect a glowing halo, symbolizing their transformation into a true angel. This moment represents not just success in the game, but also the idea that through effort, anyone can reach their own goals and ideals.
+
+Our aim was to create a game that feels healing and positive, while still offering challenge. With symbolic elements and a simple yet meaningful journey, Up Up Angel blends gameplay with uplifting themes to provide a unique and memorable experience.
   
 ### Requirements 
 
