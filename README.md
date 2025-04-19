@@ -4,7 +4,7 @@ Game Link: https://editor.p5js.org/muler-hussel/sketches/3FtJ5jacn
 
 ## Contents
 
-- [1. Our Team](#1-our-team)
+- [1. Our Team](#-our-team)
 - [2. Introduction](#2-introduction)
 - [3. Requirements](#3-requirements)
 - [4. Design](#4-design)
