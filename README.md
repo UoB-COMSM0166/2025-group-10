@@ -11,7 +11,7 @@ Game Link: https://editor.p5js.org/muler-hussel/sketches/3FtJ5jacn
 - [5. Implementation](#implementation)
 - [6. Evaluation](#evaluation)
 - [7. Process](#process)
-- [8. Sustainability, Ethics, and Accessibility](#sustainability,-ethics,-and-accessibility)
+- [8. Sustainability, Ethics, and Accessibility](#sustainability-ethics-and-accessibility)
 - [9. Conclusion](#conclusion)
 
 
