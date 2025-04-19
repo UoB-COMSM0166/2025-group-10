@@ -2,6 +2,20 @@
 2025 COMSM0166 group 10
 Game Link: https://editor.p5js.org/muler-hussel/sketches/3FtJ5jacn
 
+## Contents
+## 📚 Table of Contents
+
+- [1. Development Team](#1-development-team)
+- [2. Introduction](#2-introduction)
+- [3. Requirements](#3-requirements)
+- [4. Design](#4-design)
+- [5. Implementation](#5-implementation)
+- [6. Evaluation](#6-evaluation)
+- [7. Process](#8-process)
+- [8. Sustainability, Ethics, and Accessibility](#7-Sustainability,-Ethics,-and-Accessibility)
+- [9. Conclusion](#9-conclusion)
+
+
 ## Lecture Notes
 
 ### Week 1: Game Selection Phase 1
