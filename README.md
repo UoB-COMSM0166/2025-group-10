@@ -3,7 +3,6 @@
 Game Link: https://editor.p5js.org/muler-hussel/sketches/3FtJ5jacn
 
 ## Contents
-## 📚 Table of Contents
 
 - [1. Our Team](#1-our-team)
 - [2. Introduction](#2-introduction)
