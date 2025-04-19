@@ -190,7 +190,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 - 5% ~250 words 
 - Describe your game, what is based on, what makes it novel?
   
-  Our game, Up Up Angel, is inspired by the mobile game Doodle Jump, but redesigned for desktop play by replacing the automatic bouncing with manual jumping. This change gives players more control and a greater sense of engagement.
+Our game, Up Up Angel, is inspired by the mobile game Doodle Jump, but redesigned for desktop play by replacing the automatic bouncing with manual jumping. This change gives players more control and a greater sense of engagement.
 
 We introduced a heaven-and-hell theme to add depth and emotion. Players guide a small angel upward through floating clouds while avoiding ghosts and hellfire. Candies appear along the way to restore life, creating a balance between danger and hope.
 
