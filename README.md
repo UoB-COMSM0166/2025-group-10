@@ -5,7 +5,7 @@ Game Link: https://editor.p5js.org/muler-hussel/sketches/3FtJ5jacn
 ## Contents
 ## 📚 Table of Contents
 
-- [1. Development Team](#1-development-team)
+- [1. Our Team](#1-our-team)
 - [2. Introduction](#2-introduction)
 - [3. Requirements](#3-requirements)
 - [4. Design](#4-design)
@@ -169,7 +169,7 @@ Your game lives in the [/docs](/docs) folder, and is published using Github page
 
 Include a demo video of your game here (you don't have to wait until the end, you can insert a work in progress video)
 
-## Our Group
+## Our Team
 
 ![Description](Picture/IMG_5257%202.heic)
 
