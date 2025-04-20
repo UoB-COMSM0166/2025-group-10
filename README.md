@@ -332,7 +332,8 @@ These improvements aim to reduce the learning curve and enhance the overall play
 |                       | Environmental                                                                                              |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
 |  Digital Product vs. Physical Goods |Up Up Angel is a purely digital game, which means it avoids the environmental footprint associated with manufacturing, packaging, and distributing physical toys or board games. By existing entirely online, it reduces the demand for plastics, paper, and shipping logistics that contribute to carbon emissions.|
-|  No Extra Hardware Required | The game can be played using existing devices such as computers, meaning players do not need to purchase additional hardware. This reduces electronic consumption and promotes the reuse of current technology. |
+|  No Extra Hardware Required | Players can enjoy the game on devices they already own, such as their everyday computers. There’s no need for extra consoles or special equipment, which not only makes the game more accessible but also avoids unnecessary electronic consumption. Supporting existing hardware encourages people to make the most of what they have, rather than constantly upgrading. |
+| Low Carbon Design | The game features hand-drawn visuals and simple image assets, which are intentionally kept lightweight. This artistic choice not only gives the game a charming and approachable look, but also keeps its system requirements low. As a result, it runs smoothly on older or less powerful devices, helping to extend their usable life and reduce the amount of electronic waste generated. |
 
 ## 9. Conclusion
 
