@@ -205,6 +205,10 @@ Our goal was to design a game that feels positive and healing, yet still challen
 - Internal: Owner, Developer, Marketing Team, Project Managers
 - External: Customers, Potential Customers, Public, App Stores, Competitors
 
+#### Use case diagrams
+
+![Description](Picture/IMG_5257%202.heic)
+
 #### Epics
 1. Improve player engagement through challenging mechanics 
 2. Enhance happiness for player
