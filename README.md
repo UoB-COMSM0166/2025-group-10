@@ -270,7 +270,7 @@ Overall, our collaborative design approach — grounded in object-oriented princ
 ## 5. Implementation
 
 ### 1. Implementing Manual Jumping & Gravity Physics
-One of the biggest departures from Doodle Jump was replacing automatic bouncing with manual jumping. This meant we had to implement realistic and responsive physics, including vertical momentum, gravity, and jump timing. We created a Player class that included attributes like velocity, gravity, jumpPower, and flags such as isJumping and isControlled. The jump() method manipulated these values to simulate upward motion, while the update() method handled gravitational pull.
+One of the biggest departures from Doodle Jump was replacing automatic bouncing with manual jumping. This meant we had to implement realistic and responsive physics, including vertical momentum, gravity, and jump timing. We created a `Player` class that included attributes like `velocity`, `gravity`, `jumpPower`, and flags such as `isJumping` and `isControlled`. The `jump()` method manipulated these values to simulate upward motion, while the `update()` method handled gravitational pull.
 What made this particularly challenging was ensuring that the jump felt responsive but forgiving. If the gravity was too strong, jumps felt too short. If too light, the game lost tension. We iteratively tested different values and tweaked jump acceleration curves. Additionally, edge cases—like jumping from moving clouds—required extra care to avoid jittery or unnatural motion. Integrating cloud offsets (from MovingCloud) into the player's position dynamically was key to achieving fluid interactions.
 
 ### 2. Collision Detection & Object Interaction
