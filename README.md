@@ -330,6 +330,7 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 ## 8. Sustainability, Ethics, and Accessibility
 <br>
+
 ### 🌱 Environmental
 
 | Category                    | Description                                                                                           |
@@ -338,6 +339,7 @@ These improvements aim to reduce the learning curve and enhance the overall play
 |  No Extra Hardware Required | Players can enjoy the game on devices they already own, such as their everyday computers. There’s no need for extra consoles or special equipment, which not only makes the game more accessible but also avoids unnecessary electronic consumption. Supporting existing hardware encourages people to make the most of what they have, rather than constantly upgrading. |
 | Low Carbon Design | The game features hand-drawn visuals and simple image assets, which are intentionally kept lightweight. This artistic choice not only gives the game a charming and approachable look, but also keeps its system requirements low. As a result, it runs smoothly on older or less powerful devices, helping to extend their usable life and reduce the amount of electronic waste generated. |
 <br>
+
 ### 🧠 Individual
 
 | Category                    | Description                                                                                              |
@@ -347,6 +349,7 @@ These improvements aim to reduce the learning curve and enhance the overall play
 | Personal Reflection |There’s something quietly meaningful about helping the angel move upward. As players go higher, they might start thinking about their own journey—what they’ve been through, where they’re headed. The game’s soft visuals and gentle pace give players a chance to pause and reflect, even if just for a moment. It’s a space to breathe, to think, or to simply feel a little lighter.|
 |  Low-Stress Design | Up Up Angel isn’t about winning quickly or being perfect. It doesn’t punish failure harshly, and there’s no pressure to rush. This makes it a comforting experience, especially for players who might be feeling anxious or just need a quiet escape. It’s a game that’s kind to its players—where trying again is enough, and where the journey matters more than the score. |
 <br>
+
 ### 🫂 Social
 
 | Category                    | Description                                                                                              |
