@@ -201,6 +201,41 @@ Our goal was to design a game that feels positive and healing, yet still challen
 - 15% ~750 words
 - Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop?
 
+#### Stakeholder List
+- Internal: Owner, Developer, Marketing Team, Project Managers
+- External: Customers, Potential Customers, Public, App Stores, Competitors
+
+#### Epics
+1. Improve player engagement through challenging mechanics 
+2. Enhance happiness for player
+
+#### User Stories
+- As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.
+- As a player, I want the game to provide a sense of accomplishment and offer multiple difficulty levels, so I can enjoy both relaxation and progressive challenges.
+- As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.
+
+#### Ideation process
+In the early stages of our project, our team engaged in in-depth discussions to identify a meaningful direction for our game. We observed that in modern life, many people lead busy schedules and face various pressures from work, studies, or personal life. With this in mind, we aimed to create a game that is not only simple and easy to engage with, but also provides players with a sense of relaxation and accomplishment.
+
+From the beginning, our team unanimously agreed that we wanted to design a game that would serve as a soothing and slightly challenging experience—a short yet satisfying escape from the stress of everyday life. As such, we established two key design principles for our game: a cute, comforting visual style, and a pastel-colored aesthetic that aligns with a calming emotional tone.
+
+Initially, we considered developing a lighthearted game inspired by the classic "NS-Shaft" mechanics—simple, casual, and fun. However, once we decided that the main character would be a small angel, we re-evaluated the gameplay direction. We realized that having the angel jump upward rather than downward made much more thematic sense, reinforcing the idea of ascending to heaven—a concept inherently associated with peace, joy, and healing.
+
+This shift also inspired us to design the game environment around a sky-themed backdrop. Upon successfully completing the game, players are rewarded with a final scene resembling "heaven," creating a full-circle emotional journey that embodies our design intention.
+
+To ensure broader appeal and replayability, we designed three difficulty levels, allowing players to experience a sense of challenge and achievement, in addition to the calming aspects. We also incorporated different in-game elements (e.g., small objects and obstacles) based on each difficulty level to enhance immersion and user engagement.
+
+#### Brief
+During this requirements workshop, our team deeply explored Epics, User Stories, and Acceptance Criteria and applied these concepts to the requirements planning for our game, "Up Up Angel".
+
+First, we learned that Epics are high-level requirements that group related user stories. For example, "making the game challenging" is one of our Epics, which includes mechanics like character movement, jumping, and dodging. This structure helps us organize requirements and keep the development direction clear.
+
+Next, User Stories allow us to think from the player's perspective when defining game features. For instance, "As a player, I want a leaderboard system so that I can compete with my friends." This approach helps us focus on the user experience and ensures the game meets the needs of different types of players, such as streamers, working professionals, and students.
+
+Finally, Acceptance Criteria define when a requirement is considered "done." For example, "Given that a player finishes a game session, when the score is calculated, then the leaderboard should update and display the player's rank." This clear criterion makes it easier for the development team to test and validate features.
+
+Through this workshop, we not only gained a solid understanding of requirements analysis but also learned how to apply these concepts in the development process, ensuring that our game design is well-structured and aligned with player expectations.
+
 ## 4. Design
 Based on our initial user stories and the use case diagram, we collaboratively designed the system architecture of our game by creating a detailed class diagram and sequence diagram. This process was essential to ensuring a solid understanding of the structure and flow of the game before moving into implementation. By working as a team and discussing every design decision, we were able to align our expectations and divide responsibilities more effectively.
 
