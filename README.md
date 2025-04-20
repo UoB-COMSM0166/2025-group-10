@@ -402,7 +402,19 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 - 10% ~500 words
 
-- Reflect on project as a whole. Lessons learned. Reflect on challenges. Future work. 
+- Reflect on project as a whole. Lessons learned. Reflect on challenges. Future work.
+
+- Looking back on the development process of Up Up Angel, this project provided a valuable and multifaceted experience for our team, combining both technical learning and creative problem-solving. We gained hands-on insight into the complexities of game development within a collaborative environment—from the ideation phase to system modeling, requirements analysis, and user-centered design.
+
+One of the most important lessons we learned was the significance of effective communication in teamwork. Although software engineers often work independently in front of computers, we found that successful project execution required frequent and transparent communication—whether about gameplay design, individual responsibilities, or time management. Establishing clear expectations and continuously syncing progress helped us reduce misunderstandings and improve team efficiency.
+
+Another key reflection was on the challenge of transforming abstract ideas into concrete, actionable plans. In the early stages, the team had many creative ideas for the game, but only a few were ultimately implemented. We realized that without a clear evaluation process, we often spent considerable time revising or discarding ideas mid-way through development. As a result, we learned the importance of brainstorming freely during ideation, but also the need to prioritize and validate ideas early when entering the execution phase.
+
+In addition, we faced the recurring challenge of balancing simplicity with meaningful interactivity. Our goal was to design a game that felt relaxing, but not too passive or monotonous. Achieving this required several iterations on level structure, pacing, visual flow, and reward mechanisms.
+
+Looking ahead, we see several directions for future improvement. Potential enhancements include implementing a scoring system or time-based challenges, adding background music and sound effects to enhance emotional immersion, and introducing character customization options to increase player engagement. We are also considering improvements in mobile compatibility and performance optimization to deliver a smoother experience across different platforms.
+
+Overall, this project not only strengthened our technical and design skills but also deepened our understanding of how collaboration and structured planning are crucial to turning creative concepts into engaging, playable experiences.
 
 ### Contribution Statement
 
