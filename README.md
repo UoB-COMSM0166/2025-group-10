@@ -207,7 +207,7 @@ Our goal was to design a game that feels positive and healing, yet still challen
 
 #### Use case diagrams
 
-![Description](Use Case Diagram.jpg)
+![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/UseCaseDiagram.jpg)  
 
 #### Epics
 1. Improve player engagement through challenging mechanics 
