@@ -404,7 +404,7 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 - Reflect on project as a whole. Lessons learned. Reflect on challenges. Future work.
 
-- Looking back on the development process of Up Up Angel, this project provided a valuable and multifaceted experience for our team, combining both technical learning and creative problem-solving. We gained hands-on insight into the complexities of game development within a collaborative environment—from the ideation phase to system modeling, requirements analysis, and user-centered design.
+Looking back on the development process of Up Up Angel, this project provided a valuable and multifaceted experience for our team, combining both technical learning and creative problem-solving. We gained hands-on insight into the complexities of game development within a collaborative environment—from the ideation phase to system modeling, requirements analysis, and user-centered design.
 
 One of the most important lessons we learned was the significance of effective communication in teamwork. Although software engineers often work independently in front of computers, we found that successful project execution required frequent and transparent communication—whether about gameplay design, individual responsibilities, or time management. Establishing clear expectations and continuously syncing progress helped us reduce misunderstandings and improve team efficiency.
 
