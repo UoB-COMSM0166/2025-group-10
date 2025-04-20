@@ -4,15 +4,15 @@ Game Link: https://editor.p5js.org/muler-hussel/sketches/3FtJ5jacn
 
 ## Contents
 
-- [1. Our Team](#our-team)
-- [2. Introduction](#introduction)
-- [3. Requirements](#requirements)
-- [4. Design](#design)
-- [5. Implementation](#implementation)
-- [6. Evaluation](#evaluation)
-- [7. Process](#process)
-- [8. Sustainability, Ethics, and Accessibility](#sustainability-ethics-and-accessibility)
-- [9. Conclusion](#conclusion)
+- [1. Our Team](#1-our-team)
+- [2. Introduction](#2-introduction)
+- [3. Requirements](#3-requirements)
+- [4. Design](#4-design)
+- [5. Implementation](#5-implementation)
+- [6. Evaluation](#6-evaluation)
+- [7. Process](#7-process)
+- [8. Sustainability, Ethics, and Accessibility](#8-sustainability-ethics-and-accessibility)
+- [9. Conclusion](#9-conclusion)
 
 
 ## Lecture Notes
@@ -168,7 +168,7 @@ Your game lives in the [/docs](/docs) folder, and is published using Github page
 
 Include a demo video of your game here (you don't have to wait until the end, you can insert a work in progress video)
 
-## Our Team
+## 1. Our Team
 
 ![Description](Picture/IMG_5257%202.heic)
 
@@ -185,7 +185,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 ## Project Report
 
-### Introduction
+## 2. Introduction
 
 - 5% ~250 words 
 - Describe your game, what is based on, what makes it novel?
@@ -196,12 +196,12 @@ To give the game a unique atmosphere, we introduced the theme of heaven and hell
 
 Our goal was to design a game that feels positive and healing, yet still challenging. By combining symbolic visuals with simple but engaging mechanics, Up Up Angel offers players an experience that is both uplifting and meaningful.
   
-### Requirements 
+## 3. Requirements 
 
 - 15% ~750 words
 - Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop?
 
-### Design
+## 4. Design
 Based on our initial user stories and the use case diagram, we collaboratively designed the system architecture of our game by creating a detailed class diagram and sequence diagram. This process was essential to ensuring a solid understanding of the structure and flow of the game before moving into implementation. By working as a team and discussing every design decision, we were able to align our expectations and divide responsibilities more effectively.
 
 #### Class Diagram
@@ -228,13 +228,13 @@ As we followed an agile development approach, our class and sequence diagrams we
 The diagrams proved especially helpful when debugging or integrating features developed by different team members. They served not only as documentation but also as a communication tool within the team, allowing for clearer discussion on logic, flow, and potential improvements.  
 Overall, our collaborative design approach — grounded in object-oriented principles and supported by UML diagrams — greatly contributed to the clarity, flexibility, and maintainability of our codebase.  
 
-### Implementation
+## 5. Implementation
 
 - 15% ~750 words
 
 - Describe implementation of your game, in particular highlighting the three areas of challenge in developing your game. 
 
-### Evaluation
+## 6. Evaluation
 
 - 15% ~750 words
 
@@ -322,15 +322,15 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 - Description of how code was tested. 
 
-### Process 
+## 7. Process 
 
 - 15% ~750 words
 
 - Teamwork. How did you work together, what tools did you use. Did you have team roles? Reflection on how you worked together.
 
-### Sustainability, Ethics, and Accessibility
+## 8. Sustainability, Ethics, and Accessibility
 
-### Conclusion
+## 9. Conclusion
 
 - 10% ~500 words
 
