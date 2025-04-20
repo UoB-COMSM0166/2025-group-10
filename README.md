@@ -329,6 +329,10 @@ These improvements aim to reduce the learning curve and enhance the overall play
 - Teamwork. How did you work together, what tools did you use. Did you have team roles? Reflection on how you worked together.
 
 ## 8. Sustainability, Ethics, and Accessibility
+|                       | Environmental                                                                                              |
+|---------------------------|-----------------------------------------------------------------------------------------------------------|
+|  Digital Product vs. Physical Goods |Up Up Angel is a purely digital game, which means it avoids the environmental footprint associated with manufacturing, packaging, and distributing physical toys or board games. By existing entirely online, it reduces the demand for plastics, paper, and shipping logistics that contribute to carbon emissions.|
+|  No Extra Hardware Required | The game can be played using existing devices such as computers, meaning players do not need to purchase additional hardware. This reduces electronic consumption and promotes the reuse of current technology. |
 
 ## 9. Conclusion
 
