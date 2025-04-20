@@ -330,18 +330,18 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 ## 8. Sustainability, Ethics, and Accessibility
 
-|                       | Environmental                                                                                              |
+| Environmental                    |                                                                                               |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
 |  Digital Product vs. Physical Goods |Up Up Angel is a purely digital game, which means it avoids the environmental footprint associated with manufacturing, packaging, and distributing physical toys or board games. By existing entirely online, it reduces the demand for plastics, paper, and shipping logistics that contribute to carbon emissions.|
 |  No Extra Hardware Required | Players can enjoy the game on devices they already own, such as their everyday computers. There’s no need for extra consoles or special equipment, which not only makes the game more accessible but also avoids unnecessary electronic consumption. Supporting existing hardware encourages people to make the most of what they have, rather than constantly upgrading. |
 | Low Carbon Design | The game features hand-drawn visuals and simple image assets, which are intentionally kept lightweight. This artistic choice not only gives the game a charming and approachable look, but also keeps its system requirements low. As a result, it runs smoothly on older or less powerful devices, helping to extend their usable life and reduce the amount of electronic waste generated. |
 
-|                       | Individual                                                                                              |
+| Individual                      |                                                                                               |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
 |  Emotional Comfort |We created Up Up Angel with a simple goal: to bring people a small moment of peace. Inspired by the carefree joy of games we played as kids, it’s meant to feel light, familiar, and gently uplifting—something to turn to after a long day.|
 |  Sense of Achievement | The game offers different difficulty levels—Heaven’s Blessing, Sacred Trial, and Divine Judgement—so players can push themselves at their own pace. Clearing each level feels like a small win, building confidence one step at a time. |
 
-|                       | Social                                                                                              |
+| Social                      |                                                                                               |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
 |  Sharing Positive Values |At its heart, Up Up Angel is about rising above—not just in the game, but in life. As the angel jumps higher, dodging dark creatures and picking up sweets along the way, it quietly reflects the ups and downs we all go through. There’s a deeper message behind the simple gameplay: be brave, grow through struggle, and don’t let negativity pull you down. Reaching the top and earning a halo isn’t just a win—it’s a little reminder that we can all become our best selves, one step at a time.|
 |  A Game That Brings People Together | It’s also the kind of game you want to share. Whether it’s with a friend after class or just passing time with someone new, Up Up Angel gives people something light and fun to connect over. It doesn’t take much to start playing, but those shared laughs and "almost made it!" moments make it easy for people to relax, bond, and feel just a little less alone. |
