@@ -269,21 +269,17 @@ Overall, our collaborative design approach — grounded in object-oriented princ
 
 ## 5. Implementation
 
-1. Implementing Manual Jumping & Gravity Physics
+### 1. Implementing Manual Jumping & Gravity Physics
 One of the biggest departures from Doodle Jump was replacing automatic bouncing with manual jumping. This meant we had to implement realistic and responsive physics, including vertical momentum, gravity, and jump timing. We created a Player class that included attributes like velocity, gravity, jumpPower, and flags such as isJumping and isControlled. The jump() method manipulated these values to simulate upward motion, while the update() method handled gravitational pull.
-
 What made this particularly challenging was ensuring that the jump felt responsive but forgiving. If the gravity was too strong, jumps felt too short. If too light, the game lost tension. We iteratively tested different values and tweaked jump acceleration curves. Additionally, edge cases—like jumping from moving clouds—required extra care to avoid jittery or unnatural motion. Integrating cloud offsets (from MovingCloud) into the player's position dynamically was key to achieving fluid interactions.
 
-2. Collision Detection & Object Interaction
+### 2. Collision Detection & Object Interaction
 The second major challenge involved detecting and handling interactions between the player and in-game objects, especially given our wide variety of interactive elements. Each Objects subclass—Candy, Danger, Monster, Halo—triggered unique behaviors upon collision. For example, Candy increased life, Monster reduced it, and Halo signaled the win condition. These interactions were handled through the collidesWith(obj) method in Player, which dynamically checked overlap based on coordinates and bounding boxes.
-
 Complications arose in maintaining fair and predictable collisions, particularly when moving platforms carried objects. We needed to synchronize object motion with their cloud parent to avoid misalignment. Moreover, stacking multiple objects on a cloud meant the collision zone had to be dynamically calculated and prioritized (e.g., if a cloud had both a Candy and a Danger, order of resolution mattered). We addressed this by standardizing object size and updating the cloud’s y offset logic, which significantly reduced unexpected behavior.
 
-3. Game Difficulty and Dynamic Spawning Logic
+### 3. Game Difficulty and Dynamic Spawning Logic
 Our game supported three difficulty levels—each altering the frequency of MovingClouds and harmful objects like Monster or Danger. This system was controlled in the Sketch class, which dynamically initialized arrays of Cloud and Objects during game setup and periodically during the shiftScreen() routine.
-
 The challenge here was to maintain balance and pacing. In higher difficulties, too many hazards made the game feel unfair; in lower ones, players quickly lost engagement. We wrote conditional logic based on difficulty settings to fine-tune object spawn rates, cloud speeds, and object types. Moreover, we implemented randomized offsets and type assignments to prevent pattern repetition, which greatly improved replayability.
-
 An interesting problem emerged when combining MovingClouds with Monster objects. Initially, monsters moved independently of the cloud they stood on, leading to floating or teleporting behavior. To fix this, we made Monster and other object subclasses inherit their cloud's movement state on each frame, giving the illusion of cohesion. This solution preserved both visual consistency and mechanical fairness.
 
 In summary, the implementation phase of Up Up Angel demanded careful engineering in physics, game logic, and dynamic content generation. Through agile development and repeated testing, we transformed a peaceful visual theme into a game with rich interactivity and subtle emotional depth. Despite the challenges, the structured approach via class diagrams and a shared vision within the team helped us produce a cohesive and playable game.
