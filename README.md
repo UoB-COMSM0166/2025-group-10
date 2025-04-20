@@ -377,10 +377,6 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 ## 7. Process 
 
-- 15% ~750 words
-
-- Teamwork. How did you work together, what tools did you use. Did you have team roles? Reflection on how you worked together.
-
 In our team, effective collaboration and consistent communication were essential to ensuring a smooth and successful development process. Early on, we decided to divide our team into two sub-groups based on skillsets: three members focused on programming—covering areas such as game logic, functionality, and system integration—while the other three specialized in visual design, including character art, environment graphics, animations, and user interface elements. This division of labor allowed each sub-group to concentrate on what they did best, while still maintaining frequent contact and discussion to make sure all parts of the game fit together cohesively.
 
 ### Tools
