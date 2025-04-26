@@ -371,6 +371,18 @@ Refine visual design and level layout to improve clarity and usability
 These improvements aim to reduce the learning curve and enhance the overall player experience.
 
 - One quantitative evaluation (of your choice)
+| user | easy | medium |
+|-----:|-----:|-------:|
+| 1    | 16.7 | 17.5   |
+| 2    | 35   | 35.8   |
+| 3    | 25   | 29.2   |
+| 4    | 26.7 | 29.2   |
+| 5    | 18.3 | 25     |
+| 6    | 16.7 | 25     |
+| 7    | 10   | 15.8   |
+| 8    | 20   | 25     |
+| 9    | 18.3 | 21.7   |
+| 10   | 20   | 20.8   |
 
 
 - Description of how code was tested. 
