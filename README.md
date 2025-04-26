@@ -374,11 +374,11 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 ---
 
-# 6. Evaluation
+## 6. Evaluation
 
 *(15% ~750 words)*
 
-## One Qualitative Evaluation (Your Choice)
+### One Qualitative Evaluation (Your Choice)
 
 ### Evaluation Report
 
