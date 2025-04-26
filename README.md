@@ -370,34 +370,76 @@ Refine visual design and level layout to improve clarity and usability
 
 These improvements aim to reduce the learning curve and enhance the overall player experience.
 
-- One quantitative evaluation (of your choice)
-| user | easy | medium |
-|-----:|-----:|-------:|
-| 1    | 16.7 | 17.5   |
-| 2    | 35   | 35.8   |
-| 3    | 25   | 29.2   |
-| 4    | 26.7 | 29.2   |
-| 5    | 18.3 | 25     |
-| 6    | 16.7 | 25     |
-| 7    | 10   | 15.8   |
-| 8    | 20   | 25     |
-| 9    | 18.3 | 21.7   |
-| 10   | 20   | 20.8   |
+當然可以！這是剛剛排版好的純文字版，方便你一鍵複製 ✨：
 
-- One quantitative evaluation (of your choice)
+---
 
-| user | easy | medium |
-|-----:|-----:|-------:|
-| 1    | 16.7 | 17.5   |
-| 2    | 35   | 35.8   |
-| 3    | 25   | 29.2   |
-| 4    | 26.7 | 29.2   |
-| 5    | 18.3 | 25     |
-| 6    | 16.7 | 25     |
-| 7    | 10   | 15.8   |
-| 8    | 20   | 25     |
-| 9    | 18.3 | 21.7   |
-| 10   | 20   | 20.8   |
+# 6. Evaluation
+
+*(15% ~750 words)*
+
+## One Qualitative Evaluation (Your Choice)
+
+### Evaluation Report
+
+---
+
+### Think Aloud Evaluation
+
+**Method**  
+We conducted a Think Aloud session to observe players' real-time thoughts and actions.  
+A facilitator explained the task, and participants were encouraged to verbalize their thoughts while playing. Two observers recorded player behaviors and comments.
+
+**Observations**  
+Participants made the following comments during the playtest:
+1. The ball bounces too fast.
+2. I hope the interface can be more refined.
+3. The stationary platforms could be longer.
+
+> *Note: We decided not to focus on the fourth comment about moving platforms.*
+
+**Insights**  
+Players hesitated and made trial-and-error movements at the start, indicating insufficient feedback and unclear physical mechanics.  
+The fast bounce and rough interface design disrupted immersion, while short platforms increased difficulty unnecessarily.
+
+---
+
+### Heuristic Evaluation
+
+**Method**  
+We invited a member from another team to act as an evaluator.  
+They were asked to play the game independently and record usability issues based on Nielsen’s 10 heuristic principles. No instructions or help were provided during the session.
+
+**Observations**  
+The evaluator identified the following issues:
+1. The character movement in our game isn’t smooth enough. (We hadn’t noticed many of these issues before.)
+2. Without guidance, players are unable to play the game.
+
+**Insights**  
+These findings suggest violations of multiple usability heuristics, including:
+- **Visibility of system status**
+- **Help and documentation**
+- **Consistency and standards**
+
+The lack of clear instructions and feedback led to confusion during gameplay.
+
+---
+
+### Summary and Action Plan
+
+Our playtesters helped us notice many issues we had previously overlooked:
+
+- They revealed that the character movement in our game isn’t smooth enough, which aligns with the results from our Think Aloud sessions.
+- Without guidance, players had many questions and struggled to understand the game mechanics.
+- This shows that our game’s guidance and object functionalities are not clear enough.
+
+**Moving forward, we will:**
+- Add an instruction page at the beginning of the game
+- Use icons to indicate character abilities and object functions
+- Refine visual design and level layout to improve clarity and usability
+
+These improvements aim to reduce the learning curve and enhance the overall player experience.
+
 - One quantitative evaluation (of your choice)
 
 ### NASA
