@@ -393,7 +393,12 @@ Medium difficulty scores were slightly higher than Easy, suggesting a modest inc
 Overall, the SUS results indicate good usability.
 Most participants rated the system as "Good" with scores generally above 75, although a few users rated it "OK" with lower scores, suggesting minor usability improvements are still needed.
 
-- Description of how code was tested. 
+- Description of how code was tested.
+The code was tested through a combination of manual and exploratory testing.
+We manually executed the application and verified core functionalities, including user input handling, system feedback, and error management.
+Test cases were designed to cover both typical use scenarios and edge cases, ensuring that the system behaves as expected under various conditions.
+Additionally, peer reviews and informal user testing sessions were conducted to identify usability issues and unforeseen bugs.
+
 
 ## 7. Process 
 
