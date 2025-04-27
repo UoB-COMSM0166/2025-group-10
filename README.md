@@ -372,6 +372,26 @@ These improvements aim to reduce the learning curve and enhance the overall play
 | 9    | 18.3 | 21.7   |
 | 10   | 20   | 20.8   |
 
+Overall, task load scores were relatively low, indicating that both the Easy and Medium versions of the task were manageable.
+Medium difficulty scores were slightly higher than Easy, suggesting a modest increase in perceived workload, but overall the system maintained a reasonable level of user comfort.
+
+### SUS
+
+| User | Easy Rating | Easy Score | Medium Rating | Medium Score |
+|-----:|:------------|-----------:|:--------------|-------------:|
+| 1    | OK          | 57.5       | OK            | 65           |
+| 2    | Good        | 77.5       | OK            | 67.5         |
+| 3    | Good        | 80         | Good          | 80           |
+| 4    | Good        | 72.5       | Good          | 77.5         |
+| 5    | Good        | 75         | Good          | 75           |
+| 6    | Good        | 80         | Good          | 75           |
+| 7    | Good        | 82.5       | Good          | 85           |
+| 8    | Good        | 67.5       | Good          | 82.5         |
+| 9    | OK          | 52.5       | OK            | 70           |
+| 10   | OK          | 80         | Good          | 82.5         |
+
+Overall, the SUS results indicate good usability.
+Most participants rated the system as "Good" with scores generally above 75, although a few users rated it "OK" with lower scores, suggesting minor usability improvements are still needed.
 
 - Description of how code was tested. 
 
