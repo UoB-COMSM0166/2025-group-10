@@ -323,7 +323,7 @@ function drawWinOrLoseScreen() {
   fill(178, 34, 34);
   textSize(textSizeValue);
   let textContent = gameScreen === "gameOver" ? "Game Over!" : "You Win!";
-  text(textContent, width / 2, height / 3);
+  text(textContent, width / 2, height / 2 - 40);
   
   textSize(34);
   for (let btn of winOrLoseButtons) {
