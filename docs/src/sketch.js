@@ -45,7 +45,7 @@ function setup() {
   
   // 設定 Game Over or You Win 页面按鈕位置
   winOrLoseX = width / 2;
-  winOrLoseY = height / 2 + 40;
+  winOrLoseY = height / 2 + 50;
 
   for (let i = 0; i < winOrLoseLabels.length; i++) {
     winOrLoseButtons.push({
