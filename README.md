@@ -205,10 +205,6 @@ Our goal was to design a game that feels positive and healing, yet still challen
 - Internal: Owner, Developer, Marketing Team, Project Managers
 - External: Customers, Potential Customers, Public, App Stores, Competitors
 
-#### Use case diagrams
-
-![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/UseCaseDiagram.jpg)  
-
 #### Epics
 1. Improve player engagement through challenging mechanics 
 2. Enhance happiness for player
@@ -229,16 +225,25 @@ This shift also inspired us to design the game environment around a sky-themed b
 
 To ensure broader appeal and replayability, we designed three difficulty levels, allowing players to experience a sense of challenge and achievement, in addition to the calming aspects. We also incorporated different in-game elements (e.g., small objects and obstacles) based on each difficulty level to enhance immersion and user engagement.
 
+#### Use case diagrams
+
+![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/UseCaseDiagram.jpg)  
+
 #### Brief
-During this requirements workshop, our team deeply explored Epics, User Stories, and Acceptance Criteria and applied these concepts to the requirements planning for our game, "Up Up Angel".
+Brief Description:
+The player starts the game with the goal of jumping upward through clouds, avoiding dangers like ghosts and hellfire. The ultimate aim is to collect the halo, which gives the angel the power to fly to heaven and means the player has won the game.
 
-First, we learned that Epics are high-level requirements that group related user stories. For example, "making the game challenging" is one of our Epics, which includes mechanics like character movement, jumping, and dodging. This structure helps us organize requirements and keep the development direction clear.
+Basic Flow:
+The player selects “Play Game” from the main menu.
+The game asks the player to choose a difficulty level.
+The angel appears on the starting platform and gameplay begins.
+The player manually jumps from cloud to cloud.
+The player avoids ghosts and hellfire while climbing upward.
+Reaching the Halo triggers the victory screen.
+Falling or losing all lives triggers the game over screen.
 
-Next, User Stories allow us to think from the player's perspective when defining game features. For instance, "As a player, I want a leaderboard system so that I can compete with my friends." This approach helps us focus on the user experience and ensures the game meets the needs of different types of players, such as streamers, working professionals, and students.
-
-Finally, Acceptance Criteria define when a requirement is considered "done." For example, "Given that a player finishes a game session, when the score is calculated, then the leaderboard should update and display the player's rank." This clear criterion makes it easier for the development team to test and validate features.
-
-Through this workshop, we not only gained a solid understanding of requirements analysis but also learned how to apply these concepts in the development process, ensuring that our game design is well-structured and aligned with player expectations.
+Alternative Flows:
+Gain Extra Life: If the player collects three candies, they gain one extra life. This gives them another chance to survive falling or hitting a hazard.
 
 ## 4. Design
 Based on our initial user stories and the use case diagram, we collaboratively designed the system architecture of our game by creating a detailed class diagram and sequence diagram. This process was essential to ensuring a solid understanding of the structure and flow of the game before moving into implementation. By working as a team and discussing every design decision, we were able to align our expectations and divide responsibilities more effectively.
