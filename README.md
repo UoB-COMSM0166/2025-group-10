@@ -201,7 +201,7 @@ Our goal was to design a game that feels positive and healing, yet still challen
 - 15% ~750 words
 - Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop?
 
-#### Ideation process
+### Ideation process
 In the early stages of our project, our team engaged in in-depth discussions to identify a meaningful direction for our game. We observed that in modern life, many people lead busy schedules and face various pressures from work, studies, or personal life. With this in mind, we aimed to create a game that is not only simple and easy to engage with, but also provides players with a sense of relaxation and accomplishment.
 
 From the beginning, our team unanimously agreed that we wanted to design a game that would serve as a soothing and slightly challenging experience—a short yet satisfying escape from the stress of everyday life. As such, we established two key design principles for our game: a cute, comforting visual style, and a pastel-colored aesthetic that aligns with a calming emotional tone.
@@ -212,13 +212,13 @@ This shift also inspired us to design the game environment around a sky-themed b
 
 To ensure broader appeal and replayability, we designed three difficulty levels, allowing players to experience a sense of challenge and achievement, in addition to the calming aspects. We also incorporated different in-game elements (e.g., small objects and obstacles) based on each difficulty level to enhance immersion and user engagement.
 
-#### Stakeholder List
+### Stakeholder List
 - Internal: Owner, Developer, Marketing Team, Project Managers
 - External: Customers, Potential Customers, Public, App Stores, Competitors
 
 #### Epics & User Stories & Acceptance Criteria
 
-#### Epics: Improve player engagement through challenging mechanics
+### Epics: Improve player engagement through challenging mechanics
 - User Stories: As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.
 - Acceptance Criteria: 
 
@@ -229,9 +229,11 @@ To ensure broader appeal and replayability, we designed three difficulty levels,
 - User Stories: As a player, I want the game to provide a sense of accomplishment and offer multiple difficulty levels, so I can enjoy both relaxation and progressive challenges.
 - Acceptance Criteria:
 
-#### Use case diagrams
+### Use case diagrams
 
 ![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/UseCaseDiagram.jpg)  
+
+### Brief
 
 #### Brief Description:
 The player starts the game with the goal of jumping upward through clouds, avoiding dangers like ghosts and hellfire. The ultimate aim is to collect the halo, which gives the angel the power to fly to heaven and means the player has won the game.
