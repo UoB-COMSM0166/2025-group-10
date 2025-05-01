@@ -201,19 +201,6 @@ Our goal was to design a game that feels positive and healing, yet still challen
 - 15% ~750 words
 - Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop?
 
-#### Stakeholder List
-- Internal: Owner, Developer, Marketing Team, Project Managers
-- External: Customers, Potential Customers, Public, App Stores, Competitors
-
-#### Epics
-1. Improve player engagement through challenging mechanics 
-2. Enhance happiness for player
-
-#### User Stories
-- As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.
-- As a player, I want the game to provide a sense of accomplishment and offer multiple difficulty levels, so I can enjoy both relaxation and progressive challenges.
-- As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.
-
 #### Ideation process
 In the early stages of our project, our team engaged in in-depth discussions to identify a meaningful direction for our game. We observed that in modern life, many people lead busy schedules and face various pressures from work, studies, or personal life. With this in mind, we aimed to create a game that is not only simple and easy to engage with, but also provides players with a sense of relaxation and accomplishment.
 
@@ -225,6 +212,23 @@ This shift also inspired us to design the game environment around a sky-themed b
 
 To ensure broader appeal and replayability, we designed three difficulty levels, allowing players to experience a sense of challenge and achievement, in addition to the calming aspects. We also incorporated different in-game elements (e.g., small objects and obstacles) based on each difficulty level to enhance immersion and user engagement.
 
+#### Stakeholder List
+- Internal: Owner, Developer, Marketing Team, Project Managers
+- External: Customers, Potential Customers, Public, App Stores, Competitors
+
+#### Epics & User Stories & Acceptance Criteria
+
+## Epics: Improve player engagement through challenging mechanics
+- User Stories: As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.
+- Acceptance Criteria: 
+
+## Epics: Enhance happiness for player
+- User Stories: As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.
+- Acceptance Criteria:
+  
+- User Stories: As a player, I want the game to provide a sense of accomplishment and offer multiple difficulty levels, so I can enjoy both relaxation and progressive challenges.
+- Acceptance Criteria:
+
 #### Use case diagrams
 
 ![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/UseCaseDiagram.jpg)  
@@ -234,12 +238,14 @@ The player starts the game with the goal of jumping upward through clouds, avoid
 
 #### Basic Flow:
  1. The player selects “Play Game” from the main menu.
- 2. The game asks the player to choose a difficulty level.
- 3. The angel appears on the starting platform and gameplay begins.
- 4. The player manually jumps from cloud to cloud.
- 5. The player avoids ghosts and hellfire while climbing upward.
- 6. Reaching the Halo triggers the victory screen.
- 7. Falling or losing all lives triggers the game over screen.
+ 2. The game displays the instructions for the player to read.
+ 3. The player selects a difficulty level.
+ 4. The angel appears on the starting platform and gameplay begins.
+ 5. The player manually jumps from cloud to cloud.
+ 6. The player avoids ghosts and hellfire while jumping upward.
+ 7. Gaining the Halo triggers the win screen.
+ 8. Falling or losing all lives triggers the game over screen.
+ 9. After the game ends, the system displays options: Play Again, Settings, or Exit Game.
 
 #### Alternative Flows:
 Gain Extra Life: If the player collects three candies, they gain one extra life. This gives them another chance to survive falling or hitting a hazard.
