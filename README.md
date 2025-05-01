@@ -216,9 +216,9 @@ To ensure broader appeal and replayability, we designed three difficulty levels,
 - Internal: Owner, Developer, Marketing Team, Project Managers
 - External: Customers, Potential Customers, Public, App Stores, Competitors
 
-#### Epics & User Stories & Acceptance Criteria
+### Epics & User Stories & Acceptance Criteria
 
-### Epics: Improve player engagement through challenging mechanics
+#### Epics: Improve player engagement through challenging mechanics
 - User Stories: As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.
 - Acceptance Criteria: 
 
