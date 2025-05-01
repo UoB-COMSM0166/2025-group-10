@@ -229,20 +229,19 @@ To ensure broader appeal and replayability, we designed three difficulty levels,
 
 ![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/UseCaseDiagram.jpg)  
 
-#### Brief
-Brief Description:
+#### Brief Description:
 The player starts the game with the goal of jumping upward through clouds, avoiding dangers like ghosts and hellfire. The ultimate aim is to collect the halo, which gives the angel the power to fly to heaven and means the player has won the game.
 
-Basic Flow:
-The player selects “Play Game” from the main menu.
-The game asks the player to choose a difficulty level.
-The angel appears on the starting platform and gameplay begins.
-The player manually jumps from cloud to cloud.
-The player avoids ghosts and hellfire while climbing upward.
-Reaching the Halo triggers the victory screen.
-Falling or losing all lives triggers the game over screen.
+#### Basic Flow:
+1.The player selects “Play Game” from the main menu.
+2.The game asks the player to choose a difficulty level.
+3.The angel appears on the starting platform and gameplay begins.
+4.The player manually jumps from cloud to cloud.
+5.The player avoids ghosts and hellfire while climbing upward.
+6.Reaching the Halo triggers the victory screen.
+7.Falling or losing all lives triggers the game over screen.
 
-Alternative Flows:
+#### Alternative Flows:
 Gain Extra Life: If the player collects three candies, they gain one extra life. This gives them another chance to survive falling or hitting a hazard.
 
 ## 4. Design
