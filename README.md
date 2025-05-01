@@ -218,11 +218,11 @@ To ensure broader appeal and replayability, we designed three difficulty levels,
 
 #### Epics & User Stories & Acceptance Criteria
 
-## Epics: Improve player engagement through challenging mechanics
+#### Epics: Improve player engagement through challenging mechanics
 - User Stories: As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.
 - Acceptance Criteria: 
 
-## Epics: Enhance happiness for player
+#### Epics: Enhance happiness for player
 - User Stories: As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.
 - Acceptance Criteria:
   
