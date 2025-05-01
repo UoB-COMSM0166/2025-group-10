@@ -206,11 +206,9 @@ In the early stages of our project, our team engaged in in-depth discussions to 
 
 From the beginning, our team unanimously agreed that we wanted to design a game that would serve as a soothing and slightly challenging experience—a short yet satisfying escape from the stress of everyday life. As such, we established two key design principles for our game: a cute, comforting visual style, and a pastel-colored aesthetic that aligns with a calming emotional tone.
 
-Initially, we considered developing a lighthearted game inspired by the classic "NS-Shaft" mechanics—simple, casual, and fun. However, once we decided that the main character would be a small angel, we re-evaluated the gameplay direction. We realized that having the angel jump upward rather than downward made much more thematic sense, reinforcing the idea of ascending to heaven—a concept inherently associated with peace, joy, and healing.
+Initially, we considered developing a lighthearted game inspired by the classic "NS-Shaft" mechanics—simple, casual, and fun. However, once we decided that the main character would be a small angel, we re-evaluated the gameplay direction. We realized that having the angel jump upward rather than downward made much more thematic sense, reinforcing the idea of ascending to heaven—a concept inherently associated with peace, joy, and healing.This shift also inspired us to design the game environment around a sky-themed backdrop. Upon successfully completing the game, players are rewarded with a final scene resembling "heaven," creating a full-circle emotional journey that embodies our design intention.
 
-This shift also inspired us to design the game environment around a sky-themed backdrop. Upon successfully completing the game, players are rewarded with a final scene resembling "heaven," creating a full-circle emotional journey that embodies our design intention.
-
-To ensure broader appeal and replayability, we designed three difficulty levels, allowing players to experience a sense of challenge and achievement, in addition to the calming aspects. We also incorporated different in-game elements (e.g., small objects and obstacles) based on each difficulty level to enhance immersion and user engagement.
+To ensure broader appeal and replayability, we designed three difficulty levels, allowing players to experience a sense of challenge and achievement, in addition to the calming aspects. We also incorporated different in-game elements (e.g., obstacles) based on each difficulty level to enhance immersion and user engagement.
 
 ### Stakeholder List
 - Internal: Owner, Developer, Marketing Team, Project Managers
