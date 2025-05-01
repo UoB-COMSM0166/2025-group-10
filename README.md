@@ -211,8 +211,12 @@ Initially, we considered developing a lighthearted game inspired by the classic 
 To ensure broader appeal and replayability, we designed three difficulty levels, allowing players to experience a sense of challenge and achievement, in addition to the calming aspects. We also incorporated different in-game elements (e.g., obstacles) based on each difficulty level to enhance immersion and user engagement.
 
 ### Stakeholder List
-- Internal: Owner, Developer, Marketing Team, Project Managers
-- External: Customers, Potential Customers, Public, App Stores, Competitors
+The main stakeholders for Up Up Angel were:
+- The product: Up Up Angle
+- Game Developers: Implement game mechanics, logic, and assets. Address technical challenges to bring the design vision to life.
+- Game Designer: Oversees the project's creative direction, makes core design decisions, and manages tasks to ensure progress aligns with overall goals.
+- Users(Player): Play the game to experience its mechanics and provide feedback on gameplay, bugs, usability, and overall user experience to support iterative improvements.
+- Public: Wider groups who may view, discuss, or be inspired by the project. Their engagement enhances the game’s visibility and extends its impact beyond direct testers.
 
 ### Epics & User Stories & Acceptance Criteria
 
