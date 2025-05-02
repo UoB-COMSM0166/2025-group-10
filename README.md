@@ -226,7 +226,7 @@ The main stakeholders for Up Up Angel were:
 
 #### Epics: Enhance happiness for player
 - User Stories: As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.
-- Acceptance Criteria:
+- Acceptance Criteria: **Given** I am playing the game, **when** I engage with the game’s mechanics, **then** I should face simple and enjoyable challenges that I can complete in a short amount of time, leaving me with a sense of accomplishment and happiness.
   
 - User Stories: As a player, I want the game to provide a sense of accomplishment and offer multiple difficulty levels, so I can enjoy both relaxation and progressive challenges.
 - Acceptance Criteria:
