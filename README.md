@@ -210,7 +210,7 @@ To ensure the game appeals to a wide audience, we designed three difficulty leve
 
 ### Stakeholder List
 The main stakeholders for Up Up Angel were:
-- The product: Up Up Angle
+- The product: Up Up Angel
 - Game Developers: Implement game mechanics, logic, and assets. Address technical challenges to bring the design vision to life.
 - Game Designer: Oversees the project's creative direction, makes core design decisions, and manages tasks to ensure progress aligns with overall goals.
 - Users(Player): Play the game to experience its mechanics and provide feedback on gameplay, bugs, usability, and overall user experience to support iterative improvements.
