@@ -229,7 +229,7 @@ The main stakeholders for Up Up Angel were:
 - Acceptance Criteria: **Given** I am playing the game, **when** I engage with the game’s mechanics, **then** I should face simple and enjoyable challenges that I can complete in a short amount of time, leaving me with a sense of accomplishment and happiness.
   
 - User Stories: As a player, I want the game to provide a sense of accomplishment and offer multiple difficulty levels, so I can enjoy both relaxation and progressive challenges.
-- Acceptance Criteria:
+- Acceptance Criteria: **Given** I am starting a new game or level, **when** I select the difficulty level, **then** I should be able to choose from different difficulty settings (e.g., Easy, Medium, Hard) that give me a variety of experiences and challenges, so I can pick the one that best fits how I like to play.
 
 ### Use case diagrams
 
