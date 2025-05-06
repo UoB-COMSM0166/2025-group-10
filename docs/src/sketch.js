@@ -322,10 +322,9 @@ function drawWinOrLoseScreen() {
   
   fill(178, 34, 34);
   textSize(textSizeValue);
-  
+  textAlign(CENTER, CENTER)
   let textContent = gameScreen === "gameOver" ? "Game Over!" : "You Win!";
-  
-  text(textContent, winOrLoseX/2 , winOrLoseY - winOrLoseHeight - 120);
+  text(textContent, 400, 200);
   
   textSize(34);
   for (let btn of winOrLoseButtons) {
