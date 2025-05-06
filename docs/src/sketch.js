@@ -44,7 +44,7 @@ function setup() {
   IgotitY = height - 60;
   
   // 設定 Game Over or You Win 页面按鈕位置
-  winOrLoseX = 300;
+  winOrLoseX = 200;
   winOrLoseY = height / 2 + 40;
 
   for (let i = 0; i < winOrLoseLabels.length; i++) {
