@@ -42,10 +42,9 @@ function setup() {
   // Igotit 按鈕位置
   IgotitX = width - 100;
   IgotitY = height - 60;
-  
-  gameScreen = "gameOver";
+
   // 設定 Game Over or You Win 页面按鈕位置
-  winOrLoseX = 300;
+  winOrLoseX = width / 2 - 30;
   winOrLoseY = height / 2 + 40;
 
   for (let i = 0; i < winOrLoseLabels.length; i++) {
@@ -325,7 +324,7 @@ function drawWinOrLoseScreen() {
   textSize(textSizeValue);
   textAlign(CENTER, CENTER)
   let textContent = gameScreen === "gameOver" ? "Game Over!" : "You Win!";
-  text(textContent, width / 2 - 30, 200);
+  text(textContent, width / 2 - 30, winOrLoseY - winOrLoseHeight - 80);
   
   textSize(34);
   for (let btn of winOrLoseButtons) {
