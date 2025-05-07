@@ -429,6 +429,11 @@ Medium difficulty scores were slightly higher than Easy, suggesting a modest inc
 | 9    | OK          | 52.5       | OK            | 70           |
 | 10   | OK          | 80         | Good          | 82.5         |
 
+<p align="center"><strong>SUS Score Distribution Chart</strong></p>
+<img width="677" alt="  SUS" src="https://github.com/user-attachments/assets/fb2355dc-b180-4d42-a413-46181f62b668" />
+
+
+
 Overall, the SUS results indicate good usability.
 Most participants rated the system as "Good" with scores generally above 75, although a few users rated it "OK" with lower scores, suggesting minor usability improvements are still needed.
 
