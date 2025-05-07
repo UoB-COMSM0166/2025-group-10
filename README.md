@@ -382,15 +382,10 @@ These improvements aim to reduce the learning curve and enhance the overall play
 | 10   | 20   | 20.8   |
 
 
+<p align="center"><strong>NASA TLX Workload Score Distribution Chart</strong></p>
 
-<img width="983" alt=" NASA" src="https://github.com/user-attachments/assets/ab7cb672-2520-41f9-b61c-b823b9d76a8e" />
+<img width="936" alt="NASA" src="https://github.com/user-attachments/assets/a3f0d7ec-31ab-462e-8c6f-abc455ed38b8" />
 
- # **NASA TLX Workload Score Distribution Chart**
-
-
-
-
-NASA<img width="889" alt="NASA" src="https://github.com/user-attachments/assets/2ec92344-df3f-4834-b063-2aedc430d561" />
 
 
 Overall, task load scores were relatively low, indicating that both the Easy and Medium versions of the task were manageable.
