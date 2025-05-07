@@ -17,16 +17,20 @@ let IgotitX, IgotitY, IgotitW = 160, IgotitH = 50;
 let selectedDifficulty = "easy"; // 預設為簡單模式
 let gameAssetsLoaded = false;
 
+//sounds
+let bgMusic, loseMusic, jumpSound, getCoinSound, fireSound, ghostSound;
+
 //game over or you win variables
 let winOrLoseButtons = [];
 let winOrLoseLabels = ["Play Again", "Settings", "Exit Game"];
 let winOrLoseX, winOrLoseY;
 let winOrLoseWidth = 200, winOrLoseHeight = 50, winOrLoseSpacing = 15, winOrLoseFlashTimer = 0;
 
-//圖片匯入
+//圖片匯入, music load
 function preload() {
   bgImg = loadImage('assets/bg.png');
   angelWords = loadImage('assets/upup.png');
+  bgMusic = loadSound('/assets/sound/bgm.mp3');
 }
 
 function setup() {
@@ -78,6 +82,7 @@ function draw() {
 // 繪製開始畫面
 function drawStartScreen() {
   background(bgImg);
+  bgMusic.play();
   let bounce = sin(angle) * 20;
   angle += 0.05;
   image(angelWords, width / 3- angelWords.width / 3 , titleY/3+ bounce-60, angelWords.width / 0.7 , angelWords.height / 0.7);
@@ -268,9 +273,11 @@ function drawGame() {
   for (let i = objects.length - 1; i >= 0; i--) {
     if (player.collidesWith(objects[i])) {
       if (objects[i] instanceof Danger) {
+        fireSound.play();
         player.loseLife();
         objects.splice(i, 1);
       } else if (objects[i] instanceof Candy) {
+        getCoinSound.play();
         candyCount++;
         objects.splice(i, 1);
         if (candyCount >= 3) {
@@ -317,6 +324,11 @@ function drawStatusArea() {
 function drawWinOrLoseScreen() {
   background(bgImg);
   
+  if (gameScreen === "gameOver") {
+    bgMusic.stop();
+    loseMusic.loop();
+  }
+
   winOrLoseFlashTimer++;
   let textSizeValue = 100 + map(sin(winOrLoseFlashTimer * 0.1), -1, 1, 0, 10);
   
@@ -343,7 +355,6 @@ window.mousePressed = function() {
   let isIgotitHover = mouseX > IgotitX && mouseX < IgotitX + IgotitW &&mouseY > IgotitY && mouseY < IgotitY + IgotitH;
   
   let buttonWidth = 400;
-  let buttonHeight = 350;
 
   let isSimpleHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 200 && mouseY < 270;
   let isMediumHover = mouseX > 190 && mouseX < 190 + buttonWidth && mouseY > 350 && mouseY < 420 ;
@@ -575,6 +586,12 @@ function loadGameAssets() {
     simple = loadImage('assets/simple1.PNG');
     simpleHover = loadImage('assets/simple2.PNG');
     simpleBox = loadImage('assets/simpleBox.PNG');
+    
+    loseMusic = loadSound('/assets/sound/fail.mp3');
+    jumpSound = loadSound('/assets/sound/jump.mp3');
+    getCoinSound = loadSound('/assets/sound/coin.mp3');
+    fireSound = loadSound('/assets/sound/fire.mp3');
+    ghostSound = loadSound('/assets/sound/ghost.mp3');
 
     medium = loadImage('assets/medium1.png');
     mediumHover = loadImage('assets/medium2.png');

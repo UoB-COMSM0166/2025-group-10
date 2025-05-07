@@ -141,6 +141,7 @@ class Player {
       this.velocity = this.jumpPower;
       // 跳躍時解除附著狀態
       this.currentCloud = null;
+      jumpSound.play();
     }
   }
 
