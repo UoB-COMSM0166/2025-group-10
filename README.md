@@ -233,9 +233,9 @@ The main stakeholders for Up Up Angel were:
 
 ![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/UseCaseDiagram.jpg)  
 
-### Brief
+### Use-case Specification
 
-#### Brief Description:
+#### Description:
 The player starts the game with the goal of jumping upward through clouds, avoiding dangers like ghosts and hellfire. The ultimate aim is to collect the halo, which gives the angel the power to fly to heaven and means the player has won the game.
 
 #### Basic Flow:
