@@ -32,7 +32,6 @@ This week, our focus was on coming up with ideas for our game project. After a l
 | Jumping Over Pits on a Bridge | The original game involves players controlling a character as they navigate across a bridge, jumping over pits to avoid falling.<br>**Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Development Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
 | Endless Runner | Players control a character that runs endlessly forward, avoiding obstacles and collecting power-ups to achieve high scores.<br>**Twist**: Players can switch between characters, such as superheroes or animals, each with unique abilities like flying, dashing, or bypassing obstacles, adding strategy and variety.<br>**Development Challenges**: Creating procedurally generated maps and balancing character abilities to ensure smooth and fair gameplay. |
 
-
 ---
 
 ### Week 2: P5.js & Agile Techniques
@@ -225,7 +224,28 @@ The main stakeholders for Up Up Angel were:
 |Busy Professional|Enhance happiness for player|As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.|**Given** I am playing the game, **when** I engage with the game’s mechanics, **then** I should face simple and enjoyable challenges that I can complete in a short amount of time, leaving me with a sense of accomplishment and happiness.|
 |        |                                                       |As a player, I want the game to offer different difficulty levels, so I can choose the right one that suits my mood and how much time I have to play.|**Given** I am starting a new game or level, **when** I select the difficulty level, **then** I should be able to choose from different difficulty settings (e.g., Easy, Medium, Hard) that give me a variety of experiences and challenges, so I can pick the one that best fits how I like to play.|
 
-
+<table>
+  <thead>
+    <tr>
+      <th>User Type</th>
+      <th>Epics</th>
+      <th>User Stories</th>
+      <th>Acceptance Criteria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Streamer</td>
+      <td rowspan="2">Improve player engagement through challenging mechanics</td>
+      <td>As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.</td>
+      <td>Given I am in a game, when I progress through the levels and encounter increasing difficulty, then I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.</td>
+    </tr>
+    <tr>
+      <td>As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.</td>
+      <td>Given I am in a game, when I progress through the levels and encounter increasing difficulty, then I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.</td>
+    </tr>
+    </tbody>
+</table>
 
 ### Use case diagrams
 
