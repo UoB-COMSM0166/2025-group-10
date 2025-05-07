@@ -247,6 +247,7 @@ The main stakeholders for Up Up Angel were:
       <td rowspan="1">Improve player engagement through challenging mechanics</td> <td>As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.</td>
       <td>**Given** I am playing the game, **when** I engage with the game’s mechanics, **then** I should face simple and enjoyable challenges that I can complete in a short amount of time, leaving me with a sense of accomplishment and happiness.</td>
     </tr>
+
     <tr>
        <td rowspan="1">Normal Player</td>
        <td rowspan="1">Improve player engagement through challenging mechanics</td> <td>As a player, I want the game to offer different difficulty levels, so I can choose the right one that suits my mood and how much time I have to play.</td>
