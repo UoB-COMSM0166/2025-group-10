@@ -587,11 +587,11 @@ function loadGameAssets() {
     simpleHover = loadImage('assets/simple2.PNG');
     simpleBox = loadImage('assets/simpleBox.PNG');
     
-    loseMusic = loadSound('/assets/sound/fail.mp3');
-    jumpSound = loadSound('/assets/sound/jump.mp3');
-    getCoinSound = loadSound('/assets/sound/coin.mp3');
-    fireSound = loadSound('/assets/sound/fire.mp3');
-    ghostSound = loadSound('/assets/sound/ghost.mp3');
+    loseMusic = loadSound('assets/sound/fail.mp3');
+    jumpSound = loadSound('assets/sound/jump.mp3');
+    getCoinSound = loadSound('assets/sound/coin.mp3');
+    fireSound = loadSound('assets/sound/fire.mp3');
+    ghostSound = loadSound('assets/sound/ghost.mp3');
 
     medium = loadImage('assets/medium1.png');
     mediumHover = loadImage('assets/medium2.png');
