@@ -247,8 +247,8 @@ The main stakeholders for Up Up Angel were:
   </tr>
   <!-- Fourth User Type: Busy Professional -->
   <tr>
-    <td>Busy Professional</td>
-    <td>As a player, I want the game to offer different difficulty levels, so I can choose the right one that suits my mood and how much time I have to play.</td>
+    <td>Casual Player</td>
+    <td>As a Casual Player, I want the game to offer different difficulty levels, so I can choose the right one that suits my mood and how much time I have to play.</td>
     <td><b>Given</b> I am starting a new game or level, <b>when</b> I select the difficulty level, <b>then</b> I should be able to choose from different difficulty settings (e.g., Easy, Medium, Hard) that give me a variety of experiences and challenges, so I can pick the one that best fits how I like to play.</td>
   </tr>
 </table>
