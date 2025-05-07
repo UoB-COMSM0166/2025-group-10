@@ -65,10 +65,7 @@ function setup() {
 
 function draw() {
   background(255);
-  if (bgMusic && !bgMusic.isPlaying()) {
-    bgMusic.play();
-  }
-
+  
   if (!gameAssetsLoaded || gameScreen === "start") {
     drawStartScreen();
   } else if (gameScreen === "instruction") {
@@ -354,6 +351,16 @@ function drawWinOrLoseScreen() {
 
 //按鈕控制
 window.mousePressed = function() {
+  if (getAudioContext().state !== 'running') {
+    getAudioContext().resume().then(() => {
+      console.log('Audio context resumed');
+    });
+  }
+
+  if (bgMusic && !bgMusic.isPlaying()) {
+    bgMusic.play();
+  }
+
   let isPlayHover = mouseX > playX - playWidth / 2 && mouseX < playX + playWidth / 2 &&mouseY > playY - playHeight / 2 && mouseY < playY + playHeight / 2;
   
   let isIgotitHover = mouseX > IgotitX && mouseX < IgotitX + IgotitW &&mouseY > IgotitY && mouseY < IgotitY + IgotitH;
@@ -398,6 +405,16 @@ window.mousePressed = function() {
 };
 
 function keyPressed() {
+  if (getAudioContext().state !== 'running') {
+    getAudioContext().resume().then(() => {
+      console.log('Audio context resumed');
+    });
+  }
+  
+  if (bgMusic && !bgMusic.isPlaying()) {
+    bgMusic.play();
+  }
+  
   if (gameScreen === "start") {
     if (keyCode === ENTER) gameScreen = "game";
   } else if (gameScreen === "gameOver" || gameScreen === "youWin" || gameScreen === "instruction") {
@@ -455,7 +472,7 @@ function resetGameData() {
   
   // **確保畫面回到選擇難度時是乾淨的**
   player = null;
-  
+
   if (loseMusic.isPlaying()) {
     loseMusic.stop();
   }
