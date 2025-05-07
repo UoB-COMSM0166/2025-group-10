@@ -377,6 +377,9 @@ These improvements aim to reduce the learning curve and enhance the overall play
 | 9    | 18.3 | 21.7   |
 | 10   | 20   | 20.8   |
 
+NASA<img width="889" alt="NASA" src="https://github.com/user-attachments/assets/2ec92344-df3f-4834-b063-2aedc430d561" />
+
+
 Overall, task load scores were relatively low, indicating that both the Easy and Medium versions of the task were manageable.
 Medium difficulty scores were slightly higher than Easy, suggesting a modest increase in perceived workload, but overall the system maintained a reasonable level of user comfort.
 
