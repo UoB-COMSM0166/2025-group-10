@@ -169,7 +169,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 ## 1. Our Team
 
-![Description](docs/userPic/group.jpg)
+![Description](docs/repoPic/group.jpg)
 
 
 | Name              | Email                              | Username    |
