@@ -30,7 +30,7 @@ let winOrLoseWidth = 200, winOrLoseHeight = 50, winOrLoseSpacing = 15, winOrLose
 function preload() {
   bgImg = loadImage('assets/bg.png');
   angelWords = loadImage('assets/upup.png');
-  bgMusic = loadSound('/assets/sound/bgm.mp3');
+  bgMusic = loadSound('assets/sound/bgm.mp3');
 }
 
 function setup() {
