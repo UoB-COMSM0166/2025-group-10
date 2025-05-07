@@ -382,9 +382,11 @@ These improvements aim to reduce the learning curve and enhance the overall play
 | 10   | 20   | 20.8   |
 
 
+
 <p align="center"><strong>NASA TLX Workload Score Distribution Chart</strong></p>
 
 <img width="936" alt="NASA" src="https://github.com/user-attachments/assets/a3f0d7ec-31ab-462e-8c6f-abc455ed38b8" />
+
 
 
 
