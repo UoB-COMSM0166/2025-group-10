@@ -218,6 +218,10 @@ The main stakeholders for Up Up Angel were:
 
 ### Epics & User Stories & Acceptance Criteria
 
+| Epics              | User Stories                              | Acceptance Criteria    |
+|--------------------|-------------------------------------------|------------------------|
+|Improve player engagement through challenging mechanics|As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.|**Given** I am in a game, **when** I progress through the levels and encounter increasing difficulty, **then** I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.|
+
 #### Epics: Improve player engagement through challenging mechanics
 - User Stories: As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.
 - Acceptance Criteria: **Given** I am in a game, **when** I progress through the levels and encounter increasing difficulty, **then** I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.
