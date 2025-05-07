@@ -389,7 +389,7 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 ### NASA
 
-| user | easy | medium |
+| User | Easy | Medium |
 |-----:|-----:|-------:|
 | 1    | 16.7 | 17.5   |
 | 2    | 35   | 35.8   |
