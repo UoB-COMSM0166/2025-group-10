@@ -30,7 +30,7 @@ let winOrLoseWidth = 200, winOrLoseHeight = 50, winOrLoseSpacing = 15, winOrLose
 function preload() {
   bgImg = loadImage('assets/bg.png');
   angelWords = loadImage('assets/upup.png');
-  bgMusic = loadSound('/assets/sound/bgm.mp3');
+  bgMusic = loadSound('assets/sound/bgm.mp3');
 }
 
 function setup() {
@@ -65,6 +65,9 @@ function setup() {
 
 function draw() {
   background(255);
+  if (bgMusic && !bgMusic.isPlaying()) {
+    bgMusic.play();
+  }
 
   if (!gameAssetsLoaded || gameScreen === "start") {
     drawStartScreen();
@@ -82,7 +85,7 @@ function draw() {
 // 繪製開始畫面
 function drawStartScreen() {
   background(bgImg);
-  bgMusic.play();
+  
   let bounce = sin(angle) * 20;
   angle += 0.05;
   image(angelWords, width / 3- angelWords.width / 3 , titleY/3+ bounce-60, angelWords.width / 0.7 , angelWords.height / 0.7);
@@ -323,10 +326,11 @@ function drawStatusArea() {
 // game over or you win screen
 function drawWinOrLoseScreen() {
   background(bgImg);
-  
   if (gameScreen === "gameOver") {
     bgMusic.stop();
-    loseMusic.loop();
+    if (loseMusic && !loseMusic.isPlaying()) {
+      loseMusic.loop();
+    }
   }
 
   winOrLoseFlashTimer++;
@@ -408,27 +412,30 @@ function keyPressed() {
 }
 
 function restartGame() {
-    // 重設遊戲變數
-    life = 3;
-    candyCount = 0;
-    
-    // 重新建立遊戲對象
-    clouds = [];
-    objects = [];
-    hearts = [];
-    
-    // 重新建立玩家
-    player = new Player(canvasWidth / 2, canvasHeight);
+  // 重設遊戲變數
+  life = 3;
+  candyCount = 0;
+  
+  // 重新建立遊戲對象
+  clouds = [];
+  objects = [];
+  hearts = [];
+  
+  // 重新建立玩家
+  player = new Player(canvasWidth / 2, canvasHeight);
 
-    // 重新生成雲朵、物件、生命
-    generateGameElements();
-    generateHeart();
+  // 重新生成雲朵、物件、生命
+  generateGameElements();
+  generateHeart();
 
-    // 切換回遊戲畫面
-    gameScreen = "game";
+  // 切換回遊戲畫面
+  gameScreen = "game";
 }
 
 function startNewGame() {
+  if (loseMusic.isPlaying()) {
+    loseMusic.stop();
+  }
   resetGameData();  // **確保清空舊資料**
   player = new Player(canvasWidth / 2, canvasHeight, life, candyCount);
   generateGameElements();
@@ -447,7 +454,11 @@ function resetGameData() {
   hearts = [];
   
   // **確保畫面回到選擇難度時是乾淨的**
-  player = null;  
+  player = null;
+  
+  if (loseMusic.isPlaying()) {
+    loseMusic.stop();
+  }
 }
 
 function generateGameElements() {
@@ -572,7 +583,6 @@ function generateHeart() {
 
 function loadGameAssets() {
   setTimeout(() => { 
-    
     bgGame = loadImage('assets/gameBackground.jpg');
     cloudImg = loadImage('assets/cloud2.png');
     candyImg = loadImage('assets/candy.png');
@@ -587,11 +597,11 @@ function loadGameAssets() {
     simpleHover = loadImage('assets/simple2.PNG');
     simpleBox = loadImage('assets/simpleBox.PNG');
     
-    loseMusic = loadSound('/assets/sound/fail.mp3');
-    jumpSound = loadSound('/assets/sound/jump.mp3');
-    getCoinSound = loadSound('/assets/sound/coin.mp3');
-    fireSound = loadSound('/assets/sound/fire.mp3');
-    ghostSound = loadSound('/assets/sound/ghost.mp3');
+    loseMusic = loadSound('assets/sound/fail.mp3');
+    jumpSound = loadSound('assets/sound/jump.mp3');
+    getCoinSound = loadSound('assets/sound/coin.mp3');
+    fireSound = loadSound('assets/sound/fire.mp3');
+    ghostSound = loadSound('assets/sound/ghost.mp3');
 
     medium = loadImage('assets/medium1.png');
     mediumHover = loadImage('assets/medium2.png');
