@@ -384,7 +384,8 @@ These improvements aim to reduce the learning curve and enhance the overall play
 
 
 <img width="983" alt=" NASA" src="https://github.com/user-attachments/assets/ab7cb672-2520-41f9-b61c-b823b9d76a8e" />
-# **NASA TLX Workload Score Distribution Chart**
+
+ # **NASA TLX Workload Score Distribution Chart**
 
 
 
