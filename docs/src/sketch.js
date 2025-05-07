@@ -310,7 +310,7 @@ function drawStatusArea() {
   image(candyImg, coinIconX, coinIconY, coinIconSize, coinIconSize);
   fill(0);
   textSize(25);
-  text(candyCount, coinIconX + coinIconSize + 5, coinIconY + coinIconSize - 28);
+  text(candyCount, coinIconX + coinIconSize + 5, coinIconY + coinIconSize - 45);
 }
 
 // game over or you win screen
