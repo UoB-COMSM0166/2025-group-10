@@ -226,17 +226,22 @@ The main stakeholders for Up Up Angel were:
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td rowspan="2">Streamer</td>
-      <td rowspan="2">Improve player engagement through challenging mechanics</td>
-      <td>As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.</td>
+      <tr>
+      <td rowspan="1">Streamer</td>
+      <td rowspan="1">Improve player engagement through challenging mechanics</td> 
+      <td>As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.</td>
       <td>Given I am in a game, when I progress through the levels and encounter increasing difficulty, then I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.</td>
+    </tr>
+    <tr>
+      <td rowspan="1"></td>
+      <td rowspan="1"></td> 
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.</td>
       <td>Given I am in a game, when I progress through the levels and encounter increasing difficulty, then I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.</td>
     </tr>
-
     <tr>
       <td rowspan="1">Busy Player</td>
       <td rowspan="1">Improve player engagement through challenging mechanics</td> <td>As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.</td>
