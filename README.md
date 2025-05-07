@@ -223,26 +223,31 @@ The main stakeholders for Up Up Angel were:
     <th>User Stories</th>
     <th>Acceptance Criteria</th>
   </tr>
-  <!-- 第一個 User Type: Streamer -->
+  
+  <!-- First User Type: Streamer -->
   <tr>
-    <td rowspan="2">Streamer</td>
+    <td>Streamer</td>
     <td rowspan="2">Improve player engagement through challenging mechanics</td>
     <td>As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.</td>
     <td><b>Given</b> I am in a game, <b>when</b> I progress through the levels and encounter increasing difficulty, <b>then</b> I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.</td>
   </tr>
+  <!-- Second User Type: Challenge-Seeking Player -->
   <tr>
-    <td>As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay. (second story)</td>
-    <td><b>Given</b> I am in a game, <b>when</b> I progress through the levels and encounter increasing difficulty, <b>then</b> I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience. (second acceptance)</td>
+    <td>Challenge-Seeking Player</td>
+    <td>As a challenge-seeking player, I want the game to include many mechanics that can make me lose lives, so that I can gain a sense of achievement by overcoming them.</td>
+    <td><b>Given</b> I am in the game, <b>when</b> I am playing the game, <b>then</b> I should face challenges such as moving clouds and attacking hellfire, which require quick reactions and precise decisions to avoid failure, so that I can feel a sense of achievement when I overcome the challenges.</td>
   </tr>
   
-  <!-- 第二個 User Type: Busy Professional -->
+  <!-- Third User Type: Busy Professional -->
   <tr>
-    <td rowspan="2">Busy Professional</td>
+    <td>Busy Professional</td>
     <td rowspan="2">Enhance happiness for player</td>
     <td>As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.</td>
     <td><b>Given</b> I am playing the game, <b>when</b> I engage with the game’s mechanics, <b>then</b> I should face simple and enjoyable challenges that I can complete in a short amount of time, leaving me with a sense of accomplishment and happiness.</td>
   </tr>
+  <!-- Fourth User Type: Busy Professional -->
   <tr>
+    <td>Busy Professional</td>
     <td>As a player, I want the game to offer different difficulty levels, so I can choose the right one that suits my mood and how much time I have to play.</td>
     <td><b>Given</b> I am starting a new game or level, <b>when</b> I select the difficulty level, <b>then</b> I should be able to choose from different difficulty settings (e.g., Easy, Medium, Hard) that give me a variety of experiences and challenges, so I can pick the one that best fits how I like to play.</td>
   </tr>
