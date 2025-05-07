@@ -430,7 +430,8 @@ Medium difficulty scores were slightly higher than Easy, suggesting a modest inc
 | 10   | OK          | 80         | Good          | 82.5         |
 
 <p align="center"><strong>SUS Score Distribution Chart</strong></p>
-<img width="677" alt="  SUS" src="https://github.com/user-attachments/assets/fb2355dc-b180-4d42-a413-46181f62b668" />
+<img width="1141" alt="SUS" src="https://github.com/user-attachments/assets/9b962504-640f-4575-ae4a-c36a8cd66705" />
+
 
 
 
