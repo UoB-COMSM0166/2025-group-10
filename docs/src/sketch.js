@@ -358,7 +358,7 @@ window.mousePressed = function() {
   }
 
   if (bgMusic && !bgMusic.isPlaying()) {
-    bgMusic.play();
+    bgMusic.loop();
   }
 
   let isPlayHover = mouseX > playX - playWidth / 2 && mouseX < playX + playWidth / 2 &&mouseY > playY - playHeight / 2 && mouseY < playY + playHeight / 2;
@@ -412,9 +412,9 @@ function keyPressed() {
   }
   
   if (bgMusic && !bgMusic.isPlaying()) {
-    bgMusic.play();
+    bgMusic.loop();
   }
-  
+
   if (gameScreen === "start") {
     if (keyCode === ENTER) gameScreen = "game";
   } else if (gameScreen === "gameOver" || gameScreen === "youWin" || gameScreen === "instruction") {
