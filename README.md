@@ -207,6 +207,10 @@ At first, we considered creating a lighthearted game inspired by the classic "NS
 
 To ensure the game appeals to a wide audience, we designed three difficulty levels, offering players a chance to experience both relaxation and a sense of challenge. We also included different obstacles and environments tailored to each difficulty level, making sure that players remain engaged and immersed, even as the challenges grow.
 
+### Game Selection List
+
+![Description](docs/repoPic/GameList1.jpeg)
+
 ### Stakeholder List
 The main stakeholders for Up Up Angel were:
 - The product: Up Up Angel
@@ -255,7 +259,7 @@ The main stakeholders for Up Up Angel were:
 
 ### Use case diagrams
 
-![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/UseCaseDiagram.jpg)  
+![Class Diagram](docs/repoPic/UseCaseDiagram.jpg)  
 
 ### Use-case Specification
 
