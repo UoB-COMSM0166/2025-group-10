@@ -1,4 +1,4 @@
- /**
+/**
  * Represents a halo in the game.
  */
 class Halo extends Objects {
