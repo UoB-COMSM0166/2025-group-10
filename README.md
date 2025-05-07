@@ -209,7 +209,7 @@ To ensure the game appeals to a wide audience, we designed three difficulty leve
 
 ### Game Selection List
 
-![Description](docs/repoPic/GameList1.jpg)
+
 
 ### Stakeholder List
 The main stakeholders for Up Up Angel were:
