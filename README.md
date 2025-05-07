@@ -216,14 +216,6 @@ The main stakeholders for Up Up Angel were:
 - Public: Wider groups who may view, discuss, or be inspired by the project. Their engagement enhances the game’s visibility and extends its impact beyond direct testers.
 
 ### Epics & User Stories & Acceptance Criteria
-
-| User Type              | Epics              | User Stories          | Acceptance Criteria    |
-|--------------------|--------------------|---------------------------|------------------------|
-|Streamer|Improve player engagement through challenging mechanics|As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.|**Given** I am in a game, **when** I progress through the levels and encounter increasing difficulty, **then** I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.|
-|        |                                                       |As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.|**Given** I am in a game, **when** I progress through the levels and encounter increasing difficulty, **then** I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.|
-|Busy Professional|Enhance happiness for player|As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.|**Given** I am playing the game, **when** I engage with the game’s mechanics, **then** I should face simple and enjoyable challenges that I can complete in a short amount of time, leaving me with a sense of accomplishment and happiness.|
-|        |                                                       |As a player, I want the game to offer different difficulty levels, so I can choose the right one that suits my mood and how much time I have to play.|**Given** I am starting a new game or level, **when** I select the difficulty level, **then** I should be able to choose from different difficulty settings (e.g., Easy, Medium, Hard) that give me a variety of experiences and challenges, so I can pick the one that best fits how I like to play.|
-
 <table>
   <thead>
     <tr>
@@ -241,8 +233,18 @@ The main stakeholders for Up Up Angel were:
       <td>Given I am in a game, when I progress through the levels and encounter increasing difficulty, then I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.</td>
     </tr>
     <tr>
-      <td>As a streamer, I want the game to be both challenging and entertaining, so that my viewers remain engaged and enjoy watching my gameplay.</td>
-      <td>Given I am in a game, when I progress through the levels and encounter increasing difficulty, then I should face an increasing number of progressively more threatening obstacles (e.g., hellfire, ghosts) that provide me with an entertaining and challenging experience.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Busy Player</td>
+      <td rowspan="2">Improve player engagement through challenging mechanics</td>
+      <td>As a busy professional, I want to experience simple yet meaningful achievements so that I can feel happy and fulfilled, even during short breaks.</td>
+      <td>**Given** I am playing the game, **when** I engage with the game’s mechanics, **then** I should face simple and enjoyable challenges that I can complete in a short amount of time, leaving me with a sense of accomplishment and happiness.</td>
+      <td rowspan="2">Normal Player</td>
+      <td rowspan="2">Improve player engagement through challenging mechanics</td>
+      <td>As a player, I want the game to offer different difficulty levels, so I can choose the right one that suits my mood and how much time I have to play.</td>
+      <td>**Given** I am starting a new game or level, **when** I select the difficulty level, **then** I should be able to choose from different difficulty settings (e.g., Easy, Medium, Hard) that give me a variety of experiences and challenges, so I can pick the one that best fits how I like to play.</td>
     </tr>
     </tbody>
 </table>
