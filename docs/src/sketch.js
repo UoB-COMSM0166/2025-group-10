@@ -445,14 +445,15 @@ function restartGame() {
   generateGameElements();
   generateHeart();
 
+  if (loseMusic.isPlaying()) {
+    loseMusic.stop();
+  }
+  
   // 切換回遊戲畫面
   gameScreen = "game";
 }
 
 function startNewGame() {
-  if (loseMusic.isPlaying()) {
-    loseMusic.stop();
-  }
   resetGameData();  // **確保清空舊資料**
   player = new Player(canvasWidth / 2, canvasHeight, life, candyCount);
   generateGameElements();
