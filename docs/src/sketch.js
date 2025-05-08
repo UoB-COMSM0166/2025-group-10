@@ -2,7 +2,7 @@ let clouds = [], objects = [], hearts = [];
 let player, plateform;
 let numClouds = 100;
 let canvasWidth = 800, canvasHeight = 600, statusAreaHeight = 50;
-let cloudWidth = 100, cloudHeight = 20, firstLevelX, grassHeight = 30;
+let cloudWidth = 100, cloudHeight = 20, firstLevelY, grassHeight = 30;
 let movingDistance = canvasHeight / 8;
 let numCoinOrHeart = 3;
 let life = 3, candyCount = 0;
@@ -247,6 +247,7 @@ if (isSimpleHover && simpleBox) {
 function shiftScreen(shiftAmount) {
   plateform.y += shiftAmount;
   plateform.y = plateform.y < canvasHeight ? canvasHeight : plateform.y;
+
   for (let i = 0; i < clouds.length; i++) {
     clouds[i].y += shiftAmount;
     let obj = objects[i];
@@ -426,7 +427,7 @@ function keyPressed() {
     if (keyCode === ENTER) gameScreen = "start";
   } else if (gameScreen === "game") {
     if (keyCode === 32) { // SPACE 跳躍
-      if (player.y === canvasHeight - player.size / 2 - grassHeight || player.currentCloud) {
+      if (player.y === plateform.y - player.size / 2 - grassHeight || player.currentCloud) {
         player.jump();
       }
     }
@@ -487,7 +488,7 @@ function resetGameData() {
 function generateGameElements() {
   plateform = new Plateform(canvasWidth / 2, canvasHeight);
   clouds = generateClouds(random(60, 200), random(canvasHeight - 60 - grassHeight, canvasHeight - 90));
-  firstLevelX = clouds[0].y;
+  firstLevelY = clouds[0].y;
   objects = [];
 
   for (let i = 0; i < clouds.length; i++) {

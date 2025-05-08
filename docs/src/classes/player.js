@@ -92,8 +92,8 @@ class Player {
     }
 
     // 若玩家落到底部，解除附著並處理生命損失
-    if (this.y + this.size / 2 >= canvasHeight - grassHeight) {
-      this.y = canvasHeight - this.size / 2 - grassHeight;
+    if (this.y + this.size / 2 >= plateform.y - grassHeight) {
+      this.y = plateform.y - this.size / 2 - grassHeight;
       this.velocity = 0;
       this.currentCloud = null;
       if (!this.isStart) {
@@ -105,7 +105,7 @@ class Player {
     // 每一幀結束前，重置操控標記
     this.isControlled = false;
 
-    if ((this.y < canvasHeight / 2 && clouds[clouds.length - 1].y < canvasHeight) || (this.y > canvasHeight / 2 && clouds[0].y > firstLevelX)) {
+    if ((this.y < canvasHeight / 2 && clouds[clouds.length - 1].y < canvasHeight) || (this.y > canvasHeight / 2 && plateform.y > canvasHeight)) {
       // 計算玩家距離中線的差距
       let diff = canvasHeight / 2 - this.y;
       // 設定一個平滑係數，例如 0.1，這個值可以根據遊戲需求調整
