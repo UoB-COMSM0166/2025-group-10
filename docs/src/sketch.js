@@ -1,12 +1,12 @@
 let clouds = [], objects = [], hearts = [];
-let player;
+let player, plateform;
 let numClouds = 100;
 let canvasWidth = 800, canvasHeight = 600, statusAreaHeight = 50;
-let cloudWidth = 100, cloudHeight = 20, firstLevelX;
+let cloudWidth = 100, cloudHeight = 20, firstLevelX, grassHeight = 30;
 let movingDistance = canvasHeight / 8;
 let numCoinOrHeart = 3;
 let life = 3, candyCount = 0;
-let cloudImg, haloImg, monsterLeftImg, monsterRightImg, dangerImg, playerLeftImg, playerRightImg;
+let cloudImg, haloImg, monsterLeftImg, monsterRightImg, dangerImg, playerLeftImg, playerRightImg, grassImg;
 let bgImg, bgGame, angelWords, challengeWords;
 let simple, simpleHover, medium, mediumHover, hard, hardHover;
 let simpleBox, mediumBox, hardBox;
@@ -245,6 +245,8 @@ if (isSimpleHover && simpleBox) {
 
 //Every time player jumps, scroll clouds down and center the current cloud in the canvas.
 function shiftScreen(shiftAmount) {
+  plateform.y += shiftAmount;
+  plateform.y = plateform.y < canvasHeight ? canvasHeight : plateform.y;
   for (let i = 0; i < clouds.length; i++) {
     clouds[i].y += shiftAmount;
     let obj = objects[i];
@@ -256,6 +258,8 @@ function shiftScreen(shiftAmount) {
 
 function drawGame() {
   background(bgGame);
+  plateform.show();
+  
   for (let cloud of clouds) {
     cloud.show();
     cloud.move();
@@ -268,6 +272,7 @@ function drawGame() {
   if (keyIsDown(RIGHT_ARROW)) player.move(1);
   player.update();
   player.show();
+
   drawStatusArea();
   
   for (let i = objects.length - 1; i >= 0; i--) {
@@ -421,7 +426,7 @@ function keyPressed() {
     if (keyCode === ENTER) gameScreen = "start";
   } else if (gameScreen === "game") {
     if (keyCode === 32) { // SPACE 跳躍
-      if (player.y === canvasHeight - player.size / 2 || player.currentCloud) {
+      if (player.y === canvasHeight - player.size / 2 - grassHeight || player.currentCloud) {
         player.jump();
       }
     }
@@ -439,7 +444,7 @@ function restartGame() {
   hearts = [];
   
   // 重新建立玩家
-  player = new Player(canvasWidth / 2, canvasHeight);
+  player = new Player(canvasWidth / 2, canvasHeight - grassHeight);
 
   // 重新生成雲朵、物件、生命
   generateGameElements();
@@ -455,7 +460,7 @@ function restartGame() {
 
 function startNewGame() {
   resetGameData();  // **確保清空舊資料**
-  player = new Player(canvasWidth / 2, canvasHeight, life, candyCount);
+  player = new Player(canvasWidth / 2, canvasHeight - grassHeight);
   generateGameElements();
   generateHeart();
   gameScreen = "game";  // 切換到遊戲畫面
@@ -480,7 +485,8 @@ function resetGameData() {
 }
 
 function generateGameElements() {
-  clouds = generateClouds(random(60, 200), random(canvasHeight - 60, canvasHeight - 90));
+  plateform = new Plateform(canvasWidth / 2, canvasHeight);
+  clouds = generateClouds(random(60, 200), random(canvasHeight - 60 - grassHeight, canvasHeight - 90));
   firstLevelX = clouds[0].y;
   objects = [];
 
@@ -520,7 +526,7 @@ function generateGameElements() {
     }
   }
   
-  player = new Player(canvasWidth / 2, canvasHeight, life, candyCount);
+  player = new Player(canvasWidth / 2, canvasHeight - grassHeight);
   generateHeart();
 }
 
@@ -602,6 +608,7 @@ function generateHeart() {
 function loadGameAssets() {
   setTimeout(() => { 
     bgGame = loadImage('assets/gameBackground.jpg');
+    grassImg = loadImage('assets/grass1.png');
     cloudImg = loadImage('assets/cloud2.png');
     candyImg = loadImage('assets/candy.png');
     monsterLeftImg = loadImage('assets/ghost2.gif');

@@ -92,8 +92,8 @@ class Player {
     }
 
     // 若玩家落到底部，解除附著並處理生命損失
-    if (this.y + this.size / 2 >= canvasHeight) {
-      this.y = canvasHeight - this.size / 2;
+    if (this.y + this.size / 2 >= canvasHeight - grassHeight) {
+      this.y = canvasHeight - this.size / 2 - grassHeight;
       this.velocity = 0;
       this.currentCloud = null;
       if (!this.isStart) {
