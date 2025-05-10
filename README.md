@@ -523,7 +523,7 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 - Reflect on project as a whole. Lessons learned. Reflect on challenges. Future work.
 
 ### Reflect on Project as a Whole
-- The development of Up Up Angel took our team through the full journey of building a game from scratch—including brainstorming ideas, assessing requirements, writing code, and testing with real users. We came to see that a project is like a puzzle: each small task is a piece, and only by carefully putting them together can we complete the bigger picture we initially envisioned.
+- The development of Up Up Angel took our team through the full journey of building a game from scratch, including brainstorming ideas, assessing requirements, writing code, and testing with real users. We came to see that a project is like a puzzle: each small task is a piece, and only by carefully putting them together can we complete the bigger picture we initially envisioned.
 - We also came to appreciate just how important users are in the development process. Knowing what players need gave us clearer direction when designing the interface, gameplay, and features. Meanwhile, the feedback we received pointed out things we might have missed ourselves. It wasn’t criticism, it was an opportunity to refine and improve. We realized that design isn’t just about creating something new; it’s also about listening, adjusting, and making it better through every iteration.
 
 ### Lessons Learned
