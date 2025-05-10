@@ -221,7 +221,7 @@ At first, we considered creating a lighthearted game inspired by the classic "NS
 
 ### Stakeholder
 
-<img src="Onion.jpg" alt="Onion Diagram" width="50%"/>
+<img src="docs/repoPic/Onion.jpg" alt="Onion Diagram" width="50%"/>
 
 The main stakeholders for Up Up Angel were:
 - The product: Up Up Angel
@@ -271,6 +271,7 @@ The main stakeholders for Up Up Angel were:
 ### Use case diagrams
 
 ![Class Diagram](docs/repoPic/Usecasediagram.jpg)  
+<img src="docs/repoPic/Usecasediagram.jpg" alt="Onion Diagram" width="50%"/>
 
 ### Use-case Specification
 
