@@ -219,7 +219,10 @@ At first, we considered creating a lighthearted game inspired by the classic "NS
 | Jumping Over Pits on a Bridge | The original game involves players controlling a character as they navigate across a bridge, jumping over pits to avoid falling.<br>**Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Development Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
 | Endless Runner | Players control a character that runs endlessly forward, avoiding obstacles and collecting power-ups to achieve high scores.<br>**Twist**: Players can switch between characters, such as superheroes or animals, each with unique abilities like flying, dashing, or bypassing obstacles, adding strategy and variety.<br>**Development Challenges**: Creating procedurally generated maps and balancing character abilities to ensure smooth and fair gameplay. |
 
-### Stakeholder List
+### Stakeholder
+
+![Class Diagram](docs/repoPic/Onion.jpg)  
+
 The main stakeholders for Up Up Angel were:
 - The product: Up Up Angel
 - Game Developers: Implement game mechanics, logic, and assets. Address technical challenges to bring the design vision to life.
@@ -267,7 +270,7 @@ The main stakeholders for Up Up Angel were:
 
 ### Use case diagrams
 
-![Class Diagram](docs/repoPic/UseCaseDiagram.jpg)  
+![Class Diagram](docs/repoPic/Usecasediagram.jpg)  
 
 ### Use-case Specification
 
