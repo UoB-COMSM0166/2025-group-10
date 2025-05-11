@@ -171,8 +171,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 ## 1. Our Team
 
-![Description](docs/repoPic/group.jpg)
-
+<img src="docs/repoPic/group.jpg" alt="Group" width="60%"/>
 
 | Name              | Email                              | Username    |
 |-------------------|----------------------------------|-------------|
