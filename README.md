@@ -559,8 +559,8 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 | Bryant Lin       | 1.00 |   |
 | Naiwen Tsui      | 1.00 |   |
 | Zhu Xuefei       | 1.00 |   |
-| Pinchun Shen     | 1.00 | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the instruction and ending pages<br>- Wrote the report<br>- Made the video  |
-| Chih Hsien Ho    | 1.00 |   |
+| Pinchun Shen     | 1.00 | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the instruction and ending pages(Win&Game Over)<br>- Wrote the report<br>- Made the video  |
+| Chih Hsien Ho    | 1.00 | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the start screen and difficulty selection interface<br>- Wrote the report<br>- Made the video  |
 | Cyunwun Lin      | 1.00 |   |
 
 ### Additional Marks
