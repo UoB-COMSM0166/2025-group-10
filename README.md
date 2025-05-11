@@ -186,10 +186,11 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 ## 2. Introduction
 
-  <p float="left">
-  <img src="docs/repoPic/Doodle.gif" alt="Doodle Jump" width="100"/>
-  <img src="docs/repoPic/NS_SHAFT.gif" alt="NS SHAFT" width="100"/>
-</p>
+  <div align="center">
+  <img src="docs/repoPic/Doodle.gif" alt="Doodle Jump" width="150" style="margin-right: 30px;">
+  <img src="docs/repoPic/NS_SHAFT.gif" alt="NS SHAFT" width="130">
+</div>
+
 
 Our game, Up Up Angel, is inspired by the classic mobile game Doodle Jump, but we adapted it for desktop platforms by changing the auto-jumping mechanic into manual jumping. This gives players more control and creates a deeper sense of focus and challenge.
 
