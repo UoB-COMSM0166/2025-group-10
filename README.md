@@ -552,7 +552,7 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 
 - Provide a table of everyone's contribution, which may be used to weight individual grades. We expect that the contribution will be split evenly across team-members in most cases. Let us know as soon as possible if there are any issues with teamwork as soon as they are apparent.
 
-| Name              | Contribution|
+| Name              | Contribution| 
 |-------------------|-------------|
 | Bryant Lin        | 1.00 | 
 | Naiwen Tsui       | 1.00 | 
@@ -560,6 +560,15 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 | Pinchun Shen      | 1.00 | 
 | Chih Hsien Ho     | 1.00 | 
 | Cyunwun Lin       | 1.00 | 
+
+| Name              | Score | Contribution  |
+|------------------|------|-------------|
+| Bryant Lin       | 1.00 |   |
+| Naiwen Tsui      | 1.00 |   |
+| Zhu Xuefei       | 1.00 |   |
+| Pinchun Shen     | 1.00 |   - Designed the game concept and story background. - Visual design of the main character, game background, and objects. - Coded the instruction and ending pages. - Wrote the report. - Made the video.   |
+| Chih Hsien Ho    | 1.00 |   |
+| Cyunwun Lin      | 1.00 |   |
 
 ### Additional Marks
 
