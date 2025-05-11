@@ -279,7 +279,7 @@ The main stakeholders for Up Up Angel were:
 
 ### Use case diagrams
 
-<img src="docs/repoPic/Usecase.jpg" alt="Onion Diagram" width="60%"/>
+<img src="docs/repoPic/UseCase.jpg" alt="Use Case Diagram" width="50%"/>
 
 ### Use-case Specification
 
