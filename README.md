@@ -186,12 +186,9 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 ## 2. Introduction
 
-- 5% ~250 words 
-- Describe your game, what is based on, what makes it novel?
-
   <p float="left">
-  <img src="docs/repoPic/Doodle.gif" alt="Doodle Jump" width="150"/>
-  <img src="docs/repoPic/NS_SHAFT.gif" alt="NS SHAFT" width="150"/>
+  <img src="docs/repoPic/Doodle.gif" alt="Doodle Jump" width="100"/>
+  <img src="docs/repoPic/NS_SHAFT.gif" alt="NS SHAFT" width="100"/>
 </p>
 
 Our game, Up Up Angel, is inspired by the classic mobile game Doodle Jump, but we adapted it for desktop platforms by changing the auto-jumping mechanic into manual jumping. This gives players more control and creates a deeper sense of focus and challenge.
