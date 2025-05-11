@@ -554,12 +554,12 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 
 | Name              | Contribution|
 |-------------------|-------------|
-| Bryant Lin        | 1 | 
-| Naiwen Tsui       | 1 | 
-| Zhu Xuefei        | 1 | 
-| Pinchun Shen      | 1 | 
-| Chih Hsien Ho     | 1 | 
-| Cyunwun Lin       | 1 | 
+| Bryant Lin        | 1.00 | 
+| Naiwen Tsui       | 1.00 | 
+| Zhu Xuefei        | 1.00 | 
+| Pinchun Shen      | 1.00 | 
+| Chih Hsien Ho     | 1.00 | 
+| Cyunwun Lin       | 1.00 | 
 
 ### Additional Marks
 
