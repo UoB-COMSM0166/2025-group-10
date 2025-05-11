@@ -51,10 +51,6 @@ KanBan Board: https://github.com/orgs/UoB-COMSM0166/projects/122
 
 Video link: https://youtu.be/rdkpm2Llshk?si=53pmZ8UEkNTFCre_
 
-<iframe width="560" height="315" 
-src="[https://youtu.be/rdkpm2Llshk?si=53pmZ8UEkNTFCre_]" 
-frameborder="0" allowfullscreen></iframe>
-
 This game is all about quick reflexes and fast-paced action. The screen continuously scrolls downward, and players must guide their character down the stairs to avoid getting caught by the spikes at the top. If hit by the spikes, they lose health, and missing a step results in instant failure.
 
 Different types of stairs have unique effects, adding variety and challenge. Some platforms might disappear, move, or even bounce the player unpredictably. The game is intense, highly reactive, and keeps players on edge with its rapid pace and unpredictable obstacles, making for an exciting and adrenaline-pumping experience.
