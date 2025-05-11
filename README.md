@@ -158,6 +158,7 @@ A: If used for gambling or unfair competition, it may harm players' mental healt
 
    
 ---
+
 <img src="docs/repoPic/FirstChart.jpg" alt="First Chart" width="100%"/>
 
 ## Your Game
