@@ -2,6 +2,8 @@
 2025 COMSM0166 group 10
 Game Link: https://editor.p5js.org/muler-hussel/sketches/3FtJ5jacn
 
+<img src="docs/repoPic/FirstChart.jpg" alt="First Chart" width="100%"/>
+
 ## Contents
 
 - [1. Our Team](#1-our-team)
@@ -158,8 +160,6 @@ A: If used for gambling or unfair competition, it may harm players' mental healt
 
    
 ---
-
-<img src="docs/repoPic/FirstChart.jpg" alt="First Chart" width="100%"/>
 
 ## Your Game
 
