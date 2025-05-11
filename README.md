@@ -550,7 +550,16 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 
 ### Contribution Statement
 
-- Provide a table of everyone's contribution, which may be used to weight individual grades. We expect that the contribution will be split evenly across team-members in most cases. Let us know as soon as possible if there are any issues with teamwork as soon as they are apparent. 
+- Provide a table of everyone's contribution, which may be used to weight individual grades. We expect that the contribution will be split evenly across team-members in most cases. Let us know as soon as possible if there are any issues with teamwork as soon as they are apparent.
+
+| Name              | Contribution|
+|-------------------|-------------|
+| Bryant Lin        | 1 | 
+| Naiwen Tsui       | 1 | 
+| Zhu Xuefei        | 1 | 
+| Pinchun Shen      | 1 | 
+| Chih Hsien Ho     | 1 | 
+| Cyunwun Lin       | 1 | 
 
 ### Additional Marks
 
