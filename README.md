@@ -194,8 +194,6 @@ Include a demo video of your game here (you don't have to wait until the end, yo
   <img src="docs/repoPic/NS_SHAFT.gif" alt="NS SHAFT" width="120"/>
 </div>
 
-
-
 Our game, Up Up Angel, is inspired by the classic mobile game Doodle Jump, but we adapted it for desktop platforms by changing the auto-jumping mechanic into manual jumping. This gives players more control and creates a deeper sense of focus and challenge.
 
 Originally, our concept was similar to NS SHAFT, a game where players go downward step by step like descending stairs. However, to better fit the theme of angels and heaven, we decided to reverse the direction and create an upward-jumping experience instead.
@@ -279,7 +277,7 @@ The main stakeholders for Up Up Angel were:
 
 ### Use case diagrams
 
-<img src="docs/repoPic/UseCase.jpg" alt="Use Case Diagram" width="50%"/>
+<img src="docs/repoPic/UseCase.jpg" alt="Use Case Diagram" width="60%"/>
 
 ### Use-case Specification
 
