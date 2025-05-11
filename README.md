@@ -228,7 +228,7 @@ At first, we considered creating a lighthearted game inspired by the classic "NS
 
 ### Stakeholder
 
-<img src="docs/repoPic/Onion.jpg" alt="Onion Diagram" width="30%"/>
+<img src="docs/repoPic/Onion.jpg" alt="Onion Diagram" width="40%"/>
 
 The main stakeholders for Up Up Angel were:
 - The product: Up Up Angel
