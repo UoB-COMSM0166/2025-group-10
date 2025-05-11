@@ -187,9 +187,9 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 ## 2. Introduction
 
   <div align="center">
-  <img src="docs/repoPic/Doodle.gif" alt="Doodle Jump" width="120"/>
+  <img src="docs/repoPic/Doodle.gif" alt="Doodle Jump" width="140"/>
   <img src="https://via.placeholder.com/30x1/ffffff/ffffff" width="30" height="1" />
-  <img src="docs/repoPic/NS_SHAFT.gif" alt="NS SHAFT" width="140"/>
+  <img src="docs/repoPic/NS_SHAFT.gif" alt="NS SHAFT" width="120"/>
 </div>
 
 
