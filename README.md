@@ -478,7 +478,7 @@ Additionally, peer reviews and informal user testing sessions were conducted to 
 In our team, effective collaboration and consistent communication were essential to ensuring a smooth and successful development process. Early on, we decided to divide our team into two sub-groups based on skillsets: three members focused on programming—covering areas such as game logic, functionality, and system integration—while the other three specialized in visual design, including character art, environment graphics, animations, and user interface elements. This division of labor allowed each sub-group to concentrate on what they did best, while still maintaining frequent contact and discussion to make sure all parts of the game fit together cohesively.
 
 ### Tools
-<img src="docs/repoPic/KanBan.png" alt="Kanban" width="30%"/>
+<img src="docs/repoPic/KanBan.png" alt="Kanban" width="100%"/>
 
 To manage our workflow, we used a Kanban board to organize tasks and track progress. This board included columns like "Backlog", "In Progress", and "Done", which gave us a clear and up-to-date overview of our project’s status. Each team member updated their tasks regularly, which helped everyone stay aligned, avoid duplicate efforts, and maintain momentum throughout the development cycle. The Kanban approach was especially helpful when juggling multiple components at once, from writing scripts and coding game mechanics to designing character assets and animations.
 
