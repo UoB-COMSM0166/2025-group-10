@@ -451,6 +451,16 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 | Chih Hsien Ho     | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the start screen and difficulty selection interface<br>- Wrote the report<br>- Made the video |
 | Cyunwun Lin       | 1.00  | - Conducted SUS and NASA-TLX surveys<br>- Analysed survey results and created visualisations<br>- Organised user feedback and assisted with UX testing<br>- Created illustrations<br>- Wrote the report<br>- Edited the video<br>- Helped with video production and subtitles |
 
+| Name              | Score | Contribution  |
+|-------------------|-------|---------------|
+| Bryant Lin        | 1.00  | - Created illustrations<br>- Helped produce the video<br>- Organised user feedback and assisted with UX testing |
+| Naiwen Tsui       | 1.00  | - Created illustrations<br>- Helped produce the video<br>- Organised user feedback and assisted with UX testing |
+| Zhu Xuefei        | 1.00  | - Game feature implementation and coding<br>- Code optimisation<br>- Wrote the report |
+| Pinchun Shen      | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the instruction and ending pages (Win & Game Over)<br>- Wrote the report<br>- Made the video |
+| Chih Hsien Ho     | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the start screen and difficulty selection interface<br>- Wrote the report<br>- Made the video |
+| Cyunwun Lin       | 1.00  | - Conducted SUS and NASA-TLX surveys<br>- Analysed survey results and created visualisations<br>- Organised user feedback and assisted with UX testing<br>- Created illustrations<br>- Wrote the report<br>- Edited the video<br>- Helped with video production and subtitles |
+
+
 ### Additional Marks
 
 You can delete this section in your own repo, it's just here for information. in addition to the marks above, we will be marking you on the following two points:
