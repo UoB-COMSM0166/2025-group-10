@@ -403,25 +403,15 @@ To manage our workflow, we used a Kanban board to organize tasks and track progr
 ### 2. Online meetings/In-Person Discussions and Whatsapp group
 
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="docs/repoPic/Meeting.jpg" alt="Team Discussion" width="350"><br/>
-      <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
-    </td>
-    <td align="center">
-      <img src="docs/repoPic/whatsapp.png" alt="Design Chat" width="350"><br/>
-      <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="400">
+  <img src="docs/repoPic/whatsapp.png" alt="Design Chat" width="400">
+</p>
 
-
-
-
-
-
-
+<p align="center">
+  <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em><br/>
+  <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
+</p>
 
 
 Communication was primarily handled through WhatsApp, which proved to be a reliable and flexible platform for coordinating schedules, sharing quick updates, and discussing issues as they came up. Since we all had different personal and academic commitments, scheduling could have been a challenge—but WhatsApp allowed us to quickly reach consensus on meeting times and maintain a steady flow of informal check-ins. We also used it to post reminders, ask for feedback, and brainstorm creative ideas during quieter development periods.
