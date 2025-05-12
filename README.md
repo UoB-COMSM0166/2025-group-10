@@ -358,8 +358,8 @@ To manage our workflow, we used a Kanban board to organize tasks and track progr
 
 
 <p align="center">
-  <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="500">
-  <img src="docs/repoPic/whatsapp.png" alt="Design Chat" width="550">
+  <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="420">
+  <img src="docs/repoPic/whatsapp.png" alt="Design Chat" width="460">
 </p>
 
 <p align="center">
