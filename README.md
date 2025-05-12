@@ -382,16 +382,19 @@ To manage our workflow, we used a Kanban board to organize tasks and track progr
 
 ### 2. Online meetings/In-Person Discussions and Whatsapp group
 
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 40px;">
-  <div align="center">
-    <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="300"/><br/>
-    <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
-  </div>
-  <div align="center">
-    <img src="docs/repoPic/whatsapp.png" alt="WhatsApp Chat" width="300"/><br/>
-    <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
-  </div>
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="docs/repoPic/Meeting.jpg" alt="Team Discussion" width="300"/><br/>
+      <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
+    </td>
+    <td align="center">
+      <img src="docs/repoPic/whatsapp.png" alt="Design Discussion" width="300"/><br/>
+      <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
+    </td>
+  </tr>
+</table>
+
 
 
 
