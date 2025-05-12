@@ -11,53 +11,7 @@
 - [7. Process](#7-process)
 - [8. Sustainability, Ethics, and Accessibility](#8-sustainability-ethics-and-accessibility)
 - [9. Conclusion](#9-conclusion)
-
-
-
----
-
-Game Link:  https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
-
-
----
-
-### Week 3: Game Demo Videos
-
-#### 1. Angel Drop
-
-Video link: https://youtu.be/rdkpm2Llshk?si=53pmZ8UEkNTFCre_
-
-This game is all about quick reflexes and fast-paced action. The screen continuously scrolls downward, and players must guide their character down the stairs to avoid getting caught by the spikes at the top. If hit by the spikes, they lose health, and missing a step results in instant failure.
-
-Different types of stairs have unique effects, adding variety and challenge. Some platforms might disappear, move, or even bounce the player unpredictably. The game is intense, highly reactive, and keeps players on edge with its rapid pace and unpredictable obstacles, making for an exciting and adrenaline-pumping experience.
-
-#### 2. Frogger-like Road Crossing
-
-Video link: https://youtu.be/M9n7DXvjcw8?si=FcxUdEGWT1FpQf-O
-
-In Frog Cross Road, players must guide a small frog safely across a series of busy roads, rivers, and other hazardous environments. The screen continuously moves forward, pressuring players to make quick decisions to avoid getting left behind or hit by passing vehicles.
-
-The game features various obstacles, such as cars, trucks, floating logs, and fast-moving rapids, each requiring precise timing to navigate. Some platforms move unpredictably, adding to the challenge. With its fast-paced gameplay, high tension, and increasing difficulty, Frog Cross Road is an exciting test of reflexes and strategy. The ever-changing environment and quick reaction requirements keep players engaged and on edge throughout the experience.
-
-#### 3. Up Up Angel (Final decision)
-
-Video link: https://youtube.com/shorts/dFYu5HwDuT4?si=URENKYaQuJJZ4qi2
-
-"Up Up Angel" is a platformer game inspired by Doodle Jump, but with our own unique twist. Instead of an automatically bouncing character, players must manually jump using controls, adding a layer of strategy and challenge.
-
-Our goal was to reimagine the classic jumping game with a celestial theme. In this version, players control an angel ascending toward the heavens, navigating through clouds while avoiding small creatures that block their path. We designed the game with elements representing heaven, such as floating platforms made of clouds and a pair of golden wings at the highest point, symbolizing the angel's final transformation.
-
-By adding manual jumping mechanics, we made the game feel more interactive and engaging. Players must carefully time their jumps and plan their movements to reach their goal successfully. This project allowed us to experiment with game mechanics and level design, and we aimed to create a fun yet challenging experience with a distinctive angelic theme.
-
-
----
-
-
----
-### WEEK 8
-[SUS and NASA TLX survey.xlsx](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/SUS%20and%20NASA%20TLX%20survey.xlsx)
-
----    
+    
 
 
    
@@ -404,8 +358,8 @@ To manage our workflow, we used a Kanban board to organize tasks and track progr
 
 
 <p align="center">
-  <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="400">
-  <img src="docs/repoPic/whatsapp.png" alt="Design Chat" width="400">
+  <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="500">
+  <img src="docs/repoPic/whatsapp.png" alt="Design Chat" width="550">
 </p>
 
 <p align="center">
