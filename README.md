@@ -525,6 +525,10 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 |  Sharing Positive Values |At its heart, Up Up Angel is about rising above—not just in the game, but in life. As the angel jumps higher, dodging dark creatures and picking up sweets along the way, it quietly reflects the ups and downs we all go through. There’s a deeper message behind the simple gameplay: be brave, grow through struggle, and don’t let negativity pull you down. Reaching the top and earning a halo isn’t just a win—it’s a little reminder that we can all become our best selves, one step at a time.|
 |  A Chance for Emotional Connection | Up Up Angel carries quiet themes of growth, falling and rising again, and becoming who you're meant to be. It’s more than just a game—it can spark real conversations. Friends might start by talking about their scores or favorite moments, but end up sharing stories about their own lives, struggles, or dreams. In that way, the game becomes a gentle bridge between people, opening space for empathy and connection. |
 
+<div align="center">
+  <img src="docs/repoPic/sus.jpg" alt="Sustainability Awareness Framework" width="400"/>
+  <p><em>Figure: Sustainability Awareness Framework of our game <strong>Up Up Angel</strong></em></p>
+</div>
 
 ## 9. Conclusion
 
