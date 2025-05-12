@@ -481,7 +481,11 @@ In our team, effective collaboration and consistent communication were essential
 
 To manage our workflow, we used a Kanban board to organize tasks and track progress. This board included columns like "Backlog", "In Progress", and "Done", which gave us a clear and up-to-date overview of our project’s status. Each team member updated their tasks regularly, which helped everyone stay aligned, avoid duplicate efforts, and maintain momentum throughout the development cycle. The Kanban approach was especially helpful when juggling multiple components at once, from writing scripts and coding game mechanics to designing character assets and animations.
 
-<img src="docs/repoPic/Meeting.jpg" alt="Meeting" width="60%"/>
+<div align="center">
+  <img src="docs/repoPic/Meeting.jpg" alt="Meeting" width="60%"/>
+  <p><strong>Figure:</strong> <em>Our team during a group discussion meeting.</em></p>
+</div>
+
 
 Communication was primarily handled through WhatsApp, which proved to be a reliable and flexible platform for coordinating schedules, sharing quick updates, and discussing issues as they came up. Since we all had different personal and academic commitments, scheduling could have been a challenge—but WhatsApp allowed us to quickly reach consensus on meeting times and maintain a steady flow of informal check-ins. We also used it to post reminders, ask for feedback, and brainstorm creative ideas during quieter development periods.
 
