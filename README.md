@@ -64,7 +64,7 @@ By adding manual jumping mechanics, we made the game feel more interactive and e
    
 ---
 
-## Your Game
+# Your Game
 
 Link to your game [PLAY HERE](https://uob-comsm0166.github.io/2025-group-10/)
 
@@ -72,7 +72,7 @@ Your game lives in the [/docs](/docs) folder, and is published using Github page
 
 Include a demo video of your game here (you don't have to wait until the end, you can insert a work in progress video)
 
-## 1. Our Team
+# 1. Our Team
 
 <img src="docs/repoPic/group.jpg" alt="Group" width="60%"/>
 
@@ -87,7 +87,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 
 
-## 2. Introduction
+# 2. Introduction
 
   <div align="center">
   <img src="docs/repoPic/Doodle.gif" alt="Doodle Jump" width="140"/>
@@ -103,14 +103,14 @@ To give the game a unique atmosphere, we introduced the theme of heaven and hell
 
 Our goal was to design a game that feels positive and healing, yet still challenging. By combining symbolic visuals with simple but engaging mechanics, Up Up Angel offers players an experience that is both uplifting and meaningful.
   
-## 3. Requirements 
+# 3. Requirements 
 
-### Ideation process
+## Ideation process
 In the early stages of our project, our team came together to discuss and decide on the direction of the game. We observed that many people today lead busy lives, juggling work, studies, and personal commitments. With this in mind, our goal was to create a game that not only offers a simple and engaging experience but also provides relaxation and a sense of accomplishment, allowing players to enjoy satisfying challenges in a short time.Right from the start, we agreed that the game should strike a balance between being soothing and providing a bit of challenge—giving players a brief but fulfilling escape from the stresses of daily life. We decided on two core design principles: a cute, comforting visual style paired with soft pastel colors to evoke a calming emotional atmosphere.
 
 At first, we considered creating a lighthearted game inspired by the classic "NS-Shaft" mechanics—something simple and fun. However, when we decided that the main character would be a small angel, we rethought the gameplay. We realized that having the angel jump upward rather than downward made much more sense thematically, symbolizing the ascent to heaven—a concept associated with peace and healing. This shift also led us to choose a sky-themed backdrop for the game. At the end of the game, players are rewarded with a final scene resembling "heaven," providing a sense of emotional closure and fully realizing our design vision. To ensure the game appeals to a wide audience, we designed three difficulty levels, offering players a chance to experience both relaxation and a sense of challenge. We also included different obstacles and environments tailored to each difficulty level, making sure that players remain engaged and immersed, even as the challenges grow.
 
-### Game Selection List
+## Game Selection List
 
 | Game                      | Description                                                                                               |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -124,7 +124,7 @@ At first, we considered creating a lighthearted game inspired by the classic "NS
 | Jumping Over Pits on a Bridge | The original game involves players controlling a character as they navigate across a bridge, jumping over pits to avoid falling.<br>**Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Development Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
 | Endless Runner | Players control a character that runs endlessly forward, avoiding obstacles and collecting power-ups to achieve high scores.<br>**Twist**: Players can switch between characters, such as superheroes or animals, each with unique abilities like flying, dashing, or bypassing obstacles, adding strategy and variety.<br>**Development Challenges**: Creating procedurally generated maps and balancing character abilities to ensure smooth and fair gameplay. |
 
-### Stakeholder
+## Stakeholder
 
 <img src="docs/repoPic/Onion.jpg" alt="Onion Diagram" width="60%"/>
 
@@ -135,7 +135,7 @@ The main stakeholders for Up Up Angel were:
 - Users(Player): Play the game to experience its mechanics and provide feedback on gameplay, bugs, usability, and overall user experience to support iterative improvements.
 - Public: Wider groups who may view, discuss, or be inspired by the project. Their engagement enhances the game’s visibility and extends its impact beyond direct testers.
 
-### Epics & User Stories & Acceptance Criteria
+## Epics & User Stories & Acceptance Criteria
 <table border="1">
   <tr>
     <th>User Type</th>
@@ -173,16 +173,16 @@ The main stakeholders for Up Up Angel were:
   </tr>
 </table>
 
-### Use case diagrams
+## Use case diagrams
 
 <img src="docs/repoPic/UseCase.jpg" alt="Use Case Diagram" width="80%"/>
 
-### Use-case Specification
+## Use-case Specification
 
-#### Description:
+### Description:
 The player starts the game with the goal of jumping upward through clouds, avoiding dangers like ghosts and hellfire. The ultimate aim is to collect the halo, which gives the angel the power to fly to heaven and means the player has won the game.
 
-#### Basic Flow:
+### Basic Flow:
  1. The player selects “Play Game” from the main menu.
  2. The game displays the instructions for the player to read.
  3. The player selects a difficulty level.
@@ -193,13 +193,13 @@ The player starts the game with the goal of jumping upward through clouds, avoid
  8. Falling or losing all lives triggers the game over screen.
  9. After the game ends, the system displays options: Play Again, Settings, or Exit Game.
 
-#### Alternative Flows:
+### Alternative Flows:
 Gain Extra Life: If the player collects three candies, they gain one extra life. This gives them another chance to survive falling or hitting a hazard.
 
-## 4. Design
+# 4. Design
 Based on our initial user stories and the use case diagram, we collaboratively designed the system architecture of our game by creating a detailed class diagram and sequence diagram. This process was essential to ensuring a solid understanding of the structure and flow of the game before moving into implementation. By working as a team and discussing every design decision, we were able to align our expectations and divide responsibilities more effectively.
 
-#### Class Diagram
+### Class Diagram
 The class diagram represents a high-level overview of our object-oriented design and depicts the core classes used in the game, their attributes, methods, and relationships. At the center of our game logic is the Sketch class, which is responsible for controlling the flow of the game. It manages setup, draw cycles, user interactions, and oversees the initialization of other key classes.
 One of the most important classes is the Player class, which encapsulates all player-related behaviors such as jumping, moving left or right, checking collisions, and handling life count. It interacts with a number of other classes throughout the game loop.
 Clouds are also a critical component in the game, serving as platforms for the player to land on and move between. We implemented two types of clouds — static ones and moving ones— both inheriting from a common Cloud class. The MovingCloud class introduces horizontal motion logic and carries with it any object placed on top, ensuring consistent interaction.
@@ -210,7 +210,7 @@ The LifeHeart class is a utility class that visually represents the player’s r
 ***Class Diagram***  
 ![Class Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/assets/readme/Updated%20Class%20Diagram.png)  
 
-#### Sequence Diagram
+### Sequence Diagram
 After finalizing the class structure, we developed a sequence diagram to visualize the temporal interactions between these classes during game execution. This diagram begins with the display of the game’s starting interface, followed by the difficulty selection screen. Once a difficulty is selected, the Sketch class initializes instances of Player, Cloud, and Object classes according to the difficulty level settings.  
 During the game loop, Player listens for user inputs to jump or move. As the player moves, the system checks for collisions with clouds and objects. If a collision occurs, the Player class calls the respective Object subclass method to handle the event (e.g., reducing life when hitting a Monster, or increasing score when collecting a Candy).
 Meanwhile, the Sketch class continuously redraws the game scene using p5.js’s draw() function, updating the positions of all game elements. The LifeHeart class is called every frame to update the life display based on the player’s current state.  
@@ -218,12 +218,12 @@ Whenever the player reaches new heights, the shiftScreen() method in Sketch ensu
 ***Sequence Diagram***  
 ![Sequence Diagram](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/docs/assets/readme/Updated%20Sequence%20Diagram.png)  
 
-#### Design Iteration and Agile Process
+### Design Iteration and Agile Process
 As we followed an agile development approach, our class and sequence diagrams were not static. Instead, we continuously revised and improved them as the game evolved. Early versions of the diagrams served as rough guides and allowed us to identify design issues early. As we added new features or refined gameplay mechanics, we updated the diagrams to reflect the current structure and ensure everyone on the team had a shared understanding of the system.  
 The diagrams proved especially helpful when debugging or integrating features developed by different team members. They served not only as documentation but also as a communication tool within the team, allowing for clearer discussion on logic, flow, and potential improvements.  
 Overall, our collaborative design approach — grounded in object-oriented principles and supported by UML diagrams — greatly contributed to the clarity, flexibility, and maintainability of our codebase.  
 
-## 5. Implementation
+# 5. Implementation
 
 The development of Up Up Angel involved translating a high-level conceptual design into a fully functional game using p5.js and object-oriented programming. The implementation centered around modularizing behaviors into well-structured classes such as `Player`, `Cloud`, and `Objects`, and managing complex game logic through a central `Sketch` controller. While the overall structure was guided by our class and sequence diagrams, several challenges emerged during development, particularly regarding **manual jumping and physics**, **collisions and interactions**, and **difficulty scaling with object spawning**.
 
@@ -245,7 +245,7 @@ In summary, the implementation phase of Up Up Angel demanded careful engineering
 
 ---
 
-## 6. Evaluation
+# 6. Evaluation
 
 ### One Qualitative Evaluation (Your Choice)
 
@@ -369,34 +369,36 @@ Test cases were designed to cover both typical use scenarios and edge cases, ens
 Additionally, peer reviews and informal user testing sessions were conducted to identify usability issues and unforeseen bugs.
 
 
-## 7. Process 
+# 7. Process 
 
 In our team, effective collaboration and consistent communication were essential to ensuring a smooth and successful development process. Early on, we decided to divide our team into two sub-groups based on skillsets: three members focused on programming—covering areas such as game logic, functionality, and system integration—while the other three specialized in visual design, including character art, environment graphics, animations, and user interface elements. This division of labor allowed each sub-group to concentrate on what they did best, while still maintaining frequent contact and discussion to make sure all parts of the game fit together cohesively.
 
-### Tools
+## Tools
 
-#### 1. Kanban board
+### 1. Kanban board
 <img src="docs/repoPic/KanBan.png" alt="Kanban" width="60%"/>
 
 To manage our workflow, we used a Kanban board to organize tasks and track progress. This board included columns like "Backlog", "In Progress", and "Done", which gave us a clear and up-to-date overview of our project’s status. Each team member updated their tasks regularly, which helped everyone stay aligned, avoid duplicate efforts, and maintain momentum throughout the development cycle. The Kanban approach was especially helpful when juggling multiple components at once, from writing scripts and coding game mechanics to designing character assets and animations.
 
-#### 2. Online meetings/In-Person Discussions and Whatsapp group
+### 2. Online meetings/In-Person Discussions and Whatsapp group
+
 <div style="display: flex; justify-content: center; align-items: flex-start; gap: 40px;">
   <div align="center">
     <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="300"/><br/>
-    <p><strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em></p>
+    <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
   </div>
   <div align="center">
     <img src="docs/repoPic/whatsapp.png" alt="WhatsApp Chat" width="300"/><br/>
-    <p><strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em></p>
+    <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
   </div>
 </div>
 
 
 
+
 Communication was primarily handled through WhatsApp, which proved to be a reliable and flexible platform for coordinating schedules, sharing quick updates, and discussing issues as they came up. Since we all had different personal and academic commitments, scheduling could have been a challenge—but WhatsApp allowed us to quickly reach consensus on meeting times and maintain a steady flow of informal check-ins. We also used it to post reminders, ask for feedback, and brainstorm creative ideas during quieter development periods.
 
-#### 3. Github
+### 3. Github
 Our GitHub repository served as the central hub for all project-related files. Developers pushed code regularly and used pull requests to propose changes, which were reviewed by at least one other team member to maintain code quality and catch bugs early. On the design side, completed visual assets were uploaded in an organized folder structure, ready for integration. This system enabled parallel development: while the artists finalized sprite sheets or interface components, the coders could simultaneously implement gameplay features or fix bugs without waiting. We also made use of GitHub Issues to document and assign bugs, feature requests, or tasks that required collaboration between teams.
 
 ### Strengths vs Challenges
@@ -407,7 +409,7 @@ Despite having a well-structured workflow, we encountered several challenges alo
 Looking back, our process was not perfect, but it was highly collaborative, flexible, and built on a strong foundation of mutual respect and shared responsibility. Every member contributed to both the execution and the creative direction of the game. This experience has deepened our understanding of team dynamics and taught us the importance of proactive communication, task visibility, and adaptability in software projects.
 
 
-## 8. Sustainability, Ethics, and Accessibility
+# 8. Sustainability, Ethics, and Accessibility
 <br>
 
 ### 🌱 Environmental
@@ -442,7 +444,7 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
   <p><em><strong>Figure:</strong> Sustainability Awareness Framework of our game <strong>Up Up Angel</strong></em></p>
 </div>
 
-## 9. Conclusion
+# 9. Conclusion
 
 
 ### Reflect on Project as a Whole
