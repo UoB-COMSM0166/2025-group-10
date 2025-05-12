@@ -374,26 +374,27 @@ Additionally, peer reviews and informal user testing sessions were conducted to 
 In our team, effective collaboration and consistent communication were essential to ensuring a smooth and successful development process. Early on, we decided to divide our team into two sub-groups based on skillsets: three members focused on programming—covering areas such as game logic, functionality, and system integration—while the other three specialized in visual design, including character art, environment graphics, animations, and user interface elements. This division of labor allowed each sub-group to concentrate on what they did best, while still maintaining frequent contact and discussion to make sure all parts of the game fit together cohesively.
 
 ### Tools
+
+##### 1.Kanban board
 <img src="docs/repoPic/KanBan.png" alt="Kanban" width="60%"/>
 
 To manage our workflow, we used a Kanban board to organize tasks and track progress. This board included columns like "Backlog", "In Progress", and "Done", which gave us a clear and up-to-date overview of our project’s status. Each team member updated their tasks regularly, which helped everyone stay aligned, avoid duplicate efforts, and maintain momentum throughout the development cycle. The Kanban approach was especially helpful when juggling multiple components at once, from writing scripts and coding game mechanics to designing character assets and animations.
 
-<div style="display: flex; justify-content: center; gap: 40px;">
+##### 2.Online meetings/In-Person Discussions and Whatsapp group
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 40px;">
   <div align="center">
     <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="300"/><br/>
     <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
   </div>
   <div align="center">
-    <img src="docs/repoPic/whatsapp.png" alt="WhatsApp Discussion" width="300"/><br/>
+    <img src="docs/repoPic/whatsapp.png" alt="WhatsApp Chat" width="300"/><br/>
     <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
   </div>
 </div>
 
-
-
-
 Communication was primarily handled through WhatsApp, which proved to be a reliable and flexible platform for coordinating schedules, sharing quick updates, and discussing issues as they came up. Since we all had different personal and academic commitments, scheduling could have been a challenge—but WhatsApp allowed us to quickly reach consensus on meeting times and maintain a steady flow of informal check-ins. We also used it to post reminders, ask for feedback, and brainstorm creative ideas during quieter development periods.
 
+##### 3.Github
 Our GitHub repository served as the central hub for all project-related files. Developers pushed code regularly and used pull requests to propose changes, which were reviewed by at least one other team member to maintain code quality and catch bugs early. On the design side, completed visual assets were uploaded in an organized folder structure, ready for integration. This system enabled parallel development: while the artists finalized sprite sheets or interface components, the coders could simultaneously implement gameplay features or fix bugs without waiting. We also made use of GitHub Issues to document and assign bugs, feature requests, or tasks that required collaboration between teams.
 
 ### Strengths vs Challenges
