@@ -86,12 +86,14 @@ The following animation shows our early concept using hand-drawn elements and pa
 
 ###  1. Frogger-like Road Crossing 🐸
 Inspired by Frogger, players guide a frog safely through traffic and rivers while dodging obstacles with precision timing.
+<br>
 [![Watch Frogger Demo](https://img.youtube.com/vi/M9n7DXvjcw8/0.jpg)](https://youtu.be/M9n7DXvjcw8)
 > ▶️ Click the image above to watch the prototype video.
 
 
 ###  2. Up Up Angel 😇
 A vertical platformer inspired by Doodle Jump, but with a manual jumping mechanic that adds depth and challenge.
+<br>
 [![Watch Up Up Angel](https://img.youtube.com/vi/dFYu5HwDuT4/0.jpg)](https://youtube.com/shorts/dFYu5HwDuT4)
 > ▶️ Click the image above to watch the prototype video.
 
