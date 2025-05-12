@@ -382,18 +382,17 @@ To manage our workflow, we used a Kanban board to organize tasks and track progr
 
 ### 2. Online meetings/In-Person Discussions and Whatsapp group
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="docs/repoPic/Meeting.jpg" alt="Team Discussion" width="300"/><br/>
-      <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
-    </td>
-    <td align="center">
-      <img src="docs/repoPic/whatsapp.png" alt="Design Discussion" width="300"/><br/>
-      <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
-    </td>
-  </tr>
-</table>
+<div style="display: flex; justify-content: center; gap: 40px;">
+  <div align="center">
+    <img src="docs/repoPic/Meeting.jpg" alt="Team Discussion" width="300"/><br/>
+    <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
+  </div>
+  <div align="center">
+    <img src="docs/repoPic/whatsapp.png" alt="Design Discussion" width="300"/><br/>
+    <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
+  </div>
+</div>
+
 
 
 
@@ -404,7 +403,7 @@ Communication was primarily handled through WhatsApp, which proved to be a relia
 ### 3. Github
 Our GitHub repository served as the central hub for all project-related files. Developers pushed code regularly and used pull requests to propose changes, which were reviewed by at least one other team member to maintain code quality and catch bugs early. On the design side, completed visual assets were uploaded in an organized folder structure, ready for integration. This system enabled parallel development: while the artists finalized sprite sheets or interface components, the coders could simultaneously implement gameplay features or fix bugs without waiting. We also made use of GitHub Issues to document and assign bugs, feature requests, or tasks that required collaboration between teams.
 
-### Strengths vs Challenges
+## Strengths vs Challenges
 One of the key strengths of our team was our willingness to communicate across roles. Even though we had designated responsibilities, there was constant feedback exchanged between designers and developers. For example, the design team would often suggest UI improvements based on how game mechanics looked in action, and the coders would adapt certain features to better showcase visual assets. These iterative loops helped us refine the game's look and feel and avoid the disconnect that sometimes happens between programming and art.
 
 Despite having a well-structured workflow, we encountered several challenges along the way. One of the main difficulties was synchronizing the work between the coding and art teams. At times, assets were not delivered in the format or resolution the developers expected, leading to delays and last-minute adjustments. Another challenge was coordinating schedules, especially during exam periods or when members had overlapping deadlines for other coursework. There were also moments where miscommunication caused duplicated work or unclear task ownership. To address this, we gradually improved our documentation practices and began leaving clearer notes on the Kanban board and GitHub commits, which significantly reduced confusion over time.
