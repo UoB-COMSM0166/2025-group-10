@@ -1,6 +1,6 @@
 <img src="docs/repoPic/FirstChart.jpg" alt="First Chart" width="100%"/>
 
-## Contents
+## Table of Contents
 
 - [1. Our Team](#1-our-team)
 - [2. Introduction](#2-introduction)
@@ -13,29 +13,8 @@
 - [9. Conclusion](#9-conclusion)
 
 
-## Lecture Notes
-
-### Week 1: Game Selection Phase 1
-This week, our focus was on coming up with ideas for our game project. After a lot of brainstorming and discussions, we finalized three potential game concepts. Each idea comes with a unique twist and its own set of challenges. We considered different gameplay mechanics, potential difficulties in implementation, and how to make each game engaging for players. It was a fun but challenging process, and now we are excited to move forward with refining and selecting the best concept to develop.
-
-| Game                      | Description                                                                                               |
-|---------------------------|-----------------------------------------------------------------------------------------------------------|
-| Kids go Down Stairs |The original game involves players controlling a character as they descend a series of stairs, avoiding obstacles and collecting rewards.<br> **Twist**: The theme is changed to "Angel Drop," where players navigate through fluffy clouds instead of stairs, with unique challenges and mechanisms like disappearing clouds, wind currents, or moving platforms.<br>**Development Challenges**: Designing dynamic cloud behaviors, integrating unique mechanisms, and balancing difficulty across levels.|
-| Frogger-like Road Crossing| The original game involves a frog crossing busy roads and rivers while avoiding cars and other obstacles.<br>**Twist**: Pikachu occasionally appears to assist the frog by clearing paths or stunning obstacles with Thunderbolt.<br>**Development Challenges**: Integrating Pikachu's abilities seamlessly into the gameplay and designing interactions that balance difficulty while adding excitement. |
-| Tile Matcher (Match-3 Game)|Players click or drag matching tiles to clear them and earn points.<br> **Twist**: Add special tiles like bombs or time-limited challenges to increase difficulty. <br>**Development Challenges**: Implementing matching mechanics and smooth animations.|
-| Guess What I'm Saying | Players describe a word or phrase while others try to guess it within a time limit. Categories include movies, animals, famous people, and more. Faster guesses earn more points. <br> **Twist**:  Instead of just speaking, players may have to use gestures, drawings, or sound effects. Some modes add restrictions, like forbidden words or emoji-only clues, making the game more challenging. <br> **Development Challenges**:Creating an intuitive interface for different clue-giving methods, implementing multiplayer functionality, and balancing difficulty for all player levels.|
-| Brick Breaker|Players control a paddle to bounce a ball and break bricks at the top of the screen. <br> **Twist**: Some bricks have special effects like speed changes or extra balls. <br>**Development Challenges**: Ensuring ball physics work smoothly.|
-| Hellfire Escape|Players control an angel escaping from hell, avoiding monsters and traps while collecting energy to restore divine power.<br> **Twist**: The character can briefly fly but consumes energy.<br>**Development Challenges**: Balancing game pacing to make the escape both intense and engaging.|
-| Space Shooter | Players pilot a spaceship, destroy enemies, and upgrade their equipment. <br> **Twist**: Players can recruit alien creatures as teammates, who provide buffs such as increased attack power or shields. <br> **Development Challenges**:Designing the teammate system and implementing diverse upgrade options.|
-| Jumping Over Pits on a Bridge | The original game involves players controlling a character as they navigate across a bridge, jumping over pits to avoid falling.<br>**Twist**: The bridge collapses over time, and pits have hazards like wind or slowing obstacles.<br>**Development Challenges**: Build responsive jumping mechanics and random pit placement on a dynamic bridge. |
-| Endless Runner | Players control a character that runs endlessly forward, avoiding obstacles and collecting power-ups to achieve high scores.<br>**Twist**: Players can switch between characters, such as superheroes or animals, each with unique abilities like flying, dashing, or bypassing obstacles, adding strategy and variety.<br>**Development Challenges**: Creating procedurally generated maps and balancing character abilities to ensure smooth and fair gameplay. |
 
 ---
-
-### Week 2: P5.js & Agile Techniques
-This week, we designed a simple yet fun drawing game that allows players to use the mouse to draw colorful circles on the canvas. The gameplay is very intuitive—players simply click to draw circles and can adjust the brush color by pressing different keys.
-
-During the development process, we created a Kanban Board to manage project progress. We divided the work into different tasks, and by using the Kanban Board, we were able to clearly track the status of each task and ensure effective collaboration among team members.
 
 Game Link:  https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
 
