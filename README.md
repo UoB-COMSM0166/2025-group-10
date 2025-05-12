@@ -385,11 +385,11 @@ To manage our workflow, we used a Kanban board to organize tasks and track progr
 <table align="center">
   <tr>
     <td align="center">
-      <img src="docs/repoPic/Meeting.jpg" alt="Team Discussion" width="350"/><br/>
+      <img src="docs/repoPic/Meeting.jpg" alt="Team Discussion" width="400"/><br/>
       <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
     </td>
     <td align="center">
-      <img src="docs/repoPic/whatsapp.png" alt="Design Discussion" width="350"/><br/>
+      <img src="docs/repoPic/whatsapp.png" alt="Design Discussion" width="400"/><br/>
       <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
     </td>
   </tr>
