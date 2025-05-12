@@ -375,26 +375,28 @@ In our team, effective collaboration and consistent communication were essential
 
 ### Tools
 
-##### 1.Kanban board
+#### 1. Kanban board
 <img src="docs/repoPic/KanBan.png" alt="Kanban" width="60%"/>
 
 To manage our workflow, we used a Kanban board to organize tasks and track progress. This board included columns like "Backlog", "In Progress", and "Done", which gave us a clear and up-to-date overview of our project’s status. Each team member updated their tasks regularly, which helped everyone stay aligned, avoid duplicate efforts, and maintain momentum throughout the development cycle. The Kanban approach was especially helpful when juggling multiple components at once, from writing scripts and coding game mechanics to designing character assets and animations.
 
-##### 2.Online meetings/In-Person Discussions and Whatsapp group
+#### 2. Online meetings/In-Person Discussions and Whatsapp group
 <div style="display: flex; justify-content: center; align-items: flex-start; gap: 40px;">
   <div align="center">
     <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="300"/><br/>
-    <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
+    <p><strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em></p>
   </div>
   <div align="center">
     <img src="docs/repoPic/whatsapp.png" alt="WhatsApp Chat" width="300"/><br/>
-    <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
+    <p><strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em></p>
   </div>
 </div>
 
+
+
 Communication was primarily handled through WhatsApp, which proved to be a reliable and flexible platform for coordinating schedules, sharing quick updates, and discussing issues as they came up. Since we all had different personal and academic commitments, scheduling could have been a challenge—but WhatsApp allowed us to quickly reach consensus on meeting times and maintain a steady flow of informal check-ins. We also used it to post reminders, ask for feedback, and brainstorm creative ideas during quieter development periods.
 
-##### 3.Github
+#### 3. Github
 Our GitHub repository served as the central hub for all project-related files. Developers pushed code regularly and used pull requests to propose changes, which were reviewed by at least one other team member to maintain code quality and catch bugs early. On the design side, completed visual assets were uploaded in an organized folder structure, ready for integration. This system enabled parallel development: while the artists finalized sprite sheets or interface components, the coders could simultaneously implement gameplay features or fix bugs without waiting. We also made use of GitHub Issues to document and assign bugs, feature requests, or tasks that required collaboration between teams.
 
 ### Strengths vs Challenges
@@ -442,9 +444,6 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 
 ## 9. Conclusion
 
-- 10% ~500 words
-
-- Reflect on project as a whole. Lessons learned. Reflect on challenges. Future work.
 
 ### Reflect on Project as a Whole
 - The development of Up Up Angel took our team through the full journey of building a game from scratch, including brainstorming ideas, assessing requirements, writing code, and testing with real users. We came to see that a project is like a puzzle: each small task is a piece, and only by carefully putting them together can we complete the bigger picture we initially envisioned.
