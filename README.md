@@ -18,7 +18,6 @@
 
 Game Link:  https://editor.p5js.org/nickytsui1027/full/SlAafOFzd
 
-KanBan Board: https://github.com/orgs/UoB-COMSM0166/projects/122
 
 ---
 
@@ -130,21 +129,15 @@ Before implementing our game, we started with a physical prototype to explore ba
 This hands-on process helped us quickly iterate on ideas and communicate them with the team.
 
 The following animation shows our early concept using hand-drawn elements and paper cutouts:
-### 🎥 1. Angel Drop
 
-[![Watch Angel Drop](https://img.youtube.com/vi/rdkpm2LIshk/0.jpg)](https://youtu.be/rdkpm2LIshk)
-> A fast-paced game about descending stairs to avoid danger. Players must react quickly to survive spiked ceilings and unpredictable platforms.
-
----
-
-### 🐸 2. Frogger-like Road Crossing
+### 🐸 1. Frogger-like Road Crossing
 
 [![Watch Frogger Demo](https://img.youtube.com/vi/M9n7DXvjcw8/0.jpg)](https://youtu.be/M9n7DXvjcw8)
 > Inspired by Frogger, players guide a frog safely through traffic and rivers while dodging obstacles with precision timing.
 
 ---
 
-### 😇 3. Up Up Angel (Final Decision)
+### 😇 2. Up Up Angel 
 
 [![Watch Up Up Angel](https://img.youtube.com/vi/dFYu5HwDuT4/0.jpg)](https://youtube.com/shorts/dFYu5HwDuT4)
 > A vertical platformer inspired by Doodle Jump, but with a manual jumping mechanic that adds depth and challenge.
