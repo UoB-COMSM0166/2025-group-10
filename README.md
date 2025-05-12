@@ -443,15 +443,6 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 - Provide a table of everyone's contribution, which may be used to weight individual grades. We expect that the contribution will be split evenly across team-members in most cases. Let us know as soon as possible if there are any issues with teamwork as soon as they are apparent.
 
 | Name              | Score | Contribution  |
-|------------------|------|-------------|
-| Bryant Lin       | 1.00 |   |
-| Naiwen Tsui      | 1.00 |   |
-| Zhu Xuefei       | 1.00 |   |
-| Pinchun Shen     | 1.00 | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the instruction and ending pages(Win&Game Over)<br>- Wrote the report<br>- Made the video  |
-| Chih Hsien Ho    | 1.00 | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the start screen and difficulty selection interface<br>- Wrote the report<br>- Made the video  |
-| Cyunwun Lin      | 1.00 |   |
-
-| Name              | Score | Contribution  |
 |-------------------|-------|---------------|
 | Bryant Lin        | 1.00  |               |
 | Naiwen Tsui       | 1.00  |               |
@@ -459,7 +450,6 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 | Pinchun Shen      | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the instruction and ending pages (Win & Game Over)<br>- Wrote the report<br>- Made the video |
 | Chih Hsien Ho     | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the start screen and difficulty selection interface<br>- Wrote the report<br>- Made the video |
 | Cyunwun Lin       | 1.00  | - Conducted SUS and NASA-TLX surveys<br>- Analysed survey results and created visualisations<br>- Organised user feedback and assisted with UX testing<br>- Created illustrations<br>- Wrote the report<br>- Edited the video<br>- Helped with video production and subtitles |
-
 
 ### Additional Marks
 
