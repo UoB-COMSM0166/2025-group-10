@@ -53,85 +53,13 @@ By adding manual jumping mechanics, we made the game feel more interactive and e
 
 ---
 
-### Week 4: Object Oriented Design
-
-#### Stakeholder List
-- Internal: Owner, Developer, Marketing Team, Project Managers
-- External: Customers, Potential Customers, Public, App Stores, Competitors
-
-#### Epics
-1. Improve player engagement through challenging mechanics 
-2. Enhance happiness for player
-
-#### User Stories
-- As a busy working professional, I want simple but meaningful achievements, so that I can feel joy even with minimal effort.
-- As a streamer, I want a game that is both challenging and entertaining, so that my audience stays engaged while watching my gameplay.
-- As a student, I want a leaderboard system, so that I can compete with my classmates and see who gets the highest score.
-
-#### Brief
-During this requirements workshop, our team deeply explored Epics, User Stories, and Acceptance Criteria and applied these concepts to the requirements planning for our game, "Up Up Angel".
-
-First, we learned that Epics are high-level requirements that group related user stories. For example, "making the game challenging" is one of our Epics, which includes mechanics like character movement, jumping, and dodging. This structure helps us organize requirements and keep the development direction clear.
-
-Next, User Stories allow us to think from the player's perspective when defining game features. For instance, "As a player, I want a leaderboard system so that I can compete with my friends." This approach helps us focus on the user experience and ensures the game meets the needs of different types of players, such as streamers, working professionals, and students.
-
-Finally, Acceptance Criteria define when a requirement is considered "done." For example, "Given that a player finishes a game session, when the score is calculated, then the leaderboard should update and display the player's rank." This clear criterion makes it easier for the development team to test and validate features.
-
-Through this workshop, we not only gained a solid understanding of requirements analysis but also learned how to apply these concepts in the development process, ensuring that our game design is well-structured and aligned with player expectations.
 
 ---
 ### WEEK 8
 [SUS and NASA TLX survey.xlsx](https://github.com/UoB-COMSM0166/2025-group-10/blob/main/SUS%20and%20NASA%20TLX%20survey.xlsx)
 
 ---    
-### WEEK 10
-Sustainability Impact Analysis of "UPUP ANGEL" 
 
-Social Impact 
-
-Sense of Community  
-Q: How does the product/service affect individuals' sense of belonging?  
-A: By playing together, teenagers can interact, share topics, and feel recognized by their peers. 
-Trust  
-Q: How does the product/service change users' trust in the company?  
-A:  
-Securely storing player data ensures data protection, increasing trust in the company.  
-Quick and positive responses to player feedback improve user trust. 
-Inclusiveness and Diversity  
-Q: How does the product/service affect people's views of others?  
-A: The game is fair for all players, regardless of age, gender, or race, reducing bias and promoting inclusiveness.  
-Q: How does it impact users from different backgrounds, ages, education levels, or other differences?  
-A: The game is open to everyone without restrictions. 
-Equity  
-Q: How does the system treat people differently?  
-A: Game results depend entirely on personal performance, with no unfair internal mechanisms. 
-Participation and Communication  
-Q: How does the product/service change how people build social networks?  
-A: The game provides conversation topics, encouraging interaction and communication.  
-Q: How does the product/service change how people support, criticize, or argue with others?  
-A:  
-Positive: Game discussions improve players' communication and expression skills.  
-Negative: Spending too much time on the game may reduce real-life social interactions. 
-Cultural Impact 
-
-Individual Impact 
-
-Health  
-Q: How does the product/service improve or harm physical, mental, or emotional health?  
-A:  
-Positive: Different difficulty levels allow easy completion, boosting confidence and achievement.  
-Negative: Excessive play may damage eyesight and posture, affecting physical health. 
-Lifelong Learning  
-Q: How does the product/service affect people's abilities and skills?  
-A: The game teaches players to achieve success through effort and repeated attempts, building patience and persistence. 
-Privacy  
-Q: How does the product/service expose (or protect) personal identity, location, or social relationships?  
-A: No login is required, avoiding personal data collection and ensuring privacy protection. 
-Safety  
-Q: How does the product/service expose (or protect) people from physical harm?  
-A: The game does not involve physical activity, so there is no direct risk of injury, but long play sessions may affect health.  
-Q: What are the possible effects if the product/service is used unexpectedly?  
-A: If used for gambling or unfair competition, it may harm players' mental health and fairness in the game. 
 
    
 ---
@@ -158,7 +86,6 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 | Cyunwun Lin      | [cyunwunlin@gmail.com](mailto:cyunwunlin@gmail.com) | CarminaTW   |
 
 
-## Project Report
 
 ## 2. Introduction
 
@@ -177,9 +104,6 @@ To give the game a unique atmosphere, we introduced the theme of heaven and hell
 Our goal was to design a game that feels positive and healing, yet still challenging. By combining symbolic visuals with simple but engaging mechanics, Up Up Angel offers players an experience that is both uplifting and meaningful.
   
 ## 3. Requirements 
-
-- 15% ~750 words
-- Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop?
 
 ### Ideation process
 In the early stages of our project, our team came together to discuss and decide on the direction of the game. We observed that many people today lead busy lives, juggling work, studies, and personal commitments. With this in mind, our goal was to create a game that not only offers a simple and engaging experience but also provides relaxation and a sense of accomplishment, allowing players to enjoy satisfying challenges in a short time.Right from the start, we agreed that the game should strike a balance between being soothing and providing a bit of challenge—giving players a brief but fulfilling escape from the stresses of daily life. We decided on two core design principles: a cute, comforting visual style paired with soft pastel colors to evoke a calming emotional atmosphere.
@@ -202,7 +126,7 @@ At first, we considered creating a lighthearted game inspired by the classic "NS
 
 ### Stakeholder
 
-<img src="docs/repoPic/Onion.jpg" alt="Onion Diagram" width="40%"/>
+<img src="docs/repoPic/Onion.jpg" alt="Onion Diagram" width="60%"/>
 
 The main stakeholders for Up Up Angel were:
 - The product: Up Up Angel
@@ -251,7 +175,7 @@ The main stakeholders for Up Up Angel were:
 
 ### Use case diagrams
 
-<img src="docs/repoPic/UseCase.jpg" alt="Use Case Diagram" width="60%"/>
+<img src="docs/repoPic/UseCase.jpg" alt="Use Case Diagram" width="80%"/>
 
 ### Use-case Specification
 
@@ -322,8 +246,6 @@ In summary, the implementation phase of Up Up Angel demanded careful engineering
 ---
 
 ## 6. Evaluation
-
-*(15% ~750 words)*
 
 ### One Qualitative Evaluation (Your Choice)
 
@@ -456,10 +378,19 @@ In our team, effective collaboration and consistent communication were essential
 
 To manage our workflow, we used a Kanban board to organize tasks and track progress. This board included columns like "Backlog", "In Progress", and "Done", which gave us a clear and up-to-date overview of our project’s status. Each team member updated their tasks regularly, which helped everyone stay aligned, avoid duplicate efforts, and maintain momentum throughout the development cycle. The Kanban approach was especially helpful when juggling multiple components at once, from writing scripts and coding game mechanics to designing character assets and animations.
 
-<div align="center">
-  <img src="docs/repoPic/Meeting.jpg" alt="Meeting" width="60%"/>
-  <p><strong>Figure:</strong> <em>Our team during a group discussion meeting.</em></p>
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="docs/repoPic/Meeting.jpg" alt="Team Discussion" width="300"/><br/>
+      <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
+    </td>
+    <td align="center">
+      <img src="docs/repoPic/whatsapp.png" alt="Design Discussion" width="300"/><br/>
+      <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
+    </td>
+  </tr>
+</table>
+
 
 
 Communication was primarily handled through WhatsApp, which proved to be a reliable and flexible platform for coordinating schedules, sharing quick updates, and discussing issues as they came up. Since we all had different personal and academic commitments, scheduling could have been a challenge—but WhatsApp allowed us to quickly reach consensus on meeting times and maintain a steady flow of informal check-ins. We also used it to post reminders, ask for feedback, and brainstorm creative ideas during quieter development periods.
