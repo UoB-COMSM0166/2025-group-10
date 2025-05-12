@@ -378,18 +378,17 @@ In our team, effective collaboration and consistent communication were essential
 
 To manage our workflow, we used a Kanban board to organize tasks and track progress. This board included columns like "Backlog", "In Progress", and "Done", which gave us a clear and up-to-date overview of our project’s status. Each team member updated their tasks regularly, which helped everyone stay aligned, avoid duplicate efforts, and maintain momentum throughout the development cycle. The Kanban approach was especially helpful when juggling multiple components at once, from writing scripts and coding game mechanics to designing character assets and animations.
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="docs/repoPic/Meeting.jpg" alt="Team Discussion" width="300"/><br/>
-      <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
-    </td>
-    <td align="center">
-      <img src="docs/repoPic/whatsapp.png" alt="Design Discussion" width="300"/><br/>
-      <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
-    </td>
-  </tr>
-</table>
+<div style="display: flex; justify-content: center; gap: 40px;">
+  <div align="center">
+    <img src="docs/repoPic/Meeting.jpg" alt="Team Meeting" width="300"/><br/>
+    <strong><em>Figure 1:</em></strong> <em>Our team during a group discussion meeting.</em>
+  </div>
+  <div align="center">
+    <img src="docs/repoPic/whatsapp.png" alt="WhatsApp Discussion" width="300"/><br/>
+    <strong><em>Figure 2:</em></strong> <em>Design brainstorming through WhatsApp conversation.</em>
+  </div>
+</div>
+
 
 
 
