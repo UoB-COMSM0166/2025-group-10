@@ -444,15 +444,6 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 
 | Name              | Score | Contribution  |
 |-------------------|-------|---------------|
-| Bryant Lin        | 1.00  |               |
-| Naiwen Tsui       | 1.00  |               |
-| Zhu Xuefei        | 1.00  |               |
-| Pinchun Shen      | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the instruction and ending pages (Win & Game Over)<br>- Wrote the report<br>- Made the video |
-| Chih Hsien Ho     | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the start screen and difficulty selection interface<br>- Wrote the report<br>- Made the video |
-| Cyunwun Lin       | 1.00  | - Conducted SUS and NASA-TLX surveys<br>- Analysed survey results and created visualisations<br>- Organised user feedback and assisted with UX testing<br>- Created illustrations<br>- Wrote the report<br>- Edited the video<br>- Helped with video production and subtitles |
-
-| Name              | Score | Contribution  |
-|-------------------|-------|---------------|
 | Bryant Lin        | 1.00  | - Game feature implementation and coding<br>- Code optimisation<br>- Wrote the report |
 | Naiwen Tsui       | 1.00  | - Game feature implementation and coding<br>- Code optimisation<br>- Wrote the report |
 | Zhu Xuefei        | 1.00  | - Game feature implementation and coding<br>- Code optimisation<br>- Wrote the report |
