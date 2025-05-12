@@ -527,7 +527,7 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 
 <div align="center">
   <img src="docs/repoPic/sus.jpg" alt="Sustainability Awareness Framework" width="1000"/>
-  <p><em>Figure: Sustainability Awareness Framework of our game <strong>Up Up Angel</strong></em></p>
+  <p><em><strong>Figure:</strong> Sustainability Awareness Framework of our game <strong>Up Up Angel</strong></em></p>
 </div>
 
 ## 9. Conclusion
