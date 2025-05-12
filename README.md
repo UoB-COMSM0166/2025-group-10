@@ -24,6 +24,10 @@ Link to your game [PLAY HERE](https://uob-comsm0166.github.io/2025-group-10/)
 Your game lives in the [/docs](/docs) folder, and is published using Github pages to the link above.
 
 Include a demo video of your game here (you don't have to wait until the end, you can insert a work in progress video)
+## 🎮 Game Demo
+
+Watch the gameplay here: [demo](https://youtu.be/Io8rj_mGRh0?si=pMy_g_T-mZPkIzdd)
+
 
 # 1. Our Team
 
