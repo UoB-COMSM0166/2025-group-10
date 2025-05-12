@@ -526,7 +526,7 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 |  A Chance for Emotional Connection | Up Up Angel carries quiet themes of growth, falling and rising again, and becoming who you're meant to be. It’s more than just a game—it can spark real conversations. Friends might start by talking about their scores or favorite moments, but end up sharing stories about their own lives, struggles, or dreams. In that way, the game becomes a gentle bridge between people, opening space for empathy and connection. |
 
 <div align="center">
-  <img src="docs/repoPic/sus.jpg" alt="Sustainability Awareness Framework" width="400"/>
+  <img src="docs/repoPic/sus.jpg" alt="Sustainability Awareness Framework" width="1000"/>
   <p><em>Figure: Sustainability Awareness Framework of our game <strong>Up Up Angel</strong></em></p>
 </div>
 
