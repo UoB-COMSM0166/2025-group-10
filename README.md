@@ -448,8 +448,8 @@ Looking back, our process was not perfect, but it was highly collaborative, flex
 
 | Name              | Score | Contribution  |
 |-------------------|-------|---------------|
-| Bryant Lin        | 1.00  | - Game feature implementation and coding  <br> - Code optimisation  <br> - Debugged the program  <br> - Optimised game performance  <br> - Created the presentation slides (PPT)  <br> - Recorded the game video narration  <br> - Wrote the report |
-| Naiwen Tsui       | 1.00  | - Game feature implementation and coding<br>- Code optimisation<br>- Wrote the report |
+| Bryant Lin        | 1.00  | - Game feature implementation and coding  <br> - Code optimisation  <br> - Debugged the program  <br> - Created the presentation slides (PPT)  <br> - Recorded the game video narration  <br> - Wrote the report |
+| Naiwen Tsui       | 1.00  | - Game feature implementation and coding<br>- Code optimisation<br>- Wrote the report<br>- Designed and wrote the final presentation slides<br>- Edited and produced the demo video for the game<br>- Co-developed the game concept |
 | Zhu Xuefei        | 1.00  | - Game feature implementation and coding<br>- Code optimisation<br>- Wrote the report |
 | Pinchun Shen      | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the instruction and ending pages (Win & Game Over)<br>- Wrote the report<br>- Made the video |
 | Chih Hsien Ho     | 1.00  | - Designed the game concept and story background<br>- Visual design of the main character, game background, and objects<br>- Coded the start screen and difficulty selection interface<br>- Wrote the report<br>- Made the video |
